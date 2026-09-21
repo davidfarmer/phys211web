@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Numerical Solution for a Mass on a Spring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Bucknell Physics 211 Supplement">
+<meta property="og:title" content="Bucknell Physics 211 Supplement">
+<meta property="book:title" content="Bucknell Physics 211 Supplement">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.52"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.52"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.3.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.c838822d59bc26bc.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b9fedab97dee3c2a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.347e2ecdeacfed99.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="root-1-2.html"><span class="title">Bucknell Physics 211 Supplement</span></a></div>
+<p class="byline">Fall, 2026</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="chap_numerical-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chap_numerical.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chap_numerical-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\solution}{
+
+\textbf{Solution: }}
+\renewcommand{\arraystretch}{1.8}
+\newcommand{\Xunits}[1]{\,\mbox{#1}}
+\renewcommand{\arraystretch}{1.0}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="root-1-2-2.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="root-1-2-3.html" class="internal"><span class="codenumber">1</span> <span class="title">Additional Problems</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chap_numerical.html" class="internal"><span class="codenumber">2</span> <span class="title">Solving Equations of Motion Using Numerical Iteration</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chap_numerical">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_numerical-2.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_numerical-3.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Solving Newton’s second law analytically</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_numerical-4.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Numerical Stepping Equations</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="chap_numerical-5.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Numerical Solution for a Mass on a Spring</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_numerical-6.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_relativityI.html" class="internal"><span class="codenumber">3</span> <span class="title">Basic Postulates of Relativity</span></a></div>
+<ul id="ptx-toc-group-chap_relativityI" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativityI-2.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativityI-3.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Preliminaries</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativityI-4.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Fundamental Principles of Relativity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_time-dilation.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Time dilation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativityI-6.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Length contraction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativityI-7.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Experimental evidence</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativityI-8.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Units and dimensionless velocities</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativityI-9.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_relativistic_spacetime.html" class="internal"><span class="codenumber">4</span> <span class="title">Relativistic Spacetime</span></a></div>
+<ul id="ptx-toc-group-chap_relativistic_spacetime" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativistic_spacetime-2.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_spacetime_intervals.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Spacetime intervals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_worldlines.html" class="internal"><span class="codenumber">4.3</span> <span class="title">World Lines and Spacetime Diagrams</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativistic_spacetime-5.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Ordering of events — the relativity of simultaneity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativistic_spacetime-6.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_relativity_pande.html" class="internal"><span class="codenumber">5</span> <span class="title">Relativistic Momentum and Energy</span></a></div>
+<ul id="ptx-toc-group-chap_relativity_pande" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-2.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-3.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Relativistic Velocity Transformations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-4.html" class="internal"><span class="codenumber">5.3</span> <span class="title">New definitions for energy and momentum</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-5.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Another Invariant</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-6.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Rest Energy and Kinetic Energy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-7.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Photons: Particles with Zero Mass</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-8.html" class="internal"><span class="codenumber">5.7</span> <span class="title">More experimental evidence</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_rel-units.html" class="internal"><span class="codenumber">5.8</span> <span class="title">A note on units</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-10.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_pande-11.html" class="internal"><span class="codenumber">5.10</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_relativity_app.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of the Relativistic Conservation Laws</span></a></div>
+<ul id="ptx-toc-group-chap_relativity_app" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_app-2.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_app-3.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Changes of Rest Energy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_app-4.html" class="internal"><span class="codenumber">6.3</span> <span class="title">General Strategy for Applying the Relativistic Conservation Laws</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_app-5.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Nuclear masses, fusion and fission</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_relativity_app-6.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_thermal_energy.html" class="internal"><span class="codenumber">7</span> <span class="title">Thermal Energy and Solids</span></a></div>
+<ul id="ptx-toc-group-chap_thermal_energy" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_thermal_energy-2.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_thermal_kinetic_energy.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Thermal Kinetic Energy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_thermal_potential_energy.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Thermal Potential Energy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_the_solid_state.html" class="internal"><span class="codenumber">7.4</span> <span class="title">The Solid State</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_speedofsound.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Speed of Sound</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_thermal_energy-7.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Temperature</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_thermal_energy-8.html" class="internal"><span class="codenumber">7.7</span> <span class="title">Molar Specific Heat</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_equipartition.html" class="internal"><span class="codenumber">7.8</span> <span class="title">The Equipartition Theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_thermal_energy-10.html" class="internal"><span class="codenumber">7.9</span> <span class="title">Ideal Solid Specific Heat</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_heat.html" class="internal"><span class="codenumber">7.10</span> <span class="title">Heat and the First Law of Thermodynamics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_thermal_energy-12.html" class="internal"><span class="codenumber">7.11</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_liquids_and_gases.html" class="internal"><span class="codenumber">8</span> <span class="title">Liquids, Gases, and Phase Transitions</span></a></div>
+<ul id="ptx-toc-group-chap_liquids_and_gases" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chap_liquids_and_gases-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_liquids_and_gases-3.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Phases of Matter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_liquids_and_gases-4.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Thermal Speed</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_liquids_and_gases-5.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Liquid State</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_TheGasState.html" class="internal"><span class="codenumber">8.4</span> <span class="title">The Gas State</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_phase_transitions.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Phase Transitions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_liquids_and_gases-8.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Pressure</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_liquids_and_gases-9.html" class="internal"><span class="codenumber">8.7</span> <span class="title">The Ideal Gas Law</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_liquids_and_gases-10.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_gas_processes.html" class="internal"><span class="codenumber">9</span> <span class="title">Gas Processes</span></a></div>
+<ul id="ptx-toc-group-chap_gas_processes" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chap_gas_processes-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gas_processes-3.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Quasistatic processes and <span class="process-math">\(p\)</span> -<span class="process-math">\(V\)</span> diagrams</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_gas_processes-4.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Useful tools for applying the First Law</span></a></div>
+<ul id="ptx-toc-group-chap_gas_processes-4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-4.html#chap_gas_processes-4-3" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Changes in thermal energy (<span class="process-math">\(\Delta E_ therm\)</span>)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-4.html#chap_gas_processes-4-4" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Heat flow in gas processes (<span class="process-math">\(Q_ in\)</span>)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-4.html#sec_CalcWork" class="internal"><span class="codenumber">9.2.3</span> <span class="title">Work done during gas processes (<span class="process-math">\(W_ on\text{,}\)</span> <span class="process-math">\(W_ by\)</span>)</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_gas_processes-5.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Special case gas processes</span></a></div>
+<ul id="ptx-toc-group-chap_gas_processes-5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-5.html#chap_gas_processes-5-2" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Constant-volume process (<em class="emphasis">isochoric</em> process)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-5.html#chap_gas_processes-5-3" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Constant-pressure process (<em class="emphasis">isobaric</em> process)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-5.html#chap_gas_processes-5-4" class="internal"><span class="codenumber">9.3.3</span> <span class="title">Constant temperature process (<em class="emphasis">isothermal</em> process)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-5.html#chap_gas_processes-5-5" class="internal"><span class="codenumber">9.3.4</span> <span class="title">Straight-line process on a <span class="process-math">\(p\)</span> -<span class="process-math">\(V\)</span> diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gas_processes-5.html#chap_gas_processes-5-6" class="internal"><span class="codenumber">9.3.5</span> <span class="title">Adiabatic processes</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gas_processes-6.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Examples</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gas_processes-7.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_second_law.html" class="internal"><span class="codenumber">10</span> <span class="title">Second Law of Thermodynamics and  Entropy</span></a></div>
+<ul id="ptx-toc-group-chap_second_law" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chap_second_law-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_second_law-3.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Heat Flow Revisited</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_second_law-4.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Microstates, Macrostates, and Multiplicity</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_second_law-5.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Einstein Solid</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_second_law-6.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Coupled Einstein Solids</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_second_law-7.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Entropy</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_second_law-8.html" class="internal"><span class="codenumber">10.6</span> <span class="title">The Definition of Temperature</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_second_law-9.html" class="internal"><span class="codenumber">10.7</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_heat_engines.html" class="internal"><span class="codenumber">11</span> <span class="title">Heat Engines</span></a></div>
+<ul id="ptx-toc-group-chap_heat_engines" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_heat_engines-2.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_heat_engines-3.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Entropy Change and Heat</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_heat_engines-4.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Second Law and Heat Flow</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_heat_engines-5.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Heat Engines</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_heat_engines-6.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Gas Cycles for Heat Engines</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_heat_engines-7.html" class="internal"><span class="codenumber">11.6</span> <span class="title">Refrigerators</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_heat_engines-8.html" class="internal"><span class="codenumber">11.7</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chap_gravity.html" class="internal"><span class="codenumber">12</span> <span class="title">Gravity and Geometry</span></a></div>
+<ul id="ptx-toc-group-chap_gravity" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gravity-2.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gravity-3.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Curved Space</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_gravity-4.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Curved Spacetime</span></a></div>
+<ul id="ptx-toc-group-chap_gravity-4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gravity-4.html#chap_gravity-4-3" class="internal"><span class="codenumber">12.3.1</span> <span class="title">Curved Space</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gravity-4.html#chap_gravity-4-4" class="internal"><span class="codenumber">12.3.2</span> <span class="title">Clock Rates</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gravity-5.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Einstein’s Equivalence Principle</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="chap_gravity-6.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Law of Motion for a Freely Falling Body</span></a></div>
+<ul id="ptx-toc-group-chap_gravity-6" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gravity-6.html#chap_gravity-6-3" class="internal"><span class="codenumber">12.5.1</span> <span class="title">Remaining Stationary in the Absence of Gravity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gravity-6.html#chap_gravity-6-4" class="internal"><span class="codenumber">12.5.2</span> <span class="title">Moving at Constant Speed in the Absence of Gravity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="chap_gravity-6.html#chap_gravity-6-5" class="internal"><span class="codenumber">12.5.3</span> <span class="title">Moving in the Presence of Gravity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gravity-7.html" class="internal"><span class="codenumber">12.6</span> <span class="title">Gravitational Lenses</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gravity-8.html" class="internal"><span class="codenumber">12.7</span> <span class="title">Black Holes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gravity-9.html" class="internal"><span class="codenumber">12.8</span> <span class="title">Gravitational Waves</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="chap_gravity-10.html" class="internal"><span class="codenumber">12.9</span> <span class="title">Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="root-1-2-15.html" class="internal"><span class="codenumber">13</span> <span class="title">Answers to Selected Problems</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="root-1-2-16.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul id="ptx-toc-group-root-1-2-16" class="structural toc-item-list"><li class="toc-item toc-references"><div class="toc-title-box"><a href="root-1-2-16-1.html" class="internal"><span class="title">Bibliography</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="chap_numerical-5">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Numerical Solution for a Mass on a Spring</span>
+</h1>
+<div class="para logical" id="chap_numerical-5-2">
+<div class="para">Let’s apply this new method to a system we will be studying more in depth later in this course. The system is a mass which moves under the influence of a force exerted on it by a spring. The spring is a device which exerts a force which is proportional to the displacement of the mass from an equilibrium position. Taking the equilibrium position to be <span class="process-math">\(x = 0\text{,}\)</span> this implies that the acceleration of the mass is directly proportional to the position <span class="process-math">\(x(t)\text{.}\)</span> Suppose in our particular system the acceleration is given by</div>
+<div class="displaymath process-math" id="chap_numerical-5-2-3">
+\begin{equation}
+a_x(t) = -2.00\, x(t).\tag{2.4.1}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap_numerical-5-3">The minus sign in this expression tells us that the force is always opposite to the displacement. We’ll also assume that time is in seconds, position is in meters, velocity is in meters per second, and acceleration is in meters per second squared<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap_numerical-5-4">To proceed, we choose time steps of size <span class="process-math">\(\Delta t = 0.10\)</span> s and start the clock at <span class="process-math">\(t = 0\text{.}\)</span> We could pick any initial position and velocity; let’s choose to release the mass from rest at a position 0.30 m from equilibrium, i.e. <span class="process-math">\(x(0) = 0.30\)</span> m and <span class="process-math">\(v_x(0) = 0\text{.}\)</span> Let’s walk through the first few steps and then show some results from a computer spreadsheet.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="chap_numerical-5-5">
+<div class="para">For our example Eqs. <a href="chap_numerical-3.html#eq_newtonII" class="xref" data-knowl="./knowl/xref/eq_newtonII.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.2.1">(2.2.1)</a>, <a href="chap_numerical-4.html#eq_x-step" class="xref" data-knowl="./knowl/xref/eq_x-step.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.2">(2.3.2)</a> and <a href="chap_numerical-4.html#eq_v-step" class="xref" data-knowl="./knowl/xref/eq_v-step.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.3.3">(2.3.3)</a> are written as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_newtonII.html ./knowl/xref/eq_x-step.html ./knowl/xref/eq_v-step.html" id="chap_numerical-5-5-5">
+\begin{align}
+a_x(t) \amp = -2.00\, x(t)\tag{2.4.2}\\
+x(t+0.10) \amp = x(t) + 0.10\, v_x(t)\tag{2.4.3}\\
+v_x(t+0.10) \amp = v_x(t) + 0.10\, a_x(t).\tag{2.4.4}
+\end{align}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="chap_numerical-5-6">
+<div class="para">First calculate the initial acceleration by setting <span class="process-math">\(t = 0\)</span> in <a href="chap_numerical-5.html#chap_numerical-5-5-5" class="xref" data-knowl="./knowl/xref/eq_ex-a.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.4.2">(2.4.2)</a> to find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_ex-a.html" id="chap_numerical-5-6-3">
+\begin{equation}
+a_x(0) = -2.00\, x(0)  = -2.00 \times 0.30 = -0.60.\tag{2.4.5}
+\end{equation}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="chap_numerical-5-7">
+<div class="para">Then update <span class="process-math">\(x(t)\)</span> and <span class="process-math">\(v_x(t)\)</span> by setting <span class="process-math">\(t = 0\)</span> in Eqs. <a href="chap_numerical-5.html#chap_numerical-5-5-5" class="xref" data-knowl="./knowl/xref/eq_ex-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.4.3">(2.4.3)</a> and <a href="chap_numerical-5.html#chap_numerical-5-5-5" class="xref" data-knowl="./knowl/xref/eq_ex-v.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.4.4">(2.4.4)</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_ex-x.html ./knowl/xref/eq_ex-v.html" id="chap_numerical-5-7-7">
+\begin{align*}
+x(0.10) \amp = x(0) + 0.10\, v_x(0) = 0.30 + 0.10\times 0 = 0.30\\
+v_x(0.10) \amp = v_x(0) + 0.10\, a_x(0) = 0 + 0.10\times(-0.60) = -0.06.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap_numerical-5-8">Since the mass was initially at rest, a short time later it is still approximately at the same location. However, since the spring is stretched at <span class="process-math">\(t = 0\text{,}\)</span> a force is acting on the mass immediately, so that a short time later it has already acquired a non-zero velocity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="chap_numerical-5-9">
+<div class="para">How would you find <span class="process-math">\(x(0.20)\)</span> and <span class="process-math">\(v_x(0.20)\text{?}\)</span> Again use Eqs. <a href="chap_numerical-5.html#chap_numerical-5-5-5" class="xref" data-knowl="./knowl/xref/eq_ex-a.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.4.2">(2.4.2)</a> through <a href="chap_numerical-5.html#chap_numerical-5-5-5" class="xref" data-knowl="./knowl/xref/eq_ex-v.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.4.4">(2.4.4)</a>, this time with the ‘present time’ <span class="process-math">\(t = 0.10\text{.}\)</span> We find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_ex-a.html ./knowl/xref/eq_ex-v.html" id="chap_numerical-5-9-8">
+\begin{align*}
+a_x(0.10) \amp = -2.00\, x(0.10) = -2.00\times 0.30 = -0.60\\
+x(0.20) \amp = x(0.10) + 0.10\, v_x(0.10)\\
+\amp = 0.30 + 0.10 \times (-0.06)\\
+\amp = 0.294\\
+v_x(0.20) \amp = v_x(0.10) + 0.10\, a_x(0.10)\\
+\amp = -0.06 + 0.10\times(-0.60)\\
+\amp = -0.12.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap_numerical-5-10">We can continue this process as long as we like. You will find it convenient to organize the information for the position, velocity and acceleration for each time in the form of a table. <a href="chap_numerical-5.html#table_numerical1" class="xref" data-knowl="./knowl/xref/table_numerical1.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.4.1: Numerical solution for motion of mass on a spring using \Delta t=0.10\   s">Table 2.4.1</a> on the next page lists <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(v_x\)</span> and <span class="process-math">\(a_x\)</span> for the motion of this mass. Note that the periodic nature of the motion is manifested in the entries of the table.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap_numerical-5-11">There is an unsettling aspect of the entries in <a href="chap_numerical-5.html#table_numerical1" class="xref" data-knowl="./knowl/xref/table_numerical1.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.4.1: Numerical solution for motion of mass on a spring using \Delta t=0.10\   s">Table 2.4.1</a>. We started at <span class="process-math">\(x = 0.30\, \mbox{m}\text{,}\)</span> but at <span class="process-math">\(t = 2.30\, \mbox{s}\)</span> the position of the mass is <span class="process-math">\(x = -0.375\,
+\mbox{m}\text{,}\)</span> and further down in the table we find that at <span class="process-math">\(t = 4.5\)</span> s, <span class="process-math">\(x = 0.468\, \mbox{m}\text{.}\)</span> What should we have expected? If we had a real mass connected to a spring and set it oscillating we would expect the amplitude of the oscillations to gradually decrease because of the presence of dissipative forces (air resistance and the imperfect elasticity of the spring). In an ideal case, with no dissipative effects, we would expect there to be no increase or decrease in the amplitude; that is, the mass should oscillate between <span class="process-math">\(x = +0.30\,
+\mbox{m}\)</span> and <span class="process-math">\(x = -0.30\, \mbox{m}\text{.}\)</span> But this is not the case if we look at the data in <a href="chap_numerical-5.html#table_numerical1" class="xref" data-knowl="./knowl/xref/table_numerical1.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.4.1: Numerical solution for motion of mass on a spring using \Delta t=0.10\   s">Table 2.4.1</a>. The problem is that we used too large a time increment. Why does too large a time increment lead to errors? If you recall, our stepping equations use the approximation that the average velocity is very close to the instantaneous velocity. If the time step is too large, this approximation is no longer valid and leads to errors.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chap_numerical-5-12">We can improve our calculation of the motion by choosing a smaller time increment <span class="process-math">\(\Delta t\text{.}\)</span> If we choose <span class="process-math">\(\Delta t = 0.01\, \mbox{s}\)</span> rather than <span class="process-math">\(0.10\, \mbox{s}\text{,}\)</span> we would be calculating over a much finer time interval (10 times smaller) and while we will have to do 10 times more computations to evolve the motion out to the same time, the calculations should be more accurate. <a href="chap_numerical-5.html#table_numerical2" class="xref" data-knowl="./knowl/xref/table_numerical2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 2.4.2: Data for mass on a spring near a turning point using \Delta t=0.01\   s">Table 2.4.2</a> lists <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(v_x\)</span> and <span class="process-math">\(a_x\)</span> near a point of maximum displacement for this smaller time increment. The maximum displacement is now about 0.314. This is still larger than the initial displacement but not nearly as bad as before. Further reduction of the time increment would improve the result.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_numerical-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="table_numerical1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Numerical solution for motion of mass on a spring using <span class="process-math">\(\Delta t=0.10\   s\)</span><div class="autopermalink" aria-hidden="true" data-description="Table 2.4.1: Numerical solution for motion of mass on a spring using \Delta t=0.10\   s"><a tabindex="-1" href="#table_numerical1" title="Copy heading and permalink for Table 2.4.1: Numerical solution for motion of mass on a spring using \Delta t=0.10\   s" aria-label="Copy heading and permalink for Table 2.4.1: Numerical solution for motion of mass on a spring using \Delta t=0.10\   s">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x(t)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(v_x(t)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a_x(t)\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">0.300</td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">-0.600</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.100</td>
+<td class="l m b0 r0 l0 t0 lines">0.300</td>
+<td class="l m b0 r0 l0 t0 lines">-0.060</td>
+<td class="l m b0 r0 l0 t0 lines">-0.600</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.200</td>
+<td class="l m b0 r0 l0 t0 lines">0.294</td>
+<td class="l m b0 r0 l0 t0 lines">-0.120</td>
+<td class="l m b0 r0 l0 t0 lines">-0.588</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.300</td>
+<td class="l m b0 r0 l0 t0 lines">0.282</td>
+<td class="l m b0 r0 l0 t0 lines">-0.179</td>
+<td class="l m b0 r0 l0 t0 lines">-0.564</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.400</td>
+<td class="l m b0 r0 l0 t0 lines">0.264</td>
+<td class="l m b0 r0 l0 t0 lines">-0.235</td>
+<td class="l m b0 r0 l0 t0 lines">-0.528</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.500</td>
+<td class="l m b0 r0 l0 t0 lines">0.241</td>
+<td class="l m b0 r0 l0 t0 lines">-0.288</td>
+<td class="l m b0 r0 l0 t0 lines">-0.481</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.600</td>
+<td class="l m b0 r0 l0 t0 lines">0.212</td>
+<td class="l m b0 r0 l0 t0 lines">-0.336</td>
+<td class="l m b0 r0 l0 t0 lines">-0.424</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.700</td>
+<td class="l m b0 r0 l0 t0 lines">0.178</td>
+<td class="l m b0 r0 l0 t0 lines">-0.379</td>
+<td class="l m b0 r0 l0 t0 lines">-0.356</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.800</td>
+<td class="l m b0 r0 l0 t0 lines">0.140</td>
+<td class="l m b0 r0 l0 t0 lines">-0.414</td>
+<td class="l m b0 r0 l0 t0 lines">-0.281</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">0.900</td>
+<td class="l m b0 r0 l0 t0 lines">0.099</td>
+<td class="l m b0 r0 l0 t0 lines">-0.442</td>
+<td class="l m b0 r0 l0 t0 lines">-0.198</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.000</td>
+<td class="l m b0 r0 l0 t0 lines">0.055</td>
+<td class="l m b0 r0 l0 t0 lines">-0.462</td>
+<td class="l m b0 r0 l0 t0 lines">-0.109</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.100</td>
+<td class="l m b0 r0 l0 t0 lines">0.008</td>
+<td class="l m b0 r0 l0 t0 lines">-0.473</td>
+<td class="l m b0 r0 l0 t0 lines">-0.017</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.200</td>
+<td class="l m b0 r0 l0 t0 lines">-0.039</td>
+<td class="l m b0 r0 l0 t0 lines">-0.475</td>
+<td class="l m b0 r0 l0 t0 lines">0.078</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.300</td>
+<td class="l m b0 r0 l0 t0 lines">-0.086</td>
+<td class="l m b0 r0 l0 t0 lines">-0.467</td>
+<td class="l m b0 r0 l0 t0 lines">0.173</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.400</td>
+<td class="l m b0 r0 l0 t0 lines">-0.133</td>
+<td class="l m b0 r0 l0 t0 lines">-0.450</td>
+<td class="l m b0 r0 l0 t0 lines">0.266</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.500</td>
+<td class="l m b0 r0 l0 t0 lines">-0.178</td>
+<td class="l m b0 r0 l0 t0 lines">-0.423</td>
+<td class="l m b0 r0 l0 t0 lines">0.356</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.600</td>
+<td class="l m b0 r0 l0 t0 lines">-0.220</td>
+<td class="l m b0 r0 l0 t0 lines">-0.387</td>
+<td class="l m b0 r0 l0 t0 lines">0.440</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.700</td>
+<td class="l m b0 r0 l0 t0 lines">-0.259</td>
+<td class="l m b0 r0 l0 t0 lines">-0.343</td>
+<td class="l m b0 r0 l0 t0 lines">0.518</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.800</td>
+<td class="l m b0 r0 l0 t0 lines">-0.293</td>
+<td class="l m b0 r0 l0 t0 lines">-0.292</td>
+<td class="l m b0 r0 l0 t0 lines">0.587</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1.900</td>
+<td class="l m b0 r0 l0 t0 lines">-0.322</td>
+<td class="l m b0 r0 l0 t0 lines">-0.233</td>
+<td class="l m b0 r0 l0 t0 lines">0.645</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.000</td>
+<td class="l m b0 r0 l0 t0 lines">-0.346</td>
+<td class="l m b0 r0 l0 t0 lines">-0.168</td>
+<td class="l m b0 r0 l0 t0 lines">0.692</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.100</td>
+<td class="l m b0 r0 l0 t0 lines">-0.363</td>
+<td class="l m b0 r0 l0 t0 lines">-0.099</td>
+<td class="l m b0 r0 l0 t0 lines">0.725</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.200</td>
+<td class="l m b0 r0 l0 t0 lines">-0.373</td>
+<td class="l m b0 r0 l0 t0 lines">-0.027</td>
+<td class="l m b0 r0 l0 t0 lines">0.745</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.300</td>
+<td class="l m b0 r0 l0 t0 lines">-0.375</td>
+<td class="l m b0 r0 l0 t0 lines">0.048</td>
+<td class="l m b0 r0 l0 t0 lines">0.750</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.400</td>
+<td class="l m b0 r0 l0 t0 lines">-0.370</td>
+<td class="l m b0 r0 l0 t0 lines">0.123</td>
+<td class="l m b0 r0 l0 t0 lines">0.741</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.500</td>
+<td class="l m b0 r0 l0 t0 lines">-0.358</td>
+<td class="l m b0 r0 l0 t0 lines">0.197</td>
+<td class="l m b0 r0 l0 t0 lines">0.716</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.600</td>
+<td class="l m b0 r0 l0 t0 lines">-0.338</td>
+<td class="l m b0 r0 l0 t0 lines">0.268</td>
+<td class="l m b0 r0 l0 t0 lines">0.677</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.700</td>
+<td class="l m b0 r0 l0 t0 lines">-0.312</td>
+<td class="l m b0 r0 l0 t0 lines">0.336</td>
+<td class="l m b0 r0 l0 t0 lines">0.623</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.800</td>
+<td class="l m b0 r0 l0 t0 lines">-0.278</td>
+<td class="l m b0 r0 l0 t0 lines">0.398</td>
+<td class="l m b0 r0 l0 t0 lines">0.556</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">2.900</td>
+<td class="l m b0 r0 l0 t0 lines">-0.238</td>
+<td class="l m b0 r0 l0 t0 lines">0.454</td>
+<td class="l m b0 r0 l0 t0 lines">0.476</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.000</td>
+<td class="l m b0 r0 l0 t0 lines">-0.193</td>
+<td class="l m b0 r0 l0 t0 lines">0.502</td>
+<td class="l m b0 r0 l0 t0 lines">0.386</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.100</td>
+<td class="l m b0 r0 l0 t0 lines">-0.143</td>
+<td class="l m b0 r0 l0 t0 lines">0.540</td>
+<td class="l m b0 r0 l0 t0 lines">0.285</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.200</td>
+<td class="l m b0 r0 l0 t0 lines">-0.089</td>
+<td class="l m b0 r0 l0 t0 lines">0.569</td>
+<td class="l m b0 r0 l0 t0 lines">0.177</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.300</td>
+<td class="l m b0 r0 l0 t0 lines">-0.032</td>
+<td class="l m b0 r0 l0 t0 lines">0.587</td>
+<td class="l m b0 r0 l0 t0 lines">0.063</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.400</td>
+<td class="l m b0 r0 l0 t0 lines">0.027</td>
+<td class="l m b0 r0 l0 t0 lines">0.593</td>
+<td class="l m b0 r0 l0 t0 lines">-0.054</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.500</td>
+<td class="l m b0 r0 l0 t0 lines">0.086</td>
+<td class="l m b0 r0 l0 t0 lines">0.587</td>
+<td class="l m b0 r0 l0 t0 lines">-0.173</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.600</td>
+<td class="l m b0 r0 l0 t0 lines">0.145</td>
+<td class="l m b0 r0 l0 t0 lines">0.570</td>
+<td class="l m b0 r0 l0 t0 lines">-0.290</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.700</td>
+<td class="l m b0 r0 l0 t0 lines">0.202</td>
+<td class="l m b0 r0 l0 t0 lines">0.541</td>
+<td class="l m b0 r0 l0 t0 lines">-0.404</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.800</td>
+<td class="l m b0 r0 l0 t0 lines">0.256</td>
+<td class="l m b0 r0 l0 t0 lines">0.501</td>
+<td class="l m b0 r0 l0 t0 lines">-0.512</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">3.900</td>
+<td class="l m b0 r0 l0 t0 lines">0.306</td>
+<td class="l m b0 r0 l0 t0 lines">0.450</td>
+<td class="l m b0 r0 l0 t0 lines">-0.612</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.000</td>
+<td class="l m b0 r0 l0 t0 lines">0.351</td>
+<td class="l m b0 r0 l0 t0 lines">0.388</td>
+<td class="l m b0 r0 l0 t0 lines">-0.702</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.100</td>
+<td class="l m b0 r0 l0 t0 lines">0.390</td>
+<td class="l m b0 r0 l0 t0 lines">0.318</td>
+<td class="l m b0 r0 l0 t0 lines">-0.780</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.200</td>
+<td class="l m b0 r0 l0 t0 lines">0.422</td>
+<td class="l m b0 r0 l0 t0 lines">0.240</td>
+<td class="l m b0 r0 l0 t0 lines">-0.844</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.300</td>
+<td class="l m b0 r0 l0 t0 lines">0.446</td>
+<td class="l m b0 r0 l0 t0 lines">0.156</td>
+<td class="l m b0 r0 l0 t0 lines">-0.892</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.400</td>
+<td class="l m b0 r0 l0 t0 lines">0.461</td>
+<td class="l m b0 r0 l0 t0 lines">0.067</td>
+<td class="l m b0 r0 l0 t0 lines">-0.923</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.500</td>
+<td class="l m b0 r0 l0 t0 lines">0.468</td>
+<td class="l m b0 r0 l0 t0 lines">-0.026</td>
+<td class="l m b0 r0 l0 t0 lines">-0.936</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.600</td>
+<td class="l m b0 r0 l0 t0 lines">0.465</td>
+<td class="l m b0 r0 l0 t0 lines">-0.119</td>
+<td class="l m b0 r0 l0 t0 lines">-0.931</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure>
+<figure class="table table-like" id="table_numerical2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.4.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Data for mass on a spring near a turning point using <span class="process-math">\(\Delta t=0.01\   s\)</span><div class="autopermalink" aria-hidden="true" data-description="Table 2.4.2: Data for mass on a spring near a turning point using \Delta t=0.01\   s"><a tabindex="-1" href="#table_numerical2" title="Copy heading and permalink for Table 2.4.2: Data for mass on a spring near a turning point using \Delta t=0.01\   s" aria-label="Copy heading and permalink for Table 2.4.2: Data for mass on a spring near a turning point using \Delta t=0.01\   s">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x(t)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(v_x(t)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(a_x(t)\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.190</td>
+<td class="l m b0 r0 l0 t0 lines">0.293</td>
+<td class="l m b0 r0 l0 t0 lines">0.155</td>
+<td class="l m b0 r0 l0 t0 lines">-0.586</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.200</td>
+<td class="l m b0 r0 l0 t0 lines">0.295</td>
+<td class="l m b0 r0 l0 t0 lines">0.149</td>
+<td class="l m b0 r0 l0 t0 lines">-0.589</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.210</td>
+<td class="l m b0 r0 l0 t0 lines">0.296</td>
+<td class="l m b0 r0 l0 t0 lines">0.143</td>
+<td class="l m b0 r0 l0 t0 lines">-0.592</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.220</td>
+<td class="l m b0 r0 l0 t0 lines">0.297</td>
+<td class="l m b0 r0 l0 t0 lines">0.137</td>
+<td class="l m b0 r0 l0 t0 lines">-0.595</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.230</td>
+<td class="l m b0 r0 l0 t0 lines">0.299</td>
+<td class="l m b0 r0 l0 t0 lines">0.131</td>
+<td class="l m b0 r0 l0 t0 lines">-0.598</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.240</td>
+<td class="l m b0 r0 l0 t0 lines">0.300</td>
+<td class="l m b0 r0 l0 t0 lines">0.125</td>
+<td class="l m b0 r0 l0 t0 lines">-0.600</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.250</td>
+<td class="l m b0 r0 l0 t0 lines">0.301</td>
+<td class="l m b0 r0 l0 t0 lines">0.119</td>
+<td class="l m b0 r0 l0 t0 lines">-0.603</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.260</td>
+<td class="l m b0 r0 l0 t0 lines">0.303</td>
+<td class="l m b0 r0 l0 t0 lines">0.113</td>
+<td class="l m b0 r0 l0 t0 lines">-0.605</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.270</td>
+<td class="l m b0 r0 l0 t0 lines">0.304</td>
+<td class="l m b0 r0 l0 t0 lines">0.107</td>
+<td class="l m b0 r0 l0 t0 lines">-0.607</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.280</td>
+<td class="l m b0 r0 l0 t0 lines">0.305</td>
+<td class="l m b0 r0 l0 t0 lines">0.101</td>
+<td class="l m b0 r0 l0 t0 lines">-0.610</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.290</td>
+<td class="l m b0 r0 l0 t0 lines">0.306</td>
+<td class="l m b0 r0 l0 t0 lines">0.095</td>
+<td class="l m b0 r0 l0 t0 lines">-0.612</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.300</td>
+<td class="l m b0 r0 l0 t0 lines">0.307</td>
+<td class="l m b0 r0 l0 t0 lines">0.089</td>
+<td class="l m b0 r0 l0 t0 lines">-0.614</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.310</td>
+<td class="l m b0 r0 l0 t0 lines">0.308</td>
+<td class="l m b0 r0 l0 t0 lines">0.083</td>
+<td class="l m b0 r0 l0 t0 lines">-0.615</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.320</td>
+<td class="l m b0 r0 l0 t0 lines">0.308</td>
+<td class="l m b0 r0 l0 t0 lines">0.077</td>
+<td class="l m b0 r0 l0 t0 lines">-0.617</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.330</td>
+<td class="l m b0 r0 l0 t0 lines">0.309</td>
+<td class="l m b0 r0 l0 t0 lines">0.071</td>
+<td class="l m b0 r0 l0 t0 lines">-0.619</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.340</td>
+<td class="l m b0 r0 l0 t0 lines">0.310</td>
+<td class="l m b0 r0 l0 t0 lines">0.064</td>
+<td class="l m b0 r0 l0 t0 lines">-0.620</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.350</td>
+<td class="l m b0 r0 l0 t0 lines">0.311</td>
+<td class="l m b0 r0 l0 t0 lines">0.058</td>
+<td class="l m b0 r0 l0 t0 lines">-0.621</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.360</td>
+<td class="l m b0 r0 l0 t0 lines">0.311</td>
+<td class="l m b0 r0 l0 t0 lines">0.052</td>
+<td class="l m b0 r0 l0 t0 lines">-0.622</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.370</td>
+<td class="l m b0 r0 l0 t0 lines">0.312</td>
+<td class="l m b0 r0 l0 t0 lines">0.046</td>
+<td class="l m b0 r0 l0 t0 lines">-0.623</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.380</td>
+<td class="l m b0 r0 l0 t0 lines">0.312</td>
+<td class="l m b0 r0 l0 t0 lines">0.040</td>
+<td class="l m b0 r0 l0 t0 lines">-0.624</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.390</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">0.033</td>
+<td class="l m b0 r0 l0 t0 lines">-0.625</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.400</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">0.027</td>
+<td class="l m b0 r0 l0 t0 lines">-0.626</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.410</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">0.021</td>
+<td class="l m b0 r0 l0 t0 lines">-0.626</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.420</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">0.014</td>
+<td class="l m b0 r0 l0 t0 lines">-0.627</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.430</td>
+<td class="l m b0 r0 l0 t0 lines">0.314</td>
+<td class="l m b0 r0 l0 t0 lines">0.008</td>
+<td class="l m b0 r0 l0 t0 lines">-0.627</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.440</td>
+<td class="l m b0 r0 l0 t0 lines">0.314</td>
+<td class="l m b0 r0 l0 t0 lines">0.002</td>
+<td class="l m b0 r0 l0 t0 lines">-0.627</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.450</td>
+<td class="l m b0 r0 l0 t0 lines">0.314</td>
+<td class="l m b0 r0 l0 t0 lines">-0.004</td>
+<td class="l m b0 r0 l0 t0 lines">-0.627</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.460</td>
+<td class="l m b0 r0 l0 t0 lines">0.314</td>
+<td class="l m b0 r0 l0 t0 lines">-0.011</td>
+<td class="l m b0 r0 l0 t0 lines">-0.627</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.470</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">-0.017</td>
+<td class="l m b0 r0 l0 t0 lines">-0.627</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.480</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">-0.023</td>
+<td class="l m b0 r0 l0 t0 lines">-0.627</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.490</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">-0.029</td>
+<td class="l m b0 r0 l0 t0 lines">-0.626</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.500</td>
+<td class="l m b0 r0 l0 t0 lines">0.313</td>
+<td class="l m b0 r0 l0 t0 lines">-0.036</td>
+<td class="l m b0 r0 l0 t0 lines">-0.626</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.510</td>
+<td class="l m b0 r0 l0 t0 lines">0.312</td>
+<td class="l m b0 r0 l0 t0 lines">-0.042</td>
+<td class="l m b0 r0 l0 t0 lines">-0.625</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.520</td>
+<td class="l m b0 r0 l0 t0 lines">0.312</td>
+<td class="l m b0 r0 l0 t0 lines">-0.048</td>
+<td class="l m b0 r0 l0 t0 lines">-0.624</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.530</td>
+<td class="l m b0 r0 l0 t0 lines">0.312</td>
+<td class="l m b0 r0 l0 t0 lines">-0.054</td>
+<td class="l m b0 r0 l0 t0 lines">-0.623</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.540</td>
+<td class="l m b0 r0 l0 t0 lines">0.311</td>
+<td class="l m b0 r0 l0 t0 lines">-0.061</td>
+<td class="l m b0 r0 l0 t0 lines">-0.622</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.550</td>
+<td class="l m b0 r0 l0 t0 lines">0.310</td>
+<td class="l m b0 r0 l0 t0 lines">-0.067</td>
+<td class="l m b0 r0 l0 t0 lines">-0.621</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.560</td>
+<td class="l m b0 r0 l0 t0 lines">0.310</td>
+<td class="l m b0 r0 l0 t0 lines">-0.073</td>
+<td class="l m b0 r0 l0 t0 lines">-0.619</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.570</td>
+<td class="l m b0 r0 l0 t0 lines">0.309</td>
+<td class="l m b0 r0 l0 t0 lines">-0.079</td>
+<td class="l m b0 r0 l0 t0 lines">-0.618</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.580</td>
+<td class="l m b0 r0 l0 t0 lines">0.308</td>
+<td class="l m b0 r0 l0 t0 lines">-0.085</td>
+<td class="l m b0 r0 l0 t0 lines">-0.616</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.590</td>
+<td class="l m b0 r0 l0 t0 lines">0.307</td>
+<td class="l m b0 r0 l0 t0 lines">-0.092</td>
+<td class="l m b0 r0 l0 t0 lines">-0.615</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.600</td>
+<td class="l m b0 r0 l0 t0 lines">0.306</td>
+<td class="l m b0 r0 l0 t0 lines">-0.098</td>
+<td class="l m b0 r0 l0 t0 lines">-0.613</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.610</td>
+<td class="l m b0 r0 l0 t0 lines">0.305</td>
+<td class="l m b0 r0 l0 t0 lines">-0.104</td>
+<td class="l m b0 r0 l0 t0 lines">-0.611</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.620</td>
+<td class="l m b0 r0 l0 t0 lines">0.304</td>
+<td class="l m b0 r0 l0 t0 lines">-0.110</td>
+<td class="l m b0 r0 l0 t0 lines">-0.609</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.630</td>
+<td class="l m b0 r0 l0 t0 lines">0.303</td>
+<td class="l m b0 r0 l0 t0 lines">-0.116</td>
+<td class="l m b0 r0 l0 t0 lines">-0.607</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.640</td>
+<td class="l m b0 r0 l0 t0 lines">0.302</td>
+<td class="l m b0 r0 l0 t0 lines">-0.122</td>
+<td class="l m b0 r0 l0 t0 lines">-0.604</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">4.650</td>
+<td class="l m b0 r0 l0 t0 lines">0.301</td>
+<td class="l m b0 r0 l0 t0 lines">-0.128</td>
+<td class="l m b0 r0 l0 t0 lines">-0.602</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Section 2.4: Numerical Solution for a Mass on a Spring"><a tabindex="-1" href="#chap_numerical-5" title="Copy heading and permalink for Section 2.4: Numerical Solution for a Mass on a Spring" aria-label="Copy heading and permalink for Section 2.4: Numerical Solution for a Mass on a Spring">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="chap_numerical-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chap_numerical-6.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
