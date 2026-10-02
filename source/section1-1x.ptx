@@ -1,0 +1,42 @@
+<section>
+<title>Problems</title>
+<exercise xml:id="problem_ho-undamped-num">
+<statement>
+<p>
+For a certain mass-spring system the acceleration is given by <m>a_x(t) =
+  -0.10\, x(t)</m>. Suppose the initial position and velocity are <m>x(0)
+  = 10</m> m and <m>v_x(0) = -1.0\, \mbox{m/s}</m>. Calculate <m>x(t)</m> and <m>v_x(t)</m>
+at <m>t = 2\, \mbox{s}</m> in two different ways:
+<ol marker="a)">
+<li><p>Use two steps of 1 second each.</p></li>
+<li><p>Use four steps of <m>\frac{1}{2}</m> second each.  Round only your
+    final results to three digits (keep all digits for the
+    intermediate calculations).</p></li>
+<li><p>Why aren't the answers to a) and b) the same?</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+A drag force on an object is opposite to its velocity and is often
+proportional to its speed. Let's immerse the mass-spring system of
+problem <xref ref="problem_ho-undamped-num" /> in a vat of salad oil so
+that the acceleration becomes
+<me>
+  a_x(t) = -0.10\, x(t) - v_x(t)
+</me>
+</p>
+
+<p>
+Repeat <xref ref="problem_ho-undamped-num"></xref>
+for this acceleration. Compare the results with those you
+originally got in <xref ref="problem_ho-undamped-num"></xref>. Are the
+results what you might expect when a drag force is present?
+</p>
+</statement>
+</exercise>
+</section>

@@ -1,0 +1,194 @@
+<section>
+<title>Problems</title>
+<exercise xml:id="prob_rel_recoil">
+<statement>
+<p>
+A nucleus with mass <m>\sqrt{5}\,\text{GeV} /c^2\simeq 2.24\,\text{GeV} /c^2</m>
+in its ground state and initially at rest absorbs a photon of energy <m>E_1</m>.
+After absorbing the photon, the nucleus is raised to an excited state,
+with mass <m>5.00\,\text{GeV} /c^2</m>, and
+unknown momentum <m>p_3</m>.
+<ol>
+<li><p>Draw a picture of this interaction.</p></li>
+<li><p>Write down the two conservation laws in terms of <m>E_1</m>, <m>p_3</m>,
+    and given numerical values.</p></li>
+<li><p>Solve for <m>E_1</m> and <m>p_3</m>.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_rel_recoil2">
+<statement>
+<p>
+Calculate the speed of the recoiling excited-state nucleus in
+<xref ref="prob_rel_recoil">problem</xref>. Compare with the case of photon
+emission, done as <xref ref="ex_nuclear_decay">example</xref> in the text. Are
+the recoil velocities the same for emission and absorption?
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+A particle of mass <m>m_1 = 9\,\text{GeV} /c^2</m> and energy <m>E_1 =
+  15\,\text{GeV}</m> approaches a stationary particle of mass <m>m_2 =
+  5\,\text{GeV} /c^2</m>. The particles collide and form a single
+particle of mass <m>m_3</m>. Determine <m>m_3</m> by using the conservation
+laws.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_pair_creation">
+<statement>
+<p>
+An incident proton, mass <m>m = 938.27\,\text{MeV} /c^2</m>, strikes a
+target proton at rest with just enough energy to create an
+electron-positron pair. (The two protons are still present after
+the collision.) A positron is the antiparticle of an electron; both
+the electron and positron have masses <m>0.511\,\text{MeV} /c^2</m>.
+Calculate the minimum energy needed by the incident proton in the
+frame where the target proton is initially at rest. (Hint: After the
+collision, both protons and the electron-positron pair all move
+together with the same velocity.)
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_composite">
+<statement>
+<p>
+A particle of mass <m>3.0\,\text{MeV} /c^2</m> and momentum
+<m>1.0\,\text{MeV} /c</m> hits and sticks to a particle of mass
+<m>2.0\,\text{MeV} /c^2</m>, initially at rest.
+<ol>
+<li><p>Find the mass of the composite particle and its velocity.</p></li>
+<li><p>How much kinetic energy is converted to matter?</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_deuteron">
+<statement>
+<p>
+A deuteron (mass <m>1875.61\,\text{MeV} /c^2</m>) absorbs a photon and
+splits into a proton (mass <m>938.27\,\text{MeV} /c^2</m>) and a neutron
+(mass <m>939.57\,\text{MeV} /c^2</m>). What is the minimum energy of the
+photon required to do this?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_fusion">
+<statement>
+<p>
+The easiest and most immediately promising nuclear reaction to be used for
+fusion power is the fusion of a deuterium (<m>^2</m>H) nucleus, with mass
+<m>1875.61\,\text{MeV} /c^2</m>, and a tritium (<m>^3</m>H) nucleus, with mass
+<m>2808.92\,\text{MeV} /c^2</m>. The fusion reaction produces a <m>^4</m>He
+nucleus of mass <m>3727.38\,\text{MeV} /c^2</m>, and a free neutron of
+mass <m>939.57\,\text{MeV} /c^2</m>:
+<me>
+  {^2_1\mbox{H} } + {^3_1\mbox{H} } \rightarrow  {^4_2\mbox{He} } + n.
+</me>
+<ol>
+<li><p>Is rest energy converted to kinetic energy or vice-versa?
+Support your answer.</p></li>
+<li><p>Calculate the amount of energy that is converted.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+In a fission process, a slow neutron causes a uranium nucleus
+(<m>\text{mass}  = 218,943.42\,\text{MeV} /c^2</m>) to split into a barium
+nucleus (mass <m>=</m> <m>131,261.73\,\text{MeV} /c^2</m>) and a krypton
+nucleus (<m>\text{mass}  = 85,629.32\,\text{MeV} /c^2</m>), plus two
+excess neutrons (actually 3 including the original neutron, but that
+is present before the process as well), each of mass
+<m>939.57\,\text{MeV} /c^2</m>. Calculate the energy converted from rest
+energy to kinetic energy in this process.
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+A photon of momentum <m>2.0\,\text{MeV} /c</m> traveling along the
+positive <m>x</m>-axis strikes a particle of mass <m>4.0\,\text{MeV} /c^2</m>,
+which is initially at rest. The result of the collision is simply
+two photons: photon <m>\gamma_1</m> travels backward, along the negative
+<m>x</m>-axis and photon <m>\gamma_2</m> travels forward, along the positive
+<m>x</m>-axis.
+<ol>
+<li><p>Draw before and after pictures of the interaction.</p></li>
+<li><p>Find the energies of <m>\gamma_1</m> and <m>\gamma_2</m> after the
+    collision.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Based on the plot in <xref ref="fig_mass_per_nucleon">Figure</xref>, answer the
+following questions:
+<ol>
+<li><p>Why is a fusion reaction a more efficient power source
+    (<q>pound for pound</q>) than a fission reaction?</p></li>
+<li><p>A supermassive star goes supernova after it has run out of
+    hydrogen to fuse, at which point it starts fusing helium into
+    heavier elements, then fusing those into heavier elements, etc.,
+    until it gets to iron (Fe).  Up until this point, the fusion
+    reactions produce kinetic energy and heat, maintaining the star.
+    But after the star has fused its materials into iron, it stops
+    producing kinetic energy, collapses very suddenly and goes
+    <q>Blammo!!</q>  (This is a supernova.)  What is so special about
+    iron, and why can't the star produce additional kinetic energy
+    after this point?</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+A flower absorbs a (higher energy) photon of ultraviolet light and
+emits a (lower energy) red photon. Describe what happens to the mass
+of the flower first when it absorbs the ultraviolet photon and then
+later when it emits the red photon. Would you expect any mass
+changes during this process to be noticeable? Explain why or why not.
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+It's not just nuclear reactions that involving converting mass-energy to
+kinetic energy. Chemical reactions, such as combustion, also do this,
+although the effect on the masses is hardly noticeable. For instance,
+when a car burns one gallon of gasoline, <m>132\,\text{MJ}</m> of kinetic energy
+is released. Consider the total mass of the reactants (i.e., all
+the molecules of the gasoline and oxygen before the reaction) versus
+the total mass of all the molecules in the chemical products after
+the reaction. How much mass (in kg) is lost in this reaction (i.e.,
+total mass of reactants minus total mass of products)?
+</p>
+</statement>
+</exercise>
+</section>

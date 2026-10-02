@@ -1,0 +1,89 @@
+<section>
+<title>Numerical Stepping Equations</title>
+<p>
+Let us incorporate the ideas mentioned above into a set of formulas
+that we (or better yet, a computer) could use to calculate the
+position and velocity of a particle moving under the influence of some
+forces. Call the present time <m>t</m> and the time a little later <m>t +
+\Delta t</m>. Let <m>x(t)</m> denote the position of the particle now, then
+<m>x(t + \Delta t)</m> denotes the position of the particle a short time
+later. Similarly <m>v_x(t)</m> and <m>v_x(t + \Delta t)</m> represent the present
+and slightly later velocities of the particle. In all of these
+expressions, note that <m>x(t + \Delta t)</m> does not mean the quantity
+<sq><m>x</m></sq> times the quantity <sq><m>t + \Delta t</m></sq> but rather means the value
+of the function <m>x</m> evaluated at the time <m>t + \Delta t</m>. This is
+standard functional notation used in mathematics.
+</p>
+
+<p>
+Recall the definition of velocity as the rate of change of the
+position. Taking <m>\Delta t</m> to be very small in magnitude, we may
+approximate this as <q>velocity = displacement/time</q> and
+express the velocity at time <m>t</m> approximately as
+<men>
+  v_x(t) \simeq \frac{\Delta x}{\Delta t} = \frac{x(t+\Delta t) - x(t)}
+  {\Delta t}.
+</men>
+</p>
+
+<p>
+As you recall, <m>\Delta x/\Delta t</m> is the definition of the average
+velocity, while the instantaneous velocity is actually the derivative
+of the position with respect to time. However, for small enough time
+steps, the average velocity is an excellent approximation for the
+instantaneous velocity.
+</p>
+
+<p>
+Turning the previous expression around, we can write an expression for
+the position of the particle at time <m>t + \Delta t</m> in terms of the
+position and velocity at time <m>t</m>:
+<men xml:id="eq_x-step" >
+  x(t+\Delta t) = x(t) + v_x(t)\Delta t.
+</men>
+</p>
+
+<p>
+<xref ref="eq_x-step" /> says that the position at time <m>t + \Delta t</m> is
+the position at time <m>t</m> plus the distance traveled <m>v_x(t)\Delta t</m> by
+the particle during the short time interval <m>\Delta t</m>. Notice that
+this result is only approximate because the velocity <m>v_x</m> at time <m>t</m>
+is not necessarily equal to the average velocity during the entire
+time interval. However, if <m>\Delta t</m> is small enough, the
+approximation should be quite good.
+</p>
+
+<p>
+Next we need an expression for incrementing the velocity. By analogy
+with the arguments leading up to <xref ref="eq_x-step" />, we can write
+<men xml:id="eq_v-step" >
+  v_x(t+\Delta t) = v_x(t) + a_x(t)\Delta t.
+</men>
+</p>
+
+<p>
+The three equations <xref ref="eq_newtonII" />, <xref ref="eq_x-step" /> and
+<xref ref="eq_v-step" /> can now be incorporated into a looping procedure in
+a computer program. These three equations constitute what is
+generally referred to as <em>Euler's method</em> of numerical
+approximation. Given an initial position and velocity, we calculate
+the initial acceleration from <xref ref="eq_newtonII" />. Then we
+calculate the position and velocity a short time later from
+Eqs.<nbsp/><xref ref="eq_x-step" /> and <xref ref="eq_v-step" />. Then we repeat the
+process, pretending that the new values for <m>x</m> and <m>v_x</m> are the
+initial values. In this way we can numerically iterate the motion of
+the particle from instant to instant as far into the future as we care
+to. A spread-sheet program, such as EXCEL, can perform such
+calculations with very little <q>programming</q> required on your part.
+</p>
+
+<p>
+A note about numerical errors is worth mentioning. Remember that
+although <xref ref="eq_newtonII" /> is exact, Eqs.<nbsp/><xref ref="eq_x-step" /> and
+<xref ref="eq_v-step" /> that update <m>x</m> and <m>v_x</m> to later times are
+approximations that are best when <m>\Delta t</m> is small. If the
+calculations start going haywire, we can help the situation by
+choosing smaller steps. This means of course that the computer will
+have to run longer, but that's frequently not a serious problem.
+</p>
+</section>

@@ -1,0 +1,145 @@
+<section>
+<title>Problems</title>
+<exercise xml:id="prob_Schwarzschild_dimensions">
+<statement>
+<p>
+Use dimensional analysis on the definition of the Schwarzschild radius to
+show that it has dimensions of length.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_Schwarzschild_radius">
+<statement>
+<p>
+Calculate the Schwarzschild radius for the following objects.
+<ol>
+<li><p>A neutron star with mass <m>6.0\times 10^{30}\,\text{kg}</m>.</p></li>
+<li><p>Jupiter.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_Schwarzschild_distance">
+<statement>
+<p>
+You find yourself near a black hole with the coordinate <m>r</m> equal to
+three times the Schwarzschild radius.
+<ol>
+<li><p>How much does the coordinate <m>r</m> increase if you move a distance
+<m>10\,\text{m}</m> directly away from the black hole.</p></li>
+<li><p>How would you measure this increase in <m>r</m>?</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_Schwarzschild_time">
+<statement>
+<p>
+You still find yourself near a black hole with the coordinate <m>r</m> equal
+to three times the Schwarzschild radius.
+<ol>
+<li><p>A time of <m>10\,\text{s}</m> elapses on your clock.  In that time
+    interval how many seconds elapse on a clock very far away?</p></li>
+<li><p>You move to a new location where for every <m>10\,\text{s}</m> that
+  elapses on your clock, <m>20\,\text{s}</m> elapses on the remote clock.
+  Determine your new coordinate <m>r</m> in terms of the Schwarzschild
+  radius.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_Hare_and_Tortoise">
+<statement>
+<p>
+Special relativity review! The <em>Millennium Tortoise</em> and the
+<em>Millennium Hare</em> are racing from Earth to Alpha Centauri, a
+distance of <m>4\,\text{lt-yr}</m> in the Earth frame. The
+<em>Tortoise</em> travels at a constant speed of <m>0.5c</m>. The
+<em>Hare</em> waits on Earth for 3 years after the <em>Tortoise</em>
+departs, and then moves at the blazing speed of <m>0.8c</m> to Alpha Centauri.
+<ol>
+<li><p>Show that the <em>Tortoise</em> and the <em>Hare</em> arrive at
+   Alpha Centauri at the same time.</p></li>
+<li><p>Calculate how much time has elapsed for the <em>Tortoise</em>
+  during this trip.</p></li>
+<li><p>Calculate how much time has elapsed for the <em>Hare</em> during
+  this trip.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+In the movie <em>Interstellar</em> the crew visits a planet that is
+orbiting a black hole. The gravitational time dilation is so
+strong that one hour spent on the planet corresponds to 7 years of
+time far away from the black hole. Calculate the coordinate <m>r</m> of
+the planet's location in terms of the Schwarzschild radius. Express
+your answer as <m>r=(1 + \text{ small number } )R_s</m>, that is, calculate
+the small number.
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+A neutron star has mass of <m>6.0\times 10^{30}\,\text{kg}</m> and a
+circumference of <m>2\pi\times 15\,\text{km}</m>. An object orbits this
+star in a circular orbit with circumference <m>2\pi\times
+  15.01\,\text{km}</m>. How far above the surface of the neutron star
+is the object?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_trip">
+<statement>
+<p>
+For path (b) in <xref ref="fig_trip2">Figure</xref>, assume you travel at velocity
+<m>0.8c</m> for the first leg, and remain stationary, <m>v = 0</m>, for the rest
+of the trip.
+<ol>
+<li><p>Calculate the <m>t</m>-coordinate at the junction point.</p></li>
+<li><p>Determine the proper time for each leg and add them to get
+      the total proper time.</p></li>
+<li><p>Compare to the proper time of <m>0.8\, \mbox{s}</m> for the
+      direct route.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Explain why gravitational lensing could cause a distant point-source of
+light, such as a distant galaxy, to look like a ring.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_black_hole">
+<statement>
+<p>
+Consider a black hole with the mass of the Sun.
+<ol>
+<li><p>Determine the largest radius that this black hole could have.</p></li>
+<li><p>Determine the minimum density that this black hole must have.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+</section>

@@ -1,0 +1,167 @@
+<section>
+<title>Law of Motion for a Freely Falling Body</title>
+
+
+<introduction>
+<p>
+After a busy decade of work, Einstein finally sorted out how to turn
+the equivalence principle into a definition of natural motion
+in curved spacetime. Here's the rule:
+</p>
+
+<p>
+<assemblage><p>Of all the paths that an object could take from
+point <m>A</m> to point <m>B</m> through curved spacetime, the physical path
+will be the one that <em>maximizes proper time</em>.</p></assemblage>
+</p>
+
+<p>
+That reproduces the effect of gravity! Really? Let's examine this.
+</p>
+</introduction>
+
+
+<subsection>
+<title>Remaining Stationary in the Absence of Gravity</title>
+<p>
+Imagine being in space far away from any masses, so there is no
+gravity acting. And let's consider a really boring trip: you
+start at the spacetime point <m>x = 0</m>, <m>t = 0\,\text{s}</m> and end
+at the spacetime point <m>x = 0</m>, <m>t = 1\,\text{s}</m>. Since there are
+no forces acting on you, you must have simply remained stationary
+at <m>x=0</m> the whole time, according to Newton's First Law.
+</p>
+
+<p>
+Now let's see that we get the same result from the principle of
+maximum proper time. We could imagine other ways to start and end at
+the correct spacetime points. For example, as shown in
+<xref ref="fig_trip">Figure</xref>, you could take off at velocity <m>v = 0.6 c</m> for
+half a second and travel <m>0.3\,\text{lt-s}</m>, and then suddenly reverse
+direction and travel for another half second back to <m>x = 0</m> at a
+velocity of <m>-0.6 c</m>. This hyperactive approach gets you to your
+destination with an elapsed time on your watch of
+<men xml:id="eq_deltatnograv" >
+  \Delta t_{ proper} = \Delta t \sqrt{1 - v^2/c^2} = 
+      1.0\,\text{s}  \times \sqrt{1 - 0.6^2} = 0.8\, \mbox{s} .
+</men>
+</p>
+
+<p>
+That is, this trip would result in less proper time elapsed than the
+stationary trip.
+Of all the ways of making the trip, the one taken at zero velocity
+will give the longest proper time. This is because any non-zero
+velocity during any part of the trip reduces the proper time required
+for the trip.
+</p>
+
+<p>
+So indeed it works: the principle of maximum proper time says that
+the natural motion from <m>x=0</m>, <m>t=0\,\text{s}</m> to <m>x=0</m>, <m>t=1\,\text{s}</m>
+in the absence of any forces is simply to sit still.
+</p>
+<!--
+<figure xml:id="fig_trip" >
+<caption>Two ways of taking a different spacetime trip.</caption>
+<sidebyside><image width="73%" source="trip" />
+<image width="73%" source="trip2" /></sidebyside>
+
+</figure>
+-->
+
+<sidebyside>
+<figure xml:id="fig_trip" >
+<image width="73%" source="trip" />
+<caption>Two ways of taking a spacetime trip.</caption>
+</figure>
+<figure xml:id="fig_trip2" >
+<image width="73%" source="trip2" />
+<caption>Two ways of taking a different spacetime trip.</caption>
+</figure>
+</sidebyside>
+
+</subsection>
+
+
+<subsection>
+<title>Moving at Constant Speed in the Absence of Gravity</title>
+<p>
+Now suppose we want to go from the point <m>x = 0</m>, <m>t = 0\,\text{s}</m> to
+the point <m>x = 0.6\,\text{lt-s}</m>, <m>t = 1\,\text{s}</m>. If our principle
+of maximum proper time
+is correct then we should expect that the way to take the trip in the
+greatest proper time is to go the <sq>natural</sq> way, i.e., at a constant
+velocity <m>v = 0.6 c</m>, shown as route (a) in <xref ref="fig_trip2">Figure</xref>. We
+already know that the proper time for this constant velocity trip is
+<m>1\,\text{s} \sqrt{1 -0.6^2} = 0.8\, \mbox{s}</m>. Can we find a way that gives a
+longer proper time?
+</p>
+
+<p>
+<xref ref="fig_trip2">Figure</xref> shows an alternate route to get to <m>x =
+0.6\,\text{lt-s}</m>, <m>t = 1\,\text{s}</m>, labeled as path (b). In homework
+<xref ref="prob_trip">problem</xref>, you will calculate the proper time for this
+route. What you should find is that the total proper time is less for
+the two-step trip, route (b), than the 0.8 second <sq>natural</sq> trip at a
+single velocity, route (a). In fact there is no other route that
+gives a longer proper time than the natural route. Our principle
+shows an encouraging ability to <q>explain</q> Newton's first law, the
+law of inertia.
+</p>
+</subsection>
+
+
+<subsection>
+<title>Moving in the Presence of Gravity</title>
+<p>
+The principle of maximum proper time works in curved spacetime as
+well. The path between two events actually taken by a freely falling
+body is that path that MAXIMIZES the elapsed proper time. This rule
+answers the question: How is it that <q>spacetime tells mass how to
+move</q>?
+</p>
+<figure xml:id="fig_trajectories" >
+<caption>Trajectories</caption>
+<image width="75%" source="trajectory.png" />
+</figure>
+<p>
+Here is a qualitative example. Throw a ball straight up and catch it
+one second later at the same original height. What is the <q>naturally
+chosen</q> path through spacetime that maximizes proper time? We have
+just seen that, because of time dilation, paths that speed up, slow
+down, or reverse direction tend to <em>decrease</em> proper time. On
+the other hand, we've learned that clocks at higher altitudes measure
+<em>more</em> elapsed proper time than those at lower altitudes. So
+now consider these three paths, shown in <xref ref="fig_trajectories">Figure</xref>:
+<ul>
+<li>
+<title>Path 1</title>
+<p>
+The ball stays just above your hand the whole time.  No
+  speeding to decrease proper time <mdash/> BUT also not taking advantage of
+  increasing proper time by going high where clocks run faster.   Not
+  the best.</p></li>
+<li>
+<title>Path 2</title>
+<p>
+Zoom high at almost light-speed, zoom back down.  This
+  gets the ball high where clocks run fast, but time dilation at near
+  light speed means almost no elapsed proper time!  No good.</p></li>
+<li>
+<title>Path 3</title>
+<p>
+Spend most of the trip at a higher place where proper
+  time elapses rapidly.  But don't go very fast or change speed
+  quickly, so the time dilation is not too severe.</p></li>
+</ul>
+</p>
+
+<p>
+Result: Best path for maximizing proper time is parabolic motion <mdash/>
+fast up, slow and stop smoothly at the top, faster on the way down.
+This is the motion we actually observe!
+</p>
+</subsection>
+
+</section>

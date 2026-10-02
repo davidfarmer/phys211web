@@ -1,0 +1,60 @@
+<section>
+<title>Solving Newton's second law analytically</title>
+<p>
+Newton's second law <m>\vec{F}_{ net} = m\vec{a}</m> is a <em>differential equation</em>, i.e., an equation that can be written in
+terms of derivatives of various quantities. Ideally, we would like
+to <q>solve</q> this differential equation to
+determine expressions (as a function of time) for the velocity and
+position of a particle moving under the influence of the forces.
+If the forces exerted on the particle are
+all known, then Newton's second law can be rewritten in one-dimension
+as
+<men xml:id="eq_newtonII" >
+  a_x = \frac{d^2x}{dt^2} = \frac{F_{{ net},x}}{m},
+</men>
+where the forces are assumed to be possibly functions of position and
+velocity. <xref ref="eq_newtonII" /> written in that form is known as
+the <em>equation of motion</em> for the system under consideration.
+Mathematically one would proceed by integrating <xref ref="eq_newtonII" />
+to determine the velocity as a function of time
+<m>v_x(t)</m> and then integrating once again to obtain the position as a
+function of time <m>x(t)</m>. For example we have learned that for a
+particle falling from rest from a height <m>x_0</m> under the force of
+gravity <m>F_{ net} = mg</m>, <xref ref="eq_newtonII" /> becomes
+<men xml:id="eq_eom-freefall" >
+  \frac{d^2x}{dt^2} = -g,
+</men>
+and integrating we obtain the following expressions for the velocity
+and position:
+<men>
+  v_x(t) = -gt \mbox{\hspace{0.25in}and\hspace{0.25in}} x(t) = x_0 - 
+  \frac{1}{2}gt^2.
+</men>
+</p>
+
+<p>
+If you don't understand how we got these expressions, then take the
+derivative with respect to time of <m>x(t)</m> to get <m>v_x(t)</m> and then
+<m>v_x(t)</m> to get back to <xref ref="eq_eom-freefall" />.
+</p>
+
+<p>
+For the example shown above as well as a few other cases, the equation
+of motion is relatively straightforward to integrate to get the
+analytical functions for velocity and position. As discussed in the previous
+section, though, there are many cases
+where the equations of motion are not so easy to integrate and other
+means are necessary for determining the position and velocity of the
+particle as a function of time.
+</p>
+
+<p>
+In the following sections we will develop a set of equations that we
+can use to calculate the position and velocity of a particle at
+specified time increments <m>\Delta t</m>, a technique called <em>numerical iteration</em>. Although this technique does not give us as a
+final result a neat, compact formula for the position and velocity of
+the particle into which any value of time can be inserted, it does
+allow us to map out the position and velocity of the particle for an
+otherwise mathematically intractable problem.
+</p>
+</section>

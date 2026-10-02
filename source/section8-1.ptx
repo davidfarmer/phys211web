@@ -1,0 +1,111 @@
+<section>
+<title>Quasistatic processes and <m>p</m><nbsp/>-<m>V</m> diagrams</title>
+<p>
+An ideal gas in equilibrium is characterized by four quantities,
+pressure (<m>p</m>), temperature (<m>T</m>), volume (<m>V</m>), and the amount
+of gas, often given as the number of moles (<m>n</m>). These quantities
+are not independent; they are related by the ideal gas law:
+<m>pV = nRT</m>. Therefore, for a fixed amount of gas, knowledge of
+two out of the three quantities, <m>p</m>, <m>V</m>, and <m>T</m> suffices
+to specify the state of the equilibrium gas. An important tool
+used in analysis of thermodynamics processes that takes advantage of
+this fact is a plot of pressure versus the volume of a gas, referred
+to in short as a <m>p</m><nbsp/>-<m>V</m> diagram. The temperature <m>T</m>
+for the state of a gas represented by a point on a <m>p</m><nbsp/>-<m>V</m> diagram
+is usually not indicated on the diagram, but it can always be inferred
+from the ideal gas law (for a gas in equilibrium).
+</p>
+
+<p>
+A changing volume and/or pressure results in a
+curve on a <m>p</m><nbsp/>-<m>V</m> diagram. <xref ref="fig_PVdiagrams">Figure</xref> shows a few
+different processes. <xref ref="fig_PVdiagrams">Figure</xref>(a) shows a constant
+pressure process, with an arrow that indicates an increasing volume
+(expansion). If the arrow were turned around, the same graph would
+show a constant-pressure compression. In the literature, you may see a
+constant-pressure process referred to as an <em>isobaric</em> process
+(<q>iso</q> meaning <q>same</q> and <q>baric</q> meaning <q>pressure</q>). <xref ref="fig_PVdiagrams">Figure</xref>(b) shows a constant-volume process, with an arrow
+that indicates an increasing pressure. These processes are sometimes
+referred to as <em>isochoric</em>.
+</p>
+
+<p>
+These diagrams are very useful first because
+they are directly related to the work done on or by a gas and second
+because they are convenient for showing the time evolution of a
+thermodynamic process, particularly <em>cyclic</em> processes that repeat
+over and over again, as is the case with many engineering systems.
+The time evolution represented by curves on <m>p</m><nbsp/>-<m>V</m> are assumed
+to be slow enough that the gas is always very close to equilibrium.
+Slow processes that meet this criterion are called <em>quasistatic</em>.
+</p>
+<figure xml:id="fig_PVdiagrams" >
+<caption>Processes on a <m>p</m><nbsp/>-<m>V</m> diagram.  (a) Constant-pressure expansion
+(<em>isobaric</em>). (b) Constant-volume process (<em>isochoric</em>). 
+(c) Three constant temperature processes (<em>isothermal</em>).</caption>
+<image width="93%" source="PVdiagrams" />
+</figure>
+<p>
+<xref ref="fig_PVdiagrams">Figure</xref>(c) shows a few constant temperature (<em>isothermal</em>) processes. Assuming the number of moles of the gas
+doesn't change during a process, the ideal gas law can be used to
+determine the relationship between the pressure <m>p</m> and volume <m>V</m> for
+an isothermal process: <m>pV = nRT</m> implies <m>p = nRT/V</m>. The result is
+a swoopy curve (yes, <q>swoopy</q> is a valid scientific expression)
+since the pressure depends inversely on the volume if <m>n</m> and <m>T</m> are
+constant. The resulting curve on a <m>p</m><nbsp/>-<m>V</m> diagram is referred to as
+an <em>isotherm</em> and the same graph can show several
+isotherms, each one characterized by its value of the temperature.
+<xref ref="fig_PVdiagrams">Figure</xref>(c) shows that the isotherms corresponding to
+higher temperatures lie above and to the right of those corresponding
+to lower temperatures on a <m>p</m><nbsp/>-<m>V</m> diagram. It can also be seen
+that a constant-volume increase in pressure results in an increase in
+temperature, because this process takes the system <em>up</em> to a
+higher temperature
+isotherm. Similarly, an isobaric expansion takes the system <em>to the
+right</em> to a higher temperature isotherm. These graphical results
+are, of course, consistent with the ideal gas law.
+</p>
+
+<example xml:id="ex_PVexample">
+<title>Sketching <m>p</m><nbsp/>-<m>V</m> diagrams</title>
+<statement>
+<p>
+A gas in a cylinder starts at a temperature <m>T_1 = 300\,\text{K}</m>,
+volume <m>V_1 = 3.0\,\text{L}</m>, and pressure <m>p_1 = 100\,\text{kPa}</m>.
+It is expanded at constant pressure
+to twice its initial volume. It is then compressed isothermally back
+to the original volume, after which it is cooled down at constant volume
+to a temperature
+which is half of the initial temperature. Sketch a <m>p</m><nbsp/>-<m>V</m> diagram
+for the entire process <m>1\rightarrow 2\rightarrow 3\rightarrow 4</m>.
+</p>
+
+<p>
+<em>Solution:</em>
+</p>
+<figure xml:id="fig_PVexample" >
+<caption>Solution for <xref ref="ex_PVexample">Example</xref>. Constant-pressure
+  expansion (1 <m>\rightarrow</m> 2) to twice the initial volume, followed
+  by isothermal compression (2 <m>\rightarrow</m> 3) back to initial
+  volume, followed by cooling at constant volume (3 <m>\rightarrow</m> 4)
+  to temperature half of the initial value.</caption>
+<image width="46%" source="PVexample" />
+</figure>
+<p>
+The <m>p</m><nbsp/>-<m>V</m> diagram for the process is displayed in
+<xref ref="fig_PVexample">Figure</xref>. The illustrated constant-pressure expansion
+<m>(1 \rightarrow 2)</m> also results in a temperature increase. Since <m>pV =
+nRT</m>, a doubling of the volume (to <m>6.0\,\text{L}</m> at constant-pressure results
+in a doubling of the temperature (to <m>600\,\text{K}</m>) as well. So, after the
+isothermal compression <m>(2 \rightarrow 3)</m>, the gas is at twice its
+initial temperature and therefore twice the initial pressure; i.e., <m>p_3 =
+200\,\text{kPa}</m>. (You could also easily determine the pressure <m>p_3</m> by noting
+that with <m>n</m> and <m>T</m> both constant, <m>p_2V_2 = p_3V_3</m>.) The final process
+<m>(3 \rightarrow 4)</m> brings the gas to a temperature half of its initial
+value, and since the final volume is the same as the initial volume, the
+final pressure must by half of the initial pressure; i.e.,
+<m>p_4 = 50\,\text{kPa}</m>.
+</p>
+</statement>
+</example>
+</section>

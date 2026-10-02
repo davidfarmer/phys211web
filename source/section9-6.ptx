@@ -1,0 +1,167 @@
+<section>
+<title>The Definition of Temperature</title>
+<p>
+As we discussed in <xref ref="chap_thermal_energy">Chapter</xref>,
+temperature is often defined in terms of the thermal kinetic energy.
+Certainly thermal kinetic energy and temperature are related, via the
+equipartition theorem, so it is a useful and convenient picture to
+have. But defining temperature this way leaves its most fundamental
+role <mdash/> namely, that it is the traffic cop dictating which way
+thermal energy will spontaneously flow <mdash/> completely unexplained. In
+this section we will introduce a definition of temperature that
+naturally explains its presence in the Clausius statement of the
+second law. Conveniently, this <em>second law temperature</em> turns out
+to be the same temperature we know and love from the ideal gas law,
+the equipartition theorem, and the ball-spring solid.
+</p>
+
+<p>
+Let's think of the entropy of a system as a function of its thermal
+energy. Adding more thermal energy to a system gives more ways to
+distribute the energy, and so increases the multiplicity. This means
+an increase in entropy, so <m>S</m> should be an increasing function of
+<m>E_\text{therm}</m>. A typical dependence of entropy on <m>E_\text{therm}</m>
+is shown in <xref ref="fig_entropy_vs_energy">Figure</xref>. Note that the entropy
+is increasing with <m>E_\text{therm}</m>, but also note that the rate of
+increase slows down with increasing energy. That is, the slope is
+steadily decreasing as <m>E_\text{therm}</m> increases. This can be
+understood as a type of diminishing returns: systems with very low
+<m>E_\text{therm}</m> can gain a lot of multiplicity by adding energy.
+Once the thermal energy is high, additional thermal energy has less
+impact on the entropy.
+</p>
+<figure xml:id="fig_entropy_vs_energy" >
+<caption>Entropy as a function of thermal energy.</caption>
+<image width="65%" source="entropy_vs_energy" />
+</figure>
+<p>
+Now let's couple two subsystems, <m>A</m> and <m>B</m>. The combined energy is
+fixed, <m>E_\text{total}  = E_A + E_B</m>. Consequently, as system <m>A</m>
+gains energy, system <m>B</m> loses energy, and vice-versa. In
+<xref ref="fig_coupled_systems">Figure</xref> we plot both <m>S_A</m> and <m>S_B</m>, but
+notice that the <m>S_B</m> curve is flipped over left to right. This is
+because <m>E_B=0</m> occurs at the right side of the plot, where <m>E_A</m> is
+at its maximum, and <m>E_B</m> increases as you move to the left. The
+reason for plotting it this way is that we can, for a particular
+choice of <m>E_A</m>, read off both <m>S_A(E_A)</m> and <m>S_B(E_B)</m>. Also shown
+on the plot is the combined entropy <m>S_\text{total} =S_A+S_B</m>.
+</p>
+<figure xml:id="fig_coupled_systems" >
+<caption>Entropies of subsystems <m>A</m> and <m>B</m>, as well as the combined
+system entropy <m>S_ total</m>, all plotted versus <m>E_A</m>.</caption>
+<image width="84%" source="coupled_systems.png" />
+</figure>
+<p>
+Now imagine starting with a relatively small value of <m>E_A</m>, where the
+heavy lines are drawn on the left. What would be the net effect on
+the entropy if we were to take some energy from system <m>B</m> and give it
+system <m>A</m>? The plot shows that <m>S_B</m> would decrease and <m>S_A</m> would
+increase. The plot also shows that, since the <m>S_A</m> curve in this
+region is steeper than the <m>S_B</m> curve, system <m>A</m> would gain
+more entropy than system <m>B</m> would lose. In other words,
+<m>S_\text{total}</m> would increase. Therefore, the <q>force</q> of
+probability pushing towards a (vastly) more probable state dictates
+that energy flows from system <m>B</m> to system <m>A</m>.
+</p>
+
+<p>
+What the previous analysis should make clear is that the question of
+which way the energy will flow is determined by the magnitude of the
+<em>slope</em> on an entropy versus energy graph. Whichever system,
+<m>A</m> or <m>B</m>, has the steeper slope will be the one to receive the
+energy.
+</p>
+
+<p>
+Let's carry this analysis further. After some energy has flowed from
+<m>A</m> to <m>B</m>, we find that <m>E_A</m> has increased to where the second set
+of heavy lines are drawn. Here, the slopes of the <m>S_A</m> and <m>S_B</m>
+curves are equal in magnitude and opposite in sign. Any entropy
+change of system <m>A</m> is canceled by the entropy change of system <m>B</m>,
+so there is no longer entropy gained by increasing <m>E_A</m> (or
+decreasing it). Thermal energy will no longer be transferred because
+we are at the maximum combined entropy, which can be seen from the
+plot of <m>S_\text{total}</m>, and we have reached thermal equilibrium.
+Any additional transfer of energy (in either direction) will
+result in a decrease in total entropy.
+</p>
+
+<p>
+All this discussion leads to the notion that the slope
+<m>dS/dE_\text{therm}</m> is directing the thermal energy traffic.
+Whichever subsystem has the smaller slope will give up energy to the
+subsystem which has the larger slope. Hence, we define temperature as
+</p>
+
+<p>
+<men xml:id="eq_temperature_def" >
+  \frac{1}{T} \equiv \frac{dS}{dE_\text{therm} },
+</men>
+and our probability analysis becomes equivalent to the Clausius
+statement.
+</p>
+
+<p>
+This definition, then, explains the role of temperature in the second
+law, but does it match our previous notions of temperature? And what
+does it mean intuitively? First, yes, it does match the ideal gas
+temperature, etc. This can be shown by deriving the equipartition
+theorem from this definition of temperature; all our previous uses for
+temperature (such as the ideal gas) had their origin in the
+equipartition theorem.
+</p>
+
+<p>
+As for an intuitive meaning, think of it this way: inverse temperature
+(that is, <m>1/T</m>) is a measure of how much use a system has for
+energy. When a system can find many ways to divide up the energy,
+then adding some energy will increase <m>S</m> a lot. That is a low
+temperature system. A high temperature system is one where
+diminishing returns has set in, and additional energy does not result
+in a substantial entropy increase.
+</p>
+
+<p>
+Finally, note that for large systems we can add some amount of energy
+without significantly changing the temperature (for example, adding 10
+joules of thermal energy to a cup of water). In this case, we can
+approximate <xref ref="eq_temperature_def" /> as
+<men xml:id="eq_temperature_approx" >
+  \frac{1}{T} \approx \frac{\Delta S}{\Delta E_\text{therm} } 
+\qquad\text{or} \qquad
+T \approx  \frac{\Delta E_\text{therm} }{\Delta S}.
+</men>
+</p>
+
+<p>
+This is often a handy way to <em>estimate</em> temperature from entropy change
+or vice-versa. <em>IMPORTANT NOTE:</em> use <xref ref="eq_temperature_approx" />
+<em>only</em> if <m>\Delta S</m> and <m>\Delta E_{therm}</m> are small. If you are given
+the entropy <m>S</m> as a function of <m>E_{therm}</m>, you should be
+using <xref ref="eq_temperature_def" />.
+</p>
+
+<example>
+<title>The Temperature of my Coffee</title>
+<statement>
+<p>
+Adding <m>50\,\text{J}</m> of thermal energy to my coffee cup caused its
+entropy to increase by an amount of <m>0.17\,\text{J/K}</m>. Estimate the
+temperature of my coffee.
+</p>
+
+<p>
+<em>Solution: </em>
+According to <xref ref="eq_temperature_approx" /> we have
+<men>
+  T \approx  \frac{\Delta E_\text{therm} }{\Delta S} = 
+\frac{50\,\text{J} }{0.17\,\text{J/K} } = 294\,\text{K} .
+</men>
+</p>
+
+<p>
+That's room temperature. Yuck!
+</p>
+</statement>
+</example>
+</section>

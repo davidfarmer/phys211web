@@ -1,0 +1,8 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_relativistic_spacetime">
+<title>Relativistic Spacetime</title>
+<xi:include  href="section3-1.ptx" />
+<xi:include  href="sec_spacetime_intervals.ptx" />
+<xi:include  href="sec_worldlines.ptx" />
+<xi:include  href="section3-4.ptx" />
+<xi:include  href="section3-3x.ptx" />
+</chapter>

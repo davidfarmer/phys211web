@@ -1,0 +1,173 @@
+<section>
+<title>Useful tools for applying the First Law</title>
+
+
+<introduction>
+<p>
+In this section we will treat in order the three terms that appear in
+the First Law of Thermodynamics, as written in <xref ref="eq_first_law_ch8" />.
+</p>
+</introduction>
+
+
+<subsection>
+<title>Changes in thermal energy (<m>\Delta E_ therm</m>)</title>
+<p>
+In <xref ref="chap_liquids_and_gases">Chapter</xref> you learned that the thermal
+energy of an ideal gas is
+<men>
+  E_\text{therm}  = \frac{f}{2}\, nRT,
+</men>
+where <m>f</m> is the number of degrees of freedom of a molecule in the gas.
+From this, it's straightforward to see that
+<men>
+  \Delta E_\text{therm}  = \frac{f}{2} nR\, \Delta T.
+</men>
+</p>
+
+<p>
+So if we know the number of moles, and the temperature difference,
+we can calculate the thermal energy difference without knowing
+anything about the pressure and the volume.
+</p>
+
+<p>
+There will be times when you know the pressure and the volume, but not
+the number of moles.
+There is a convenient simplification of this
+kind of calculation that obviates the need to explicitly calculate <m>n</m>.
+Consider a gas with an unspecified number of moles that undergoes
+a process starting at <m>p_1</m> and <m>V_1</m>, and ending at <m>p_2</m> and <m>V_2</m>.
+The change in the thermal energy of the gas is
+<md>
+  <mrow>  \Delta E_\text{therm}  =\mathstrut \amp  \frac{f}{2}n R (T_2 - T_1)</mrow>
+  <mrow>  =\mathstrut \amp   \frac{f}{2}n R \left(\frac{p_2V_2}{nR} -
+                                          \frac{p_1V_1}{nR} \right)</mrow>
+  <mrow>  =\mathstrut \amp   \frac{f}{2}(p_2V_2 - p_1V_1)</mrow>
+  <mrow xml:id="eq_Etherm_from_pV" number="yes">  =\mathstrut \amp  \frac{f}{2}\, \Delta(pV).</mrow>
+</md>
+</p>
+
+<p>
+We have found the thermal energy difference in a way that eliminates the
+need to know <m>n</m> or <m>T</m>!
+</p>
+
+<p>
+Sometimes you won't have enough information about <m>p</m>, <m>V</m>, <m>T</m>, or <m>n</m>
+to calculate <m>\Delta E_\text{therm}</m> directly. In those situations
+you might be able to use the First Law, <xref ref="eq_first_law_ch8" />, if
+you know enough about the other terms, <m>Q_\text{in}</m> and <m>W_\text{on}</m>.
+</p>
+</subsection>
+
+
+<subsection>
+<title>Heat flow in gas processes (<m>Q_ in</m>)</title>
+<p>
+Direct calculation of the heat flowing into or out of a gas is, in
+general, a difficult problem, and a topic of study in mechanical
+engineering. For most
+of the problems we will study in PHYS<nbsp/>211 you can calculate <m>Q_\text{in}</m>
+indirectly, using the First Law, <xref ref="eq_first_law_ch8" />, because
+there will be enough information about the other terms,
+<m>\Delta E_\text{therm}</m> and <m>W_\text{on}</m>.
+</p>
+
+<p>
+There is one kind of gas process for which determination of <m>Q_\text{in}</m> is
+easy: <em>adiabatic</em> compression or expansion. That's because
+the term <em>adiabatic</em> is simply the name given to those processes in
+which <m>Q_\text{in} =0</m>. Adiabatic processes are the idealized versions of
+processes in which the gas is very well insulated so that it doesn't
+interact thermally with the external world. We will talk more about
+adiabatic processes later in this chapter.
+</p>
+</subsection>
+
+
+<subsection xml:id="sec_CalcWork">
+<title>Work done during gas processes (<m>W_ on</m>, <m>W_ by</m>)</title>
+<p>
+A simple system for analyzing the work done on a gas, or by a gas,
+is illustrated in <xref ref="fig_cylinder">Figure</xref>. A fitted piston (the shaded disk)
+with mass <m>m</m> and surface area <m>A</m> is free to slide up and down the
+frictionless walls of the cylinder, and seals a fixed
+amount of gas trapped in the volume below.
+In equilibrium the force of the gas pushing up on the piston
+is balanced by the net force of the external world
+pushing down (the combined forces of gravity, the force due to atmospheric
+pressure, and any additional force that you might be applying
+to keep the piston in place).
+</p>
+
+<p>
+Imagine that the forces change ever so slightly so that the
+piston experiences a small upward displacement <m>\Delta\vec{r}</m>,
+increasing the volume of the gas. The work done
+<em>by</em> the gas is
+<md>
+  <mrow>  W_\text{by}  =\mathstrut \amp  \vec{F}_\text{ by gas on world } \cdot \Delta\vec{r}</mrow>
+  <mrow>  =\mathstrut \amp  F_\text{ by gas on world } \, \Delta r \cos(0^\circ)</mrow>
+  <mrow>  =\mathstrut \amp  p_\text{gas} \, A\, \Delta r</mrow>
+  <mrow>  =\mathstrut \amp  p_\text{gas} \, \Delta V.</mrow>
+</md>
+</p>
+
+<p>
+The work done <em>on</em> the gas will be the negative of this, because
+the angle between the vector force <m>\vec{F}_\text{ world on gas }</m>
+and the displacement <m>\Delta \vec{r}</m><nbsp/> is<m>180^\circ</m>.
+</p>
+
+<p>
+For infinitesimally small changes, <m>\Delta V \longrightarrow dV</m>, allowing
+us to use integration to calculate the work for processes during which
+the pressure does not remain constant:
+</p>
+
+<p>
+<men>
+  W_\text{on}  = -\int_{V_1}^{V_2} p\, dV\mbox{and} 
+W_\text{by}  = \int_{V_1}^{V_2} p\, dV,
+</men>
+</p>
+
+<p>
+Although these results have been derived for expansion of a gas in
+the cylinder, they can be generalized to expansion and compression
+of arbitrarily shaped volumes.
+</p>
+<figure xml:id="fig_cylinder" >
+<caption>Piston with surface area <m>A</m> in a cylinder containing
+a gas with volume <m>V_ gas</m> and <m>p_ gas</m>.</caption>
+<image width="84%" source="cylinder" />
+</figure>
+<p>
+Since work has been expressed as an integral of pressure with
+respect to volume, we see that the magnitude of the work done in a
+process is equal to the area under the curve of the <m>p</m><nbsp/>-<m>V</m> diagram
+for the process between the initial and final volumes.
+</p>
+
+<p>
+<em>NOTE:</em> the sign of the work is critically important.
+For an expanding gas, the gas is lifting the piston, and <m>W_\text{by}</m>
+is positive, but <m>W_\text{on}</m> is negative. For a contracting
+gas the opposite is true. For a car engine, a positive
+value of <m>W_\text{by}</m> means that the car is able to drive, whereas a negative
+value for <m>W_\text{by}</m> means that you have to push the car to get it to go.
+</p>
+
+<p>
+<em>NOTE about units:</em> in standard units, if pressure is in N/m<m>^2</m>
+(i.e., Pa) and volume is in m<m>^3</m>, the resulting calculated work will
+be in J. But in many realistic problems, the pressure is given in kPa
+and the volume is given in L. Since <m>1\,\text{L}  = 10^{-3}
+\,\text{m}^3 </m> and 1 kPa = <m>10^3</m> Pa, a calculation of work using L
+and kPa also gives an answer in J. So, it isn't necessary to convert
+to Pa and <m>\text{m}^3</m> when doing these calculations.
+</p>
+</subsection>
+
+</section>

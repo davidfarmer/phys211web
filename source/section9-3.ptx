@@ -1,0 +1,169 @@
+<section>
+<title>Einstein Solid</title>
+<p>
+We now develop the ideas of the previous section in the context of a
+specific model. The simplest model to work with, it turns out, is not
+the ball-spring model or the ideal gas, but rather a variation of the
+ball-spring solid called the Einstein solid. Experiments on very cold
+metals showed that their specific heats could fall well below the
+value <m>3R</m>, suggesting something not contained in the ball-spring
+model was occurring at low temperatures. Einstein showed that a
+quantum mechanical version of the ball-spring model could explain this
+result.<fn>The complete description of very cold metals requires
+  an additional modification, worked out by a Dutch physicist named
+  Peter Debye.  We will not consider the Debye theory here.</fn> To
+begin, notice that a three-dimensional oscillator, such as the
+molecule in the ball-spring model, can be written as a sum of three
+independent, one-dimensional oscillators:
+<md>
+  <mrow>  E_\text{ball}  \amp = \bigl(\textstyle\frac{1}{2} m v_x^2 + \frac{1}{2} m v_y^2 
++ \frac{1}{2} m v_z^2\bigr) +
+\bigl(\textstyle\frac{1}{2} k_{sp} x^2
++ \frac{1}{2} k_{sp} y^2 + \frac{1}{2} k_{sp}z^2\bigr)</mrow>
+  <mrow>  \amp = \bigl(\textstyle\frac{1}{2}mv_x^2+
+   \frac{1}{2}k_{sp}x^2\bigr)
++\bigl(\textstyle\frac{1}{2}mv_y^2+\frac{1}{2}k_{sp}y^2\bigr)
++\bigl(\textstyle\frac{1}{2}mv_z^2+\frac{1}{2}k_{sp}z^2\bigr)</mrow>
+</md>
+</p>
+
+<p>
+In the second grouping, each term in parentheses is an oscillator
+moving in one particular direction and independent of the motion in
+the other perpendicular directions. Thus a set of <m>N</m> molecules in
+the ball-spring model is equivalent to <m>3N</m> one-dimensional
+oscillators. In what follows we will be working primarily with the
+one-dimensional oscillators so we let <m>N</m> represent the number of
+oscillators instead of the number of molecules. The number of
+molecules is then <m>N/3</m>.
+</p>
+
+<p>
+Einstein proposed to treat the one-dimensional oscillators quantum
+mechanically, which should be appropriate when the temperature is
+low enough. We will not discuss quantum mechanics here <mdash/> that is a
+topic for PHYS 212 <mdash/> but we will summarize the main results of interest
+to us. The energy levels of the quantum harmonic oscillator are not
+continuous but rather discrete (or <em>quantized</em>). This is
+illustrated in <xref ref="fig_qho">Figure</xref>. At very low energies we cannot
+vary the oscillator energy up or down by arbitrarily small amounts,
+but rather can only add energy in discrete chunks. Furthermore, for
+the quantum harmonic oscillator, these energy levels are equally
+spaced. Therefore we can write the energy level of an oscillator as
+<men>
+  E_\text{osc}  = E_0 + n\epsilon \qquad
+\text{ where \(n=0\), 1, 2, 3, \dots }
+</men>
+</p>
+
+<p>
+Here <m>E_0</m> is the lowest energy level possible, and we may increase
+the energy by adding an integer number of <q>energy units</q> of size
+<m>\epsilon</m>.
+</p>
+<figure xml:id="fig_qho" >
+<caption>The quantum harmonic oscillator has discrete energy levels,
+  shown as horizontal lines.  The energy difference between successive
+  levels is <m>\epsilon</m>.</caption>
+<image width="37%" source="qho" />
+</figure>
+<p>
+Now consider a system of two oscillators, with a total energy of three
+<q>energy units.</q> These oscillators bounce energy back and forth and
+so one of the oscillators may have at a given instant anywhere from
+zero to all three of the energy units. Let <m>n_1</m> be the number of
+energy units that the first oscillator has, and <m>n_2</m> the number of
+energy units for the second oscillator. Specifying <m>n_1</m> and <m>n_2</m>
+determines a particular microstate. The total energy of three units
+implies <m>n_1+n_2=3</m>, so the possible microstates, written as
+<m>(n_1,n_2)</m>, are
+<me>
+  (3,0),  (2,1),  (1,2),  (0,3).
+</me>
+</p>
+
+<p>
+Evidently, the multiplicity of the macrostate with two oscillators and
+a total of three energy units is <m>\Omega =4</m>. That is, there are four
+different microstates with this total energy.
+</p>
+
+<example xml:id="example_multiplicity">
+<title>Three oscillators, two energy units</title>
+<statement>
+<p>
+Write down all the microstates for a system of three oscillators and
+a total of two energy units, and determine the multiplicity.
+</p>
+
+<p>
+<em>Solution: </em>
+For microstates written as <m>(n_1,n_2,n_3)</m>, we need to have
+<m>n_1+n_2+n_3=2</m>, so the possible microstates are
+<me>
+  (2,0,0),(0,2,0),(0,0,2),
+(1,1,0),(1,0,1),(0,1,1),
+</me>
+and the multiplicity <m>\Omega=6</m>.
+</p>
+</statement>
+</example>
+
+<p>
+It is feasible to determine the multiplicity directly by counting the
+microstates when the number of oscillators and energy units is small.
+But this becomes unwieldy very quickly as the number of oscillators
+and energy units is increased. Fortunately, we can derive the general
+result for <m>N</m> oscillators and <m>q</m> total energy units, which is
+<men xml:id="eq_Einstein_multiplicity" >
+  \Omega = \frac{(q+N-1)!}{q!\;(N-1)!}.
+</men>
+</p>
+
+<p>
+The factorial function is defined as <m>n!=n(n-1)(n-2)\cdots 2\cdot 1</m>.
+For example, <m>5!=5\cdot 4\cdot 3\cdot 2\cdot 1=120</m>. A special
+case is the factorial of the number zero: by definition,
+<m>0!=1</m>. The meaning of <m>n!</m> is that it is the number of
+distinct ways to order <m>n</m> objects. The number of ways to order zero
+objects is taken to be 1.
+</p>
+
+<example>
+<title>Checking the multiplicity formula</title>
+<statement>
+<p>
+Verify the Einstein solid multiplicity formula,
+<xref ref="eq_Einstein_multiplicity" />, for the cases of two oscillators
+with three energy units and three oscillators with two energy units.
+</p>
+
+<p>
+<em>Solution: </em>
+For two oscillators and three energy units (<m>N=2</m> and <m>q=3</m>) the
+multiplicity formula gives
+<men>
+  \Omega = \frac{(3+2-1)!}{3!\;(2-1)!} = \frac{4!}{3!\;1!} =
+\frac{24}{6\cdot 1} = 4,
+</men>
+which matches our result above. For the second case, <m>N=3</m> and <m>q=2</m>,
+giving
+<men>
+  \Omega = \frac{(2+3-1)!}{2!\;(3-1)!} = \frac{4!}{2!\;2!} = \frac{24}{2^2}
+= 6,
+</men>
+verifying the second case.
+</p>
+</statement>
+</example>
+
+<p>
+Factorials become very large very quickly. For example, <m>100!\approx
+10^{157}</m>, which is an amazingly large number. An Einstein solid with
+100 oscillators and 200 energy units has a multiplicity <m>\Omega =
+2.8\times 10^{82}</m>. Now you can appreciate having
+<xref ref="eq_Einstein_multiplicity" /> to work with instead of counting
+all possible microstates. And imagine how large the result would be
+for Avogadro's number of oscillators!
+</p>
+</section>

@@ -1,0 +1,130 @@
+<section>
+<title>General Strategy for 
+Applying the Relativistic Conservation Laws</title>
+<p>
+In a typical problem you are given information about the particles
+before an interaction and asked to compute certain properties of the
+outgoing particles after the interaction. You do this by writing down
+equations that express the fact that the sum of the incoming momenta
+is equal to the sum of the outgoing momenta and the sum of the
+incoming energies is equal to the sum of the outgoing energies. What
+quantities should be used in writing these equations? Here is some
+time-saving advice.
+</p>
+<blockquote>
+<p>
+Always write the conservation of momentum and conservation of energy
+equations in terms of momentum and energy or mass variables, never in
+terms of velocity or kinetic energy.
+</p>
+</blockquote>
+<p>
+This rule keeps the algebra as simple as possible <mdash/> it gets around
+having to solve simultaneous equations with the <m>\sqrt{1-u^2/c^2}</m>
+terms that can make the algebra messy. For example, if you are given
+the velocity of one or more particles in the problem statement, first
+calculate the momentum and energy of each particle from the given
+velocities.
+</p>
+
+<p>
+A second piece of advice:
+</p>
+<blockquote>
+<p>
+When working with <q>eV</q> units (e.g., MeV for energy, MeV/<m>c</m> for
+momentum, MeV/<m>c^2</m> for mass), don't ever put any numbers in for the
+speed of light <m>c</m>.  Just leave it as <nbsp/><q><m>c</m>.</q>  The units will then
+automatically take care of themselves.
+</p>
+</blockquote>
+<p>
+For example, if you have an motionless electron, its energy can be
+obtained from <m>E^2 = p^2c^2+m^2c^4</m>. For a motionless electron <m>p = 0</m>,
+so <m>E= mc^2 = 0.511\,\text{MeV} /c^2\times c^2 = 0.511\,\text{MeV}</m>.
+(See <xref ref="sec_rel-units">section</xref>.)
+</p>
+
+<example xml:id="ex_nuclear_decay">
+<title>Emission of a photon by a nucleus</title>
+<statement>
+<p>
+An excited atomic
+nucleus, of mass <m>5.00\,\text{GeV} /c^2</m> and at rest, as in
+<xref ref="fig_photon_emission2">Figure</xref>, decays to its ground state by
+emitting a photon of energy <m>2.00\,\text{GeV}</m>. Calculate the recoil
+velocity and mass of the ground-state nucleus.
+</p>
+
+<p>
+<em>Solution: </em>
+First draw a picture, and label each particle with its value of
+energy and momentum. Before the decay the excited nucleus has zero
+momentum because it is at rest. And from <m>E^2 = p^2c^2 + m^2c^4</m>, with
+<m>p =0</m>, we know its energy is the same as its rest energy, namely
+<m>5.00\,\text{GeV}</m>.
+</p>
+<figure xml:id="fig_photon_emission2" >
+<caption>Emission of a photon by a nucleus as discussed in <xref ref="ex_nuclear_decay">Example</xref>.</caption>
+<image width="75%" source="photon_emission2.png" />
+</figure>
+<p>
+After the decay the ground-state nucleus recoils with unknown energy
+and momentum, <m>E_2</m> and <m>p_2</m>. Also, the emitted photon has an energy
+of <m>2.00\,\text{GeV}</m>, as specified in the problem. And because the
+photon's mass is zero its momentum has the same numerical value as its
+energy. Notice that in the diagram there are two unknowns, the
+energy and momentum of the recoiling ground-state nucleus. We plan to
+solve for these two unknowns with two equations, the energy and
+momentum conservation equations.
+</p>
+
+<p>
+Looking at the diagram, we write down the energy conservation equation
+in terms of the symbols and numerical quantities shown in the
+diagram:
+<me>
+  5.00\,\text{GeV}  = E_2 + 2.00\,\text{GeV} .
+</me>
+</p>
+
+<p>
+Similarly, we write the momentum conservation equation in terms of
+symbols and numerical quantities shown in the diagram:
+<me>
+  0 = p_2 + 2.00\,\text{GeV} /c.
+</me>
+</p>
+
+<p>
+From these conservation-law equations we easily solve for the energy
+and momentum of the recoiling nucleus to obtain
+<m>E_2 = 3.00\,\text{GeV}</m> and <m>p_2 = -2.00\,\text{GeV} /c</m>.
+Now that we've obtained expressions for the
+energy and momentum of the recoiling ground-state nucleus, we can find
+its speed using a formula from
+<xref ref="chap_relativity_pande">Problem</xref>. <xref ref="prob_rel-u-p-e"></xref> (and from
+<xref ref="table_rel-defs">Table</xref>):
+<me>
+  u_2 = \frac{p_2c^2}{E_2} = \frac{(-2.00\,\text{GeV} /c)\times c^2}
+           {3.00\,\text{GeV} } = -\frac{2}{3}c,
+</me>
+and its mass from
+<md>
+  <mrow>  m_2c^2 =\mathstrut \amp  \sqrt{E_2^2 - p_2c^2}</mrow>
+  <mrow>  =\mathstrut \amp  \sqrt{(3.00\,\text{GeV} )^2 - (2.00\,\text{GeV} /c)^2 \times
+            c^2}</mrow>
+  <mrow>  =\mathstrut \amp  \sqrt{5}\,\text{GeV} ,</mrow>
+</md>
+so the mass is <m>m_2 = \sqrt{5}\,\text{GeV} /c^2\simeq 2.24\,\text{GeV} /c^2</m>.
+</p>
+
+<p>
+Notice that even though we were asked to find the velocity and mass
+of the recoiling nucleus, we didn't use these variables in our
+analysis until the very end, after we solved for its energy and
+momentum.
+</p>
+</statement>
+</example>
+</section>

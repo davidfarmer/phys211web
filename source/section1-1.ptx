@@ -1,0 +1,67 @@
+<section>
+<title>Introduction</title>
+<p>
+The past few decades have witnessed a massive revolution in the way
+people live and work, due in great part to <em>significant</em> enhancements
+in computational power. Computers are everywhere these days in society,
+not just on your desktop (or on your lap) but also in your pockets
+(MP3 players and cell phones), in your kitchens (ranges, dishwashers
+and microwave ovens), and behind the scenes monitoring the money in
+your bank accounts, your class schedules and grades, and your music
+preferences at on-line music stores.
+</p>
+
+<p>
+The significant enhancement in
+computation power has also dramatically changed all fields of science
+and engineering. Despite our brilliant teaching of physics
+in this course, there are many problems in physics and engineering that
+you simply will not be able to solve analytically.<fn>By <q>analytically</q>
+we mean using the tools from mathematics to determine a written solution
+in the form of an equation that can be used to describe the behavior of the
+system.</fn> Some problems simply don't allow a closed-form solution.
+But it is even more severe than that. There are a wide variety of
+physical systems whose equations of motion <em>can't</em> be solved,
+no matter how brilliant or persistent the
+scientist/mathematician. In fact, many real systems are <q>chaotic,</q>
+with surprisingly complicated behavior arising from seemingly simple
+systems. In cases where an analytical solution is unavailable, the
+only option is to solve the problem <em>numerically</em>, using a
+computer to simulate the behavior.
+</p>
+
+<p>
+Computer simulations have become among the most important techniques
+in science and engineering. Many of you will use numerical techniques
+in your career, whether you are simulating the behavior of a new
+passenger airline that you are designing, calculating the forces acting
+on an artificial joint that you are designing for a patient, or predicting
+the effects of a disruption in Middle East oil supply on the global
+economy. Numerical simulations also play a significant role in basic
+scientific research, enabling us to explore the behavior of a system that
+is too complicated to solve analytically and too difficult to
+explore experimentally. In fact, numerical simulations are so
+common now that they are often considered to be a third branch in
+scientific analysis, separate from (and complementary to) experimental
+and theoretical science.
+</p>
+
+<p>
+The basic idea of numerical simulations is actually quite easy.
+In this chapter, we introduce an important technique referred to as
+<em>iteration</em> where we break the dynamics of the system into
+a series of discrete time steps. So, for example, instead of
+representing the motion of a ball with a continuous equation, we
+instead note the location of the ball, say, every tenth of a second.
+Given the location and velocity of the ball at a particular moment
+in time, we can predict its location 0.1 s later by using a very
+simple numerical techniques referred to as the
+<em>Euler Method</em>, a technique that conceptually is nothing more
+than a simple application of the common <q>distance = speed <times/> time</q>
+approach. Despite the simplicity of the Euler method, it is a very
+powerful method that is used in many numerical applications. This chapter
+introduces the basic ideas (with some homework problems); you will use
+the method in lab to simulate the motion of a falling object subject
+to air resistance.
+</p>
+</section>

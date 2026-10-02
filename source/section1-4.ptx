@@ -1,0 +1,235 @@
+<section>
+<title>Numerical Solution for a Mass on a Spring</title>
+<p>
+Let's apply this new method to a system we will be studying more in
+depth later in this course. The system is a mass which moves under
+the influence of a force exerted on it by a spring. The spring is a
+device which exerts a force which is proportional to the displacement
+of the mass from an equilibrium position. Taking the equilibrium
+position to be <m>x = 0</m>, this implies that the acceleration of the mass
+is directly proportional to the position <m>x(t)</m>. Suppose in our
+particular system the acceleration is given by
+<men>
+  a_x(t) = -2.00\, x(t).
+</men>
+</p>
+
+<p>
+The minus sign in this expression tells us that the force is
+always opposite to the displacement. We'll also assume that time is
+in seconds, position is in meters, velocity is in meters per second,
+and acceleration is in meters per second squared
+</p>
+
+<p>
+To proceed, we choose time steps of size <m>\Delta t = 0.10</m> s and start
+the clock at <m>t = 0</m>. We could pick any initial position and
+velocity; let's choose to release the mass from rest at a position
+0.30 m from equilibrium, i.e. <m>x(0) = 0.30</m> m and <m>v_x(0) = 0</m>. Let's
+walk through the first few steps and then show some results from a
+computer spreadsheet.
+</p>
+
+<p>
+For our example Eqs.<nbsp/><xref ref="eq_newtonII" />, <xref ref="eq_x-step" /> and
+<xref ref="eq_v-step" /> are written as
+<md>
+  <mrow xml:id="eq_ex-a" number="yes">  a_x(t) \amp = -2.00\, x(t)</mrow>
+  <mrow xml:id="eq_ex-x" number="yes">  x(t+0.10) \amp = x(t) + 0.10\, v_x(t)</mrow>
+  <mrow xml:id="eq_ex-v" number="yes">  v_x(t+0.10) \amp = v_x(t) + 0.10\, a_x(t).</mrow>
+</md>
+</p>
+
+<p>
+First calculate the initial acceleration by setting <m>t = 0</m> in
+<xref ref="eq_ex-a" /> to find
+<men>
+  a_x(0) = -2.00\, x(0)  = -2.00 \times 0.30 = -0.60.
+</men>
+</p>
+
+<p>
+Then update <m>x(t)</m> and <m>v_x(t)</m> by setting <m>t = 0</m> in Eqs.<nbsp/><xref ref="eq_ex-x" /> and
+<xref ref="eq_ex-v" />:
+<md>
+  <mrow>  x(0.10) \amp = x(0) + 0.10\, v_x(0) = 0.30 + 0.10\times 0 = 0.30</mrow>
+  <mrow>  v_x(0.10) \amp = v_x(0) + 0.10\, a_x(0) = 0 + 0.10\times(-0.60) = -0.06.</mrow>
+</md>
+</p>
+
+<p>
+Since the mass was initially at rest, a short time later it is still
+approximately at the same location. However, since the spring is
+stretched at <m>t = 0</m>, a force is acting on the mass immediately, so
+that a short time later it has already acquired a non-zero velocity.
+</p>
+
+<p>
+How would you find <m>x(0.20)</m> and <m>v_x(0.20)</m>? Again use
+Eqs.<nbsp/><xref ref="eq_ex-a" /> through <xref ref="eq_ex-v" />, this time with the
+<sq>present time</sq> <m>t = 0.10</m>. We find that
+<md>
+  <mrow>  a_x(0.10) \amp = -2.00\, x(0.10) = -2.00\times 0.30 = -0.60</mrow>
+  <mrow>  x(0.20) \amp = x(0.10) + 0.10\, v_x(0.10)</mrow>
+  <mrow>  \amp = 0.30 + 0.10 \times (-0.06)</mrow>
+  <mrow>  \amp = 0.294</mrow>
+  <mrow>  v_x(0.20) \amp = v_x(0.10) + 0.10\, a_x(0.10)</mrow>
+  <mrow>  \amp = -0.06 + 0.10\times(-0.60)</mrow>
+  <mrow>  \amp = -0.12.</mrow>
+</md>
+</p>
+
+<p>
+We can continue this process as long as we like. You will find it
+convenient to organize the information for the position, velocity and
+acceleration for each time in the form of a table. <xref ref="table_numerical1">Table</xref> on the next page lists <m>t</m>, <m>x</m>, <m>v_x</m> and <m>a_x</m> for
+the motion of this mass. Note that the periodic nature of the motion
+is manifested in the entries of the table.
+</p>
+
+<p>
+There is an unsettling aspect of the entries in <xref ref="table_numerical1">Table</xref>. We started at <m>x = 0.30\, \mbox{m}</m>, but at
+<m>t = 2.30\, \mbox{s}</m> the position of the mass is <m>x = -0.375\,
+\mbox{m}</m>, and further down in the table we find that at <m>t = 4.5</m> s,
+<m>x = 0.468\, \mbox{m}</m>. What should we have expected? If we had a
+real mass connected to a spring and set it oscillating we would expect
+the amplitude of the oscillations to gradually decrease because of the
+presence of dissipative forces (air resistance and the imperfect
+elasticity of the spring). In an ideal case, with no dissipative
+effects, we would expect there to be no increase or decrease in the
+amplitude; that is, the mass should oscillate between <m>x = +0.30\,
+\mbox{m}</m> and <m>x = -0.30\, \mbox{m}</m>. But this is not the case if we
+look at the data in <xref ref="table_numerical1">Table</xref>. The problem is that
+we used too large a time increment. Why does too large a time
+increment lead to errors? If you recall, our stepping equations use
+the approximation that the average velocity is very close to the
+instantaneous velocity. If the time step is too large, this
+approximation is no longer valid and leads to errors.
+</p>
+
+<p>
+We can improve our calculation of the motion by choosing a smaller
+time increment <m>\Delta t</m>. If we choose <m>\Delta t = 0.01\, \mbox{s}</m>
+rather than <m>0.10\, \mbox{s}</m>, we would be calculating over a much
+finer time interval (10 times smaller) and while we will have to do 10
+times more computations to evolve the motion out to the same time, the
+calculations should be more accurate. <xref ref="table_numerical2">Table</xref>
+lists <m>t</m>, <m>x</m>, <m>v_x</m> and <m>a_x</m> near a point of maximum displacement for
+this smaller time increment. The maximum displacement is now about
+0.314. This is still larger than the initial displacement but not
+nearly as bad as before. Further reduction of the time increment
+would improve the result.
+</p>
+<table xml:id="table_numerical1" >
+<title>Numerical solution for motion of 
+mass on a spring using <m>\Delta t=0.10\   s</m></title>
+<tabular>
+<row><cell><m>t</m></cell><cell><m>x(t)</m></cell><cell><m>v_x(t)</m></cell><cell><m>a_x(t)</m></cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>0</cell><cell>0.300</cell><cell>0</cell><cell>-0.600</cell></row>
+<row><cell>0.100</cell><cell>0.300</cell><cell>-0.060</cell><cell>-0.600</cell></row>
+<row><cell>0.200</cell><cell>0.294</cell><cell>-0.120</cell><cell>-0.588</cell></row>
+<row><cell>0.300</cell><cell>0.282</cell><cell>-0.179</cell><cell>-0.564</cell></row>
+<row><cell>0.400</cell><cell>0.264</cell><cell>-0.235</cell><cell>-0.528</cell></row>
+<row><cell>0.500</cell><cell>0.241</cell><cell>-0.288</cell><cell>-0.481</cell></row>
+<row><cell>0.600</cell><cell>0.212</cell><cell>-0.336</cell><cell>-0.424</cell></row>
+<row><cell>0.700</cell><cell>0.178</cell><cell>-0.379</cell><cell>-0.356</cell></row>
+<row><cell>0.800</cell><cell>0.140</cell><cell>-0.414</cell><cell>-0.281</cell></row>
+<row><cell>0.900</cell><cell>0.099</cell><cell>-0.442</cell><cell>-0.198</cell></row>
+<row><cell>1.000</cell><cell>0.055</cell><cell>-0.462</cell><cell>-0.109</cell></row>
+<row><cell>1.100</cell><cell>0.008</cell><cell>-0.473</cell><cell>-0.017</cell></row>
+<row><cell>1.200</cell><cell>-0.039</cell><cell>-0.475</cell><cell>0.078</cell></row>
+<row><cell>1.300</cell><cell>-0.086</cell><cell>-0.467</cell><cell>0.173</cell></row>
+<row><cell>1.400</cell><cell>-0.133</cell><cell>-0.450</cell><cell>0.266</cell></row>
+<row><cell>1.500</cell><cell>-0.178</cell><cell>-0.423</cell><cell>0.356</cell></row>
+<row><cell>1.600</cell><cell>-0.220</cell><cell>-0.387</cell><cell>0.440</cell></row>
+<row><cell>1.700</cell><cell>-0.259</cell><cell>-0.343</cell><cell>0.518</cell></row>
+<row><cell>1.800</cell><cell>-0.293</cell><cell>-0.292</cell><cell>0.587</cell></row>
+<row><cell>1.900</cell><cell>-0.322</cell><cell>-0.233</cell><cell>0.645</cell></row>
+<row><cell>2.000</cell><cell>-0.346</cell><cell>-0.168</cell><cell>0.692</cell></row>
+<row><cell>2.100</cell><cell>-0.363</cell><cell>-0.099</cell><cell>0.725</cell></row>
+<row><cell>2.200</cell><cell>-0.373</cell><cell>-0.027</cell><cell>0.745</cell></row>
+<row><cell>2.300</cell><cell>-0.375</cell><cell>0.048</cell><cell>0.750</cell></row>
+<row><cell>2.400</cell><cell>-0.370</cell><cell>0.123</cell><cell>0.741</cell></row>
+<row><cell>2.500</cell><cell>-0.358</cell><cell>0.197</cell><cell>0.716</cell></row>
+<row><cell>2.600</cell><cell>-0.338</cell><cell>0.268</cell><cell>0.677</cell></row>
+<row><cell>2.700</cell><cell>-0.312</cell><cell>0.336</cell><cell>0.623</cell></row>
+<row><cell>2.800</cell><cell>-0.278</cell><cell>0.398</cell><cell>0.556</cell></row>
+<row><cell>2.900</cell><cell>-0.238</cell><cell>0.454</cell><cell>0.476</cell></row>
+<row><cell>3.000</cell><cell>-0.193</cell><cell>0.502</cell><cell>0.386</cell></row>
+<row><cell>3.100</cell><cell>-0.143</cell><cell>0.540</cell><cell>0.285</cell></row>
+<row><cell>3.200</cell><cell>-0.089</cell><cell>0.569</cell><cell>0.177</cell></row>
+<row><cell>3.300</cell><cell>-0.032</cell><cell>0.587</cell><cell>0.063</cell></row>
+<row><cell>3.400</cell><cell>0.027</cell><cell>0.593</cell><cell>-0.054</cell></row>
+<row><cell>3.500</cell><cell>0.086</cell><cell>0.587</cell><cell>-0.173</cell></row>
+<row><cell>3.600</cell><cell>0.145</cell><cell>0.570</cell><cell>-0.290</cell></row>
+<row><cell>3.700</cell><cell>0.202</cell><cell>0.541</cell><cell>-0.404</cell></row>
+<row><cell>3.800</cell><cell>0.256</cell><cell>0.501</cell><cell>-0.512</cell></row>
+<row><cell>3.900</cell><cell>0.306</cell><cell>0.450</cell><cell>-0.612</cell></row>
+<row><cell>4.000</cell><cell>0.351</cell><cell>0.388</cell><cell>-0.702</cell></row>
+<row><cell>4.100</cell><cell>0.390</cell><cell>0.318</cell><cell>-0.780</cell></row>
+<row><cell>4.200</cell><cell>0.422</cell><cell>0.240</cell><cell>-0.844</cell></row>
+<row><cell>4.300</cell><cell>0.446</cell><cell>0.156</cell><cell>-0.892</cell></row>
+<row><cell>4.400</cell><cell>0.461</cell><cell>0.067</cell><cell>-0.923</cell></row>
+<row><cell>4.500</cell><cell>0.468</cell><cell>-0.026</cell><cell>-0.936</cell></row>
+<row><cell>4.600</cell><cell>0.465</cell><cell>-0.119</cell><cell>-0.931</cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+<table xml:id="table_numerical2" >
+<title>Data for mass on a spring near a turning point using  
+<m>\Delta t=0.01\   s</m></title>
+<tabular>
+<row><cell><m>t</m></cell><cell><m>x(t)</m></cell><cell><m>v_x(t)</m></cell><cell><m>a_x(t)</m></cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>4.190</cell><cell>0.293</cell><cell>0.155</cell><cell>-0.586</cell></row>
+<row><cell>4.200</cell><cell>0.295</cell><cell>0.149</cell><cell>-0.589</cell></row>
+<row><cell>4.210</cell><cell>0.296</cell><cell>0.143</cell><cell>-0.592</cell></row>
+<row><cell>4.220</cell><cell>0.297</cell><cell>0.137</cell><cell>-0.595</cell></row>
+<row><cell>4.230</cell><cell>0.299</cell><cell>0.131</cell><cell>-0.598</cell></row>
+<row><cell>4.240</cell><cell>0.300</cell><cell>0.125</cell><cell>-0.600</cell></row>
+<row><cell>4.250</cell><cell>0.301</cell><cell>0.119</cell><cell>-0.603</cell></row>
+<row><cell>4.260</cell><cell>0.303</cell><cell>0.113</cell><cell>-0.605</cell></row>
+<row><cell>4.270</cell><cell>0.304</cell><cell>0.107</cell><cell>-0.607</cell></row>
+<row><cell>4.280</cell><cell>0.305</cell><cell>0.101</cell><cell>-0.610</cell></row>
+<row><cell>4.290</cell><cell>0.306</cell><cell>0.095</cell><cell>-0.612</cell></row>
+<row><cell>4.300</cell><cell>0.307</cell><cell>0.089</cell><cell>-0.614</cell></row>
+<row><cell>4.310</cell><cell>0.308</cell><cell>0.083</cell><cell>-0.615</cell></row>
+<row><cell>4.320</cell><cell>0.308</cell><cell>0.077</cell><cell>-0.617</cell></row>
+<row><cell>4.330</cell><cell>0.309</cell><cell>0.071</cell><cell>-0.619</cell></row>
+<row><cell>4.340</cell><cell>0.310</cell><cell>0.064</cell><cell>-0.620</cell></row>
+<row><cell>4.350</cell><cell>0.311</cell><cell>0.058</cell><cell>-0.621</cell></row>
+<row><cell>4.360</cell><cell>0.311</cell><cell>0.052</cell><cell>-0.622</cell></row>
+<row><cell>4.370</cell><cell>0.312</cell><cell>0.046</cell><cell>-0.623</cell></row>
+<row><cell>4.380</cell><cell>0.312</cell><cell>0.040</cell><cell>-0.624</cell></row>
+<row><cell>4.390</cell><cell>0.313</cell><cell>0.033</cell><cell>-0.625</cell></row>
+<row><cell>4.400</cell><cell>0.313</cell><cell>0.027</cell><cell>-0.626</cell></row>
+<row><cell>4.410</cell><cell>0.313</cell><cell>0.021</cell><cell>-0.626</cell></row>
+<row><cell>4.420</cell><cell>0.313</cell><cell>0.014</cell><cell>-0.627</cell></row>
+<row><cell>4.430</cell><cell>0.314</cell><cell>0.008</cell><cell>-0.627</cell></row>
+<row><cell>4.440</cell><cell>0.314</cell><cell>0.002</cell><cell>-0.627</cell></row>
+<row><cell>4.450</cell><cell>0.314</cell><cell>-0.004</cell><cell>-0.627</cell></row>
+<row><cell>4.460</cell><cell>0.314</cell><cell>-0.011</cell><cell>-0.627</cell></row>
+<row><cell>4.470</cell><cell>0.313</cell><cell>-0.017</cell><cell>-0.627</cell></row>
+<row><cell>4.480</cell><cell>0.313</cell><cell>-0.023</cell><cell>-0.627</cell></row>
+<row><cell>4.490</cell><cell>0.313</cell><cell>-0.029</cell><cell>-0.626</cell></row>
+<row><cell>4.500</cell><cell>0.313</cell><cell>-0.036</cell><cell>-0.626</cell></row>
+<row><cell>4.510</cell><cell>0.312</cell><cell>-0.042</cell><cell>-0.625</cell></row>
+<row><cell>4.520</cell><cell>0.312</cell><cell>-0.048</cell><cell>-0.624</cell></row>
+<row><cell>4.530</cell><cell>0.312</cell><cell>-0.054</cell><cell>-0.623</cell></row>
+<row><cell>4.540</cell><cell>0.311</cell><cell>-0.061</cell><cell>-0.622</cell></row>
+<row><cell>4.550</cell><cell>0.310</cell><cell>-0.067</cell><cell>-0.621</cell></row>
+<row><cell>4.560</cell><cell>0.310</cell><cell>-0.073</cell><cell>-0.619</cell></row>
+<row><cell>4.570</cell><cell>0.309</cell><cell>-0.079</cell><cell>-0.618</cell></row>
+<row><cell>4.580</cell><cell>0.308</cell><cell>-0.085</cell><cell>-0.616</cell></row>
+<row><cell>4.590</cell><cell>0.307</cell><cell>-0.092</cell><cell>-0.615</cell></row>
+<row><cell>4.600</cell><cell>0.306</cell><cell>-0.098</cell><cell>-0.613</cell></row>
+<row><cell>4.610</cell><cell>0.305</cell><cell>-0.104</cell><cell>-0.611</cell></row>
+<row><cell>4.620</cell><cell>0.304</cell><cell>-0.110</cell><cell>-0.609</cell></row>
+<row><cell>4.630</cell><cell>0.303</cell><cell>-0.116</cell><cell>-0.607</cell></row>
+<row><cell>4.640</cell><cell>0.302</cell><cell>-0.122</cell><cell>-0.604</cell></row>
+<row><cell>4.650</cell><cell>0.301</cell><cell>-0.128</cell><cell>-0.602</cell></row>
+<row><cell></cell></row>
+</tabular>
+</table>
+</section>

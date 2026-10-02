@@ -1,0 +1,233 @@
+<section>
+<title>Curved Spacetime</title>
+
+
+<introduction>
+<p>
+Now we repeat our experiment with the two circles, but let's go into
+space, make the circles large, and center them around a spherical
+object of mass <m>M</m>. This mass could be a planet or a star, or maybe a
+black hole. In this case we are not on the curved surface of a
+sphere, rather we draw our circles on a horizontal plane. But,
+surprise! We would again find that <m>\Delta s</m>, the radial distance
+traveled, is not equal to <m>\Delta r</m>.
+</p>
+
+<p>
+So <em>now</em> what's going on? In general relativity, mass distorts
+space and time, and what we are measuring is the distortion of
+space.<fn>And just like being on a curved surface, we would find
+  that our distorted horizontal plane breaks other rules of planar
+  geometry, such as the angles of a triangle not adding to
+  <m>180^\circ</m>.</fn> A curved surface is a helpful way to visualize
+distorted space, and for that reason, physicists refer to the
+distorted spacetime predicted by general relativity as <em>curved
+spacetime</em>. But it's important to remember that the curved surface
+is only a visualization tool.
+</p>
+
+<p>
+So what does general relativity tell us about distorted space and
+distorted time (which, from now on we will refer to as curved
+spacetime). How is it that <q>mass tells spacetime how to curve</q>?
+Generally, the answer requires one to solve a set of nasty coupled
+nonlinear differential equations known as Einstein's equations, which
+is well beyond the scope of this course. Fortunately, for the case of
+the spacetime outside a spherical mass, there is a relatively simple
+solution, which was found by Karl
+Schwarzschild.<fn>Schwarzschild found this solution to
+  Einstein's equations in 1915, the same year that Einstein published
+  his general relativity.  Schwarzschild then died a year later due to a disease he had caught while serving in
+  World War I.</fn> We now describe his solution.
+</p>
+</introduction>
+
+
+<subsection>
+<title>Curved Space</title>
+<p>
+Consider an equatorial plane, that is, a two-dimensional <m>x</m>-<m>y</m> plane
+of space with spherical mass <m>M</m> centered at the origin. Define the
+coordinate <m>r</m> in terms of the circumference <m>C</m> of a circle centered
+about this mass; that is, take a string of length <m>C</m> and make it into
+a circle centered about the mass. Then define <m>r=C/(2\pi)</m>.
+</p>
+
+<p>
+Now, moving radially outward a small distance <m>\Delta s</m> will increase
+the coordinate <m>r</m> by an amount <m>\Delta r</m>. If space were not distorted,
+we would expect <m>\Delta s = \Delta r</m>. But since the mass <m>M</m>
+distorts space, <m>\Delta s</m> is not equal to <m>\Delta r</m>, but rather they
+are related by
+<men xml:id="eq_Schwarzschild_ds" >
+  \Delta s = \frac{1}{\sqrt{1 - R_s/r}} \Delta r.
+</men>
+</p>
+
+<p>
+Here <m>R_s</m> is the Schwarzschild radius, defined as
+<men xml:id="eq_Schwarzschild_radius" >
+  R_s = \frac{2 G M}{c^2},
+</men>
+where <m>G</m> is Newton's gravitational constant and <m>c</m> is the speed of
+light. Please note: the Schwarzschild radius <m>R_s</m> is not the radius
+of the spherical mass <m>M</m>. It is simply a length that appears in
+( <xref ref="eq_Schwarzschild_ds"></xref> to tell us how distorted space is. This
+solution of Einstein's equations applies for the region outside of the
+mass <m>M</m> and for <m>r>R_s</m>.
+</p>
+
+<p>
+We can visualize this distorted space by introducing a fictional
+third dimension and curving our <m>x</m>-<m>y</m> plane into it, as shown in
+<xref ref="fig_curved-space">Figure</xref>. Like our previous example with the
+surface of the sphere, this curved surface
+illustrates why <m>\Delta s > \Delta r</m>
+and accurately captures the distortion of the <m>x</m>-<m>y</m> plane.
+</p>
+<figure xml:id="fig_curved-space" >
+<caption>Curved space near a black hole.  The distance <m>\Delta s</m> measured
+radially along the surface between circles of radial coordinate  <m>r_1</m> 
+and <m>r_2</m> is larger than their  difference <m>\Delta r</m>.</caption>
+<image width="75%" source="black-hole.png" />
+</figure>
+<p>
+But don't confuse this fictional third dimension with the physical
+<m>z</m> direction. The curvature is only describing the distortion of
+the horizontal <m>x</m>-<m>y</m> plane.
+</p>
+
+<example xml:id="ex_curved_space">
+<statement>
+<p>
+How curved is space near the sun? That is, how different are
+<m>\Delta s</m> and <m>\Delta r</m>?
+</p>
+
+<p>
+<em>Solution: </em> First, find the Schwarzschild radius from
+<xref ref="eq_Schwarzschild_radius" /> with <m>M=M_\text{sun} = 1.99\times
+10^{30}\,\text{kg}</m>:
+<men>
+  R_s = \frac{2GM}{c^2} = \frac{2\times 6.67\times 10^{-11}\,\frac{\text{N\(\cdot\)m\(^2\)} }{\text{kg\(^2\)} }\times 1.99\times 10^{30}\,\text{kg} }{(3.00\times 10^8\,\text{m/s} )^2} = 2950\,\text{m}
+</men>
+</p>
+
+<p>
+Then use the general relativity relation between <m>\Delta s</m> and <m>\Delta r</m>,
+<xref ref="eq_Schwarzschild_ds" />, at the location
+<m>r=R_\text{sun} =6.96\times 10^{8}\,\text{m}</m> to get
+<md>
+  <mrow>  \Delta s \amp = \biggl(1-\frac{2950\,\text{m} }{6.96\times 10^{8}\,\text{m} }\biggr)^{-1/2}\Delta r</mrow>
+  <mrow>  \amp = 1.0000021\,\Delta r.</mrow>
+</md>
+</p>
+
+<p>
+That's not looking very curved, but it turns out to be enough to direct the
+motion of all the planets in their orbits about the sun!
+</p>
+</statement>
+</example>
+</subsection>
+
+
+<subsection>
+<title>Clock Rates</title>
+<p>
+The spherical mass <m>M</m> distorts both space <em>and</em> time, so now
+let's turn to the time component. The Schwarzschild solution states
+that a clock located at coordinate <m>r</m> runs slower than a clock
+located very far from the mass. Consider a pair of events and let
+<m>\Delta t_r</m> represent the time between these events as measured by a
+stationary clock at coordinate <m>r</m>. Further, let <m>\Delta t_\infty</m> be
+the time between the same pair of events as measured by a stationary
+clock far away. These time increments are related by
+<men xml:id="eq_Schwarzschild_dt" >
+  \Delta t_r = \sqrt{1-\frac{R_s}{r}}\;\Delta t_\infty.
+</men>
+</p>
+
+<p>
+Note that <m>\Delta t_r\lt \Delta t_\infty</m> for any finite <m>r</m>. This means
+that clocks closer to the mass <m>M</m> will run slower than clocks farther
+away, as illustrated in <xref ref="fig_clocks">Figure</xref>. A nice mnemonic is
+<q>Low clocks are slow clocks</q>.
+</p>
+<figure xml:id="fig_clocks" >
+<caption>The clock closer to the mass <m>M</m> runs slower than the clock
+  far away.  Low clocks are slow clocks!</caption>
+<image width="56%" source="clocks.png" />
+</figure>
+<p>
+This is a completely separate effect from the proper time relation that
+we studied in special relativity. There the clocks were moving relative
+to one another, while here both clocks are stationary with respect to the
+mass <m>M</m> and have no relative motion. Yet general relativity predicts
+that the clocks still run at different rates.
+</p>
+
+<example>
+<title>Clocks on the Earth's Surface</title>
+<statement>
+<p>
+How much slower does a clock at sea level run than one far away from
+Earth?
+</p>
+
+<p>
+<em>Solution: </em>
+</p>
+
+<p>
+First, find the Schwarzschild radius for the Earth, with <m>M=5.97\times
+10^{24}\,\text{kg}</m>:
+<md>
+  <mrow>  R_s \amp = \frac{2GM}{c^2} = \frac{2\times 6.67\times 10^{-11}\,\frac{\text{N\(\cdot\)m\(^2\)} }{\text{kg\(^2\)} } \times
+    5.97\times 10^{24}\,\text{kg} }{(3.00\times 10^8\,\text{m/s} )^2}
+  = 0.00885\,\text{m}</mrow>
+</md>
+</p>
+
+<p>
+That's a lot smaller than the radius of the Earth!
+Next use <xref ref="eq_Schwarzschild_dt" /> with <m>r=R_E = 6.37\times
+10^{6}\,\text{m}</m>
+<md>
+  <mrow>  \Delta t_{R_E} \amp =
+  \sqrt{1-\frac{0.00885\,\text{m} }{6.37\times 10^{6}\,\text{m} }}\;\Delta t_\infty
+   \approx (1 - 6.95\times 10^{-10}) \Delta t_\infty.</mrow>
+</md>
+</p>
+
+<p>
+A useful way to express this result is the rate at which a clock on Earth
+falls behind:
+<md>
+  <mrow>  \Delta t_\infty - \Delta t_{R_E} \amp = \Delta t_\infty -
+     (1 - 6.95\times 10^{-10}) \Delta t_\infty</mrow>
+  <mrow>  \amp = 6.95\times 10^{-10} \Delta t_\infty.</mrow>
+</md>
+</p>
+
+<p>
+The clock on Earth falls behind the far away clock an amount
+<m>6.95\times 10^{-10}\,\text{s}</m> every second. Thus, for the clock on
+Earth to get behind the remote clock by one second, it takes
+<men>
+  \frac{1}{6.95\times 10^{-10}} \text{seconds}  = 1.44\times
+10^9\,\text{s}    \approx 46\,\text{yr} .
+</men>
+</p>
+</statement>
+</example>
+
+<p>
+We don't notice these time effects much near Earth, but these small
+differences are essential to be accounted for in the design and
+operations of GPS devices. For a more dramatic example, see Problem
+4.
+</p>
+</subsection>
+
+</section>

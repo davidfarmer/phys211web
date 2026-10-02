@@ -1,0 +1,43 @@
+<section>
+<title>Curved Space</title>
+<p>
+Imagine performing the following geometry experiment. Take a circle
+of a known circumference <m>C_1</m> and another larger circle with
+circumference <m>C_2</m> and arrange them concentrically, as in
+<xref ref="fig_sphere2">Figure</xref>a. Now ask yourself what is the shortest
+distance you could travel going from one circle to the other. A
+reasonable answer would be to go along a radial line, and the distance
+would be the difference in radii, <m>\Delta r =
+r_2-r_1 = C_2/(2\pi) - C_1/(2\pi)</m>.
+</p>
+
+<p>
+But now imagine that you measure this radial distance and you find it
+to be some distance <m>\Delta s</m> that is not equal to <m>\Delta r</m>! What's going
+on? One possible explanation is that you might not be on a flat
+surface. For example, those two concentric circles may be sitting on
+the curved surface of a sphere, as depicted in
+<xref ref="fig_sphere2">Figure</xref>b. And now it would make sense that <m>\Delta s</m>,
+the distance you travel along the surface of the sphere to get from
+one circle to the other, is not equal to <m>\Delta r</m>, the difference
+between the radii of the circles.
+</p>
+<figure xml:id="fig_sphere2" >
+<caption>(a) Two concentric circles, with the distance between them
+labelled as <m>\Delta s</m>.  (b) The same two concentric circles on the
+surface of a sphere.</caption>
+<me>
+  <image width="75%" source="sphere" />
+</me>
+</figure>
+<p>
+You might also notice with further experiments on this curved surface
+that many rules of planar geometry are altered: the sum of the
+interior angles of a triangle do not have to add up to <m>180^\circ</m>,
+parallel lines may eventually meet, etc.
+</p>
+
+<p>
+So what does this have to do with general relativity?
+</p>
+</section>

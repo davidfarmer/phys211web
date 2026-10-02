@@ -1,0 +1,186 @@
+<section>
+<title>Nuclear masses, fusion and fission</title>
+<p>
+A particularly important application of the material in this chapter
+is nuclear power generation. There are two main approaches: fusion
+and fission. Nuclear fusion involves the merging (fusing) of two light
+nuclei (usually hydrogen) to form a more massive nucleus (usually helium),
+whereas fission<fn>The story of how fission was discovered is quite
+interesting. It starts with Lise Meitner and Otto Hahn, who conducted
+<q>transuranium</q> experiments where they bombarded massive nuclei with the
+goal of making <em>more</em> massive nuclei (more massive than uranium). But
+the experiments produced puzzling results.  Meitner <mdash/> with her nephew
+Otto Frisch <mdash/> later provided an explanation.  Instead of making more
+massive nuclei, they realized that the nuclei were breaking up with a
+resulting loss of mass, and Meitner used Einstein's theory of relativity
+to explain the increase in energy observed in the process. Meitner <mdash/> who
+was inexplicably overlooked for the Nobel Prize for the fission discovery <mdash/> also discovered a radiation process which was named the <em>Auger
+effect</em> after a scientist who also discovered this process, a couple of
+years <em>after</em> Meitner had discovered it.</fn> involves the splitting of
+a very massive nucleus (e.g., uranium) into two or more lighter nuclei.
+For the process to release kinetic energy, conservation of relativistic
+energy requires that the end product(s) have a smaller total mass
+than the initial nucleus or nuclei.
+</p>
+
+<p>
+To develop a quantitative relationship between changes in kinetic
+energy and changes in mass, consider a simple fission decay
+in which particle <em>A</em> with mass <m>m_A</m> and kinetic energy
+<m>K_A</m> decays into a particle <em>B</em> with mass <m>m_B</m> and kinetic energy
+<m>K_B</m> and a particle <em>C</em> with mass <m>m_C</m> and kinetic energy
+<m>K_C</m>:
+<me>
+  \textbf{A} \longrightarrow \textbf{B} + \textbf{C}.
+</me>
+</p>
+
+<p>
+Total relativistic energy is conserved (<m>E_\text{before}  = 
+E_\text{after}</m>) giving
+<men>
+  E_A =  E_B + E_C.
+</men>
+</p>
+
+<p>
+This can be written in terms of kinetic energy using
+<xref ref="eq_rel-k-def" />, giving
+<men>
+  m_Ac^2 + K_A =  (m_Bc^2 + K_B) + (m_Cc^2 + K_C).
+</men>
+</p>
+
+<p>
+Rearrangement yields the expression
+<men>
+  (K_B + K_C) - K_A = -\left[(m_Bc^2 +m_C) - m_Ac^2\right],
+</men>
+or
+</p>
+
+<p>
+<men>
+  \Delta K_\text{system}  = -\Delta m_\text{system}  c^2.
+</men>
+</p>
+
+<p>
+This relationship is easily generalized to larger numbers of
+particles, and it also holds in fusion reactions.
+</p>
+<figure xml:id="fig_mass_per_nucleon" >
+<caption>Plot of mass per nucleon (proton and neutrons) for the 
+elements versus the number of nucleons <m>A</m>. (Data from NIST: 
+\url{http://physics.nist.gov/PhysRefData/Compositions/)}</caption>
+<image width="84%" source="mass_per_nucleon.png" />
+</figure>
+<p>
+<xref ref="fig_mass_per_nucleon">Figure</xref> shows a plot of the masses of
+the elements, divided by the total number of protons and neutrons
+(nucleons) in the nucleus of each atom. This plot is very illuminating
+when considering fusion and fission processes. The fusion of two <m>^2</m>H
+nuclei to form a single <m>^4</m>He nucleus results in a lower overall mass,
+since the number of nucleons does not change; consequently, this process
+releases kinetic energy. On the other hand, elements with large atomic
+number <m>A</m> have a larger mass/nucleon than those with intermediate values
+of <m>A</m>; consequently, kinetic energy can also be released by splitting
+up one of these heavier atoms (fission).
+</p>
+
+<p>
+Of the two processes <mdash/> fission and fusion <mdash/> fission is a
+much easier process to achieve in the laboratory or in industrial
+processes. Many large nuclei are naturally unstable, e.g., <m>^{235}</m>U can
+spontaneously decay via the fission process <m>{}^{235}\text{U}  \rightarrow
+{}^{134}\text{Xe}  + {}^{100}\text{Sr}  + {}^1n</m>. Practically, then,
+the issue boils down to setting things up such that the process can be
+accelerated when desired, and can be inhibited when unwanted. From that
+perspective, the concept of a chain reaction is relevant. The idea of
+combining multiple nuclear fissions into chain reactions <mdash/>which was
+pioneered by Lise Meitner, Otto Hahn, Fritz Strassmann, and Enrico Fermi
+in the 1930s <mdash/> is straightforward: if the neutrons that are released
+in a fission process bombard another nearby (unstable) nucleus, they can
+trigger the fission of that nucleus as well. Practically, all that is
+needed is a large enough density of the unstable nucleus (e.g., <m>^{235}</m>U)
+and a chain reaction will start. This idea was pursued by the Manhattan
+Project in the 1940s to develop an atomic bomb, the detonation of which
+was achieved by explosively compressing a uranium sample to increase its
+density above the critical value for a chain reaction. Alternatively,
+the strength of the fission chain reaction can be controlled by absorbing
+some of the neutrons produced in the fission reaction. Graphite rods
+(which absorb neutrons) are commonly used to <q>moderate</q> the reaction
+in this way to allow the reaction to proceed in a controlled manner in
+power generators.
+</p>
+
+<p>
+Nuclear fission power has a few serious drawbacks: (a) the fuel (uranium,
+plutonium, etc.) is expensive and limited in supply. If society were
+to switch entirely to uranium-fission-based power generation, it is
+estimated that the supply of uranium would last for only 50<ndash/>100 years.
+<fn>Wider application of current technology in waste reprocessing 
+and the use of specialized breeder reactors would extend the uranium fuel 
+supply by a factor of more than 10, though these practices are currently 
+avoided in many countries due to the low cost of uranium and the associated 
+nuclear proliferation risks.</fn> (b) The by-products of the fission reaction
+are nuclei which themselves are unstable and radioactive; consequently,
+the material poses a health hazard unless properly stored.
+</p>
+
+<p>
+Another drawback of nuclear fission reactors <mdash/> which is diminishing
+with improved technology <mdash/> is the concern that they could <q>melt down</q>
+and release massive amounts of radiation (this actually happened to the
+Chernobyl 4 reactor in the Soviet Union in 1986). This threat has been
+lessened recently by the development of much better systems, including a
+<q>melt-proof</q> system with an expandable core; if the temperature of the
+core exceeds a defined value, the core expands, dropping the density of
+the fissile material down below its critical value and stopping the chain
+reaction. (This works even if all cooling is stopped.) But even this
+system isn't perfect, as there is always the concern that a terrorist
+attack or gross human error could result in the release of disastrous
+amounts of radioactive waste into the environment.
+</p>
+
+<p>
+In contrast to fission reactors, nuclear fusion reactors use water
+as their fuel (actually the <m>^2</m>H isotope of hydrogen, also
+called deuterium, which is found in small amounts in water)
+and produce helium as a by-product, so waste disposal is
+less of a problem.<fn>Some radioactive tritium (the <m>^3</m>H 
+isotope of hydrogen) is released in the process as well, which can 
+present exposure risks in the short term, if not properly managed. 
+Tritium is a highly mobile and reactive gas that can involve itself 
+in the place of normal hydrogen in a variety of biological processes, 
+so it should be carefully managed to avoid exposure, though with a 
+half-life of only 12 years, tritium does not constitute a long-term 
+waste problem. Further, the biological half-life of tritium<mdash/>at 
+roughly 10 days<mdash/>and its very low decay energy, make it of minimal 
+concern. The only long-term waste problem would be the activated
+material in the reactor containment vessel itself.</fn> The nuclear
+energy production is also much more efficient for this process than
+for fission, as can be inferred from the steepness of the curve in
+<xref ref="fig_mass_per_nucleon">Figure</xref>. It is estimated that there is enough
+<m>^2</m>H (deuterium) in ocean water to power the world's needs for many
+thousands of years (if not millions). In fact, nuclear fusion is the
+power source in stars, including our own Sun. It can be argued that
+almost all of the Earth's energy sources can be traced back to nuclear
+fusion.
+</p>
+
+<p>
+Nuclear fusion is not without its problems, though. Specifically, it
+is very difficult to achieve in a controlled manner. Making a fusion
+bomb unfortunately isn't that difficult (relatively speaking), as a
+fission explosion can be (and has been) used to compress hydrogen
+together and cause explosive fusion. But to achieve a controlled
+fusion reaction is a very difficult procedure that will require
+a significant amount of ingenuity over the next few decades.
+If physicists and engineers manage to overcome the technical hurdles,
+earth-based fusion reactors could prove to be an important source of
+abundant and relatively clean power. And in the mean time, we can
+continue to make use of the giant fusion reactor in space that beams
+energy down to earth.
+</p>
+</section>

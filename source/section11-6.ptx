@@ -1,0 +1,68 @@
+<section>
+<title>Gravitational Lenses</title>
+<p>
+Now consider the motion of an object in the curved space of our
+spherical mass <m>M</m>, as shown in
+<xref ref="fig_light-bent-by-curved-space">Figure</xref>). The maximum proper time
+path gets bent as illustrated, regardless of the mass of the object.
+That makes sense: we know this is reproducing gravity, and that with
+gravity the acceleration of, say, the Earth due to the gravitational
+pull of the Sun is independent of the mass of the Earth.
+</p>
+<figure xml:id="fig_light-bent-by-curved-space" >
+<caption>Light being bent by curved space near spherical mass.</caption>
+<image width="56%" source="black-hole-bends-light.png" />
+</figure>
+<p>
+But this leads to an astounding prediction: even a beam of light, which
+has no mass, will be bent by gravity!
+This phenomenon <mdash/> called <em>gravitational
+lensing</em> <mdash/> has observational implications. Shortly after Einstein
+published his theory of general relativity, astronomers used
+the idea of gravitational lensing to predict an observational
+shift in the position of a distant star if its light passes close
+to our Sun. The idea is shown in <xref ref="fig_grav_lens_1919">Figure</xref>:
+if the light from a distant star passes very close to the Sun on
+its way to your eye on the Earth, it will be bent very slightly
+by the Sun's gravitational field. When you see that light, your
+eye doesn't know that its path has been bent; consequently, you
+perceive the light to be coming from a different location in the
+sky. In other words, the star appears to be shifted slightly in the
+sky.
+</p>
+<figure xml:id="fig_grav_lens_1919" >
+<caption>Diagram (NOT drawn to scale) of the famous 1919 gravitational
+lens test. Light from a distant star passing near the Sun is bent
+slightly. An observer looking at this bent light from the star
+perceives the star as being shifted slightly in the cosmos.</caption>
+<image width="84%" source="1919eclipse.png" />
+</figure>
+<p>
+The problem with this prediction is that it is very difficult to
+see a star if its light passes right by the Sun because, well, there
+is a really bright Sun there blinding you if you want to look at the
+star. But during an eclipse in 1919,
+some scientists were able to measure this lensing effect on the
+apparent location of the star Kappa Tauri (in the constellation
+Taurus). The shift in the apparent location agreed <em>precisely</em>
+with the predictions made by Einstein.
+</p>
+
+<p>
+The observation of gravitational lensing in 1919 was the first experimental
+test of relativity, and its success made Einstein an international celebrity.
+But this was certainly not the last test of gravitational lensing.
+There are numerous examples of gravitational lensing when looking at
+distant galaxies. Not only can gravitational lensing shift the apparent
+location of a distant celestial object, but it can cause double images
+(as sketched in <xref ref="fig_lensing">Figure</xref>) or even apparent arcs or
+rings. See the hubblesite.org/news/18-gravitational-lensing website
+for a gallery of images of gravitational lenses of distant galaxies.
+</p>
+<figure xml:id="fig_lensing" >
+<caption>Gravitational lenses can cause double images; i.e.,
+the appearance of what look like two identical galaxies in the
+night sky. The same effect can produce rings and arcs as well.</caption>
+<image width="84%" source="lensing.png" />
+</figure>
+</section>

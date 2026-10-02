@@ -1,0 +1,220 @@
+<section>
+<title>Examples</title>
+<example>
+<title>Calculating work for gas processes</title>
+<statement>
+<p>
+Calculate the work done on the gas for each of the three processes in
+<xref ref="ex_PVexample">Example</xref> (see <xref ref="fig_PVexample">Figure</xref>).
+</p>
+
+<p>
+<em>Solution:</em> Let's deal with each of the three processes in turn:
+<ul>
+<li><p><em>Process <m>1 \rightarrow 2</m>:</em> This is a constant-pressure
+  expansion, so <m>p</m> can be taken out of the integral for work:
+<md>
+  <mrow>  W_\text{by}   =\mathstrut \amp  \int_{V_1}^{V_2}p\,dV</mrow>
+  <mrow>  =\mathstrut \amp  p\int_{V_1}^{V_2} dV</mrow>
+  <mrow>  =\mathstrut \amp  p (V_2 - V_1)</mrow>
+  <mrow>  =\mathstrut \amp  (100\,\text{kPa} )(6.0\,\text{L}  - 3.0\,\text{L} )</mrow>
+  <mrow>  =\mathstrut \amp  300\,\text{J} .</mrow>
+</md>
+The value of <m>W_\text{by}</m> is positive, which makes sense because
+the gas is expanding (the volume is increasing).
+A short-cut to the result would be to recognize 
+that <m>W_\text{by}</m> 
+is the area under the <m>p\,-V</m> curve, which in this case is 
+a rectangle:
+<men>
+  W_\text{by}  = (100\,\text{kPa} )(6.0\,\text{L}  - 3.0\,\text{L} ) = 300\,\text{J} .
+</men>
+The work done on the gas is <m>W_\text{on}  = -W_\text{by}  = -300</m> J.</p></li>
+<li><p><em>Process <m>2 \rightarrow 3</m>:</em> This is an isothermal
+  compression, so <m>W_\text{on}  = -W_\text{by}  = -nRT\ln (V_3/V_2)</m>. We
+  don't know how many moles of gas there are, but we could figure it
+  out using the Ideal Gas Law.  <em>But we aren't going to do that</em>,
+  because we can replace the entire product <m>nRT</m> with either <m>p_2V_2</m> 
+or <m>p_3V_3</m>. So,
+<md>
+  <mrow>  W_\text{on}  =\mathstrut \amp  -p_2V_2\, \ln\left(\frac{V_3}{V_2}\right)</mrow>
+  <mrow>  =\mathstrut \amp  -(100 \,\text{kPa} )(6.0 L)\,\ln \left(\frac{3.0 L}{6.0 L}\right)</mrow>
+  <mrow>  =\mathstrut \amp  416 \,\text{J} .</mrow>
+</md>
+Note that this is a positive number, which makes sense
+since it is a compression, and we know that <m>W_\text{on}</m> is positive for a
+compression.  Note also that the work for the  process <m>2 \rightarrow 3</m> 
+has a larger magnitude than that for process <m>1 \rightarrow 2</m>, which also
+makes sense because there is a larger area under the curve <m>2 \rightarrow 3</m>
+than under the curve <m>1 \rightarrow 2</m>.</p></li>
+<li><p><em>Process <m>3 \rightarrow 4</m>:</em> This is a constant-volume process,
+so <m>W_\text{on}  = 0</m>. This is also consistent with work as area under the 
+curve, as the area under the curve for the process <m>3 \rightarrow 4</m> is
+zero.</p></li>
+</ul>
+
+</p>
+</statement>
+</example>
+
+<example>
+<title>Adiabatic compression</title>
+<statement>
+<p>
+A diatomic gas in a well-insulated container has an initial pressure,
+temperature, and volume of <m>150\,\text{kPa}</m>, <m>300\,\text{K}</m>, and
+<m>3.5\,\text{L}</m>. The gas is compressed to a volume of <m>0.5\,\text{L}</m>.
+Calculate the pressure and temperature of the gas after the compression.
+</p>
+
+<p>
+<em>Solution:</em> Since the container is insulated, <m>Q_\text{in} =0</m>,
+and this is an adiabatic process. And since the gas is
+composed of diatomic molecules at a temperature that isn't too high,
+there are 5 degrees of freedom for the gas and <m>\gamma = \frac{f+2}{f} = 
+\frac{7}{5}</m>.
+Since this is an adiabatic process, <m>pV^{\gamma} = (\text{constant} )</m>, so
+so <m>p_iV_i^\gamma = p_fV_f^\gamma</m>, which implies
+<md>
+  <mrow>  p_f =\mathstrut \amp  p_i\left(\frac{V_i}{V_f}\right)^\gamma</mrow>
+  <mrow>  =\mathstrut \amp  150 \,\text{kPa} \left(\frac{3.5 \,\text{L} }{0.5 \,\text{L} }\right)^{7/5}</mrow>
+  <mrow>  =\mathstrut \amp  2290\,\text{kPa} .</mrow>
+</md>
+</p>
+
+<p>
+To determine the temperature after the compression, remember that in
+any adiabatic process <m>TV^{\gamma - 1} = \text{constant}</m>, so
+<men>
+  T_iV_i^{\gamma - 1} = T_fV_f^{\gamma - 1},
+</men>
+which implies that
+<md>
+  <mrow>  T_f =\mathstrut \amp  T_i\left(\frac{V_i}{V_f}\right)^{\gamma - 1}</mrow>
+  <mrow>  =\mathstrut \amp  (300 \,\text{K} )\left(\frac{3.5 \,\text{L} }{0.5 \,\text{L} }
+                 \right)^{\frac{7}{5}-1}</mrow>
+  <mrow>  =\mathstrut \amp  653 \,\text{K} .</mrow>
+</md>
+</p>
+
+<p>
+Note that the gas heats up, which is characteristic of any adiabatic
+compression.
+</p>
+</statement>
+</example>
+
+<example xml:id="ex_cycle2010tst3">
+<title>A complete cycle</title>
+<statement>
+<p>
+Consider a fixed amount of an ideal gas of diatomic molecules undergoing
+the processes shown in <xref ref="fig_CycleExample">Figure</xref>. The gas starts at
+point <em>A</em> in the diagram and expands along the path
+<m>\textbf{A}\longrightarrow{B}</m> with no heat flowing into or out of the
+gas.
+</p>
+
+<p>
+(a) Calculate the pressure of the gas at point <em>B</em> after the
+expansion. (b) Determine the net work done <em>on</em> the gas and the heat
+flow <m>Q_\text{in}</m> in one complete cycle
+(<m>\textbf{A}\longrightarrow{B}\longrightarrow{C}\longrightarrow{A}</m>).
+</p>
+<figure xml:id="fig_CycleExample" >
+<caption>For <xref ref="ex_cycle2010tst3">Example</xref>.</caption>
+<image width="56%" source="cycle" />
+</figure>
+<p>
+<em>Solution:</em> (a) Since the process <m>\textbf{A} \rightarrow \textbf{B}</m> is
+adiabatic, <m>pV^\gamma = (\text{constant} )</m> and
+<m>p_AV_A^\gamma = p_BV_B^\gamma</m>
+so
+<men>
+  p_B = p_A\left(\frac{V_A}{V_B}\right)^{7/5} = 100
+  \,\text{kPa}  \times \left(\frac{1.0 \,\text{L} }{2.5 \,\text{L} }\right)^{7/5}
+  = 27.7 \,\text{kPa} .
+</men>
+</p>
+
+<p>
+(b) We will calculate the work done on the gas for each of the three
+processes and add up the results to get the net work. To figure out
+the total heat flow <m>Q_\text{in}</m> we could do something similar <mdash/>
+i.e., calculate <m>Q_\text{in}</m> for each process and then add them up. But
+there is an easier way: since we know that <m>\Delta E_\text{therm}  = 0</m>
+for the complete cycle, once we have determined the total <m>W_\text{on}</m>
+for the complete cycle, we can use the First Law of Thermodynamics to
+get <m>Q_\text{in}</m> for the complete cycle.
+</p>
+
+<p>
+Let's start with process <m>\textbf{A} \rightarrow {B}</m>. This is an adiabatic
+process, so <m>Q_\text{in}  = 0</m>. Calculating work is tricky for adiabatic
+processes, so we'll find <m>\Delta E_\text{therm}</m> first and then use
+the First Law to get <m>W_\text{on}</m>. This is a diatomic gas, so <m>f = 5</m>
+and <m>\Delta E_\text{therm}  = \frac{f}{2}nR\Delta T</m>.
+<m>\Delta E_\text{therm}</m> can be found
+with the pressures and volumes given (see <xref ref="eq_Etherm_from_pV" />):
+<md>
+  <mrow>  \Delta E_\text{therm}  =\mathstrut \amp  \frac{f}{2}(p_BV_B - p_AV_A)</mrow>
+  <mrow>  =\mathstrut \amp  \frac{5}{2} \left(27.7 \,\text{kPa}  \times 
+                   2.5 \,\text{L}  - 100 \,\text{kPa} \times 1.0 \,\text{L} \right)</mrow>
+  <mrow>  =\mathstrut \amp  -76.7 \,\text{J} .</mrow>
+</md>
+</p>
+
+<p>
+We can now find the work done on the gas via the First Law:
+<md>
+  <mrow>  W_\text{on}  =\mathstrut \amp  \Delta E_\text{therm}  - Q_\text{in}</mrow>
+  <mrow>  =\mathstrut \amp  -76.7 \,\text{J}  - 0</mrow>
+  <mrow>  =\mathstrut \amp  -76.7 \,\text{J} .</mrow>
+</md>
+</p>
+
+<p>
+Process <m>\textbf{B} \rightarrow \textbf{C}</m> is a constant-volume process
+(isochoric), so
+<m>W_\text{on}  = 0</m>.
+</p>
+
+<p>
+Process <m>\textbf{C} \rightarrow {A}</m> is a constant-pressure
+process (isobaric), so
+<md>
+  <mrow>  W_\text{on}  =\mathstrut \amp  -p\,\Delta V</mrow>
+  <mrow>  =\mathstrut \amp  -p\, (V_A - V_C)</mrow>
+  <mrow>  =\mathstrut \amp  -100 \,\text{kPa} \, (1.0 \,\text{L}  - 2.5 \,\text{L} )</mrow>
+  <mrow>  =\mathstrut \amp  150 \,\text{J} .</mrow>
+</md>
+</p>
+
+<p>
+So, the net work <m>W_\text{on}</m> done on the gas for the complete cycle
+<m>\textbf{A} \rightarrow \textbf{B} \rightarrow \textbf{C} \rightarrow \textbf{A}</m> is
+<md>
+  <mrow>  W_\text{on} ^\text{net}  
+     =\mathstrut \amp  W_\text{on} ^{A\to B}+W_\text{on} ^{B\to C}+W_\text{on} ^{C\to A}</mrow>
+  <mrow>  =\mathstrut \amp  -76.7 \,\text{J}  + 0 + 150 \,\text{J}</mrow>
+  <mrow>  =\mathstrut \amp  73.3 \,\text{J} .</mrow>
+</md>
+</p>
+
+<p>
+As for the total heat flow <m>Q_\text{in}</m> for the entire cycle, we can use
+the First Law:
+<md>
+  <mrow>  Q_\text{in}  =\mathstrut \amp  \Delta E_\text{therm}  - W_\text{on}</mrow>
+  <mrow>  =\mathstrut \amp  0 - 73.3 \,\text{J}</mrow>
+  <mrow>  =\mathstrut \amp  -73.3 \,\text{J} .</mrow>
+</md>
+</p>
+
+<p>
+This means the net heat flow during the entire cycle is <m>73.3\,\text{J}</m>
+flowing <em>out</em> of the gas.
+</p>
+</statement>
+</example>
+</section>

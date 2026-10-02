@@ -1,0 +1,141 @@
+<section>
+<title>Microstates, Macrostates, and Multiplicity</title>
+<p>
+To explain how probabilities work in thermodynamics <mdash/> and ultimately
+to explain entropy and how it relates to the second law of
+thermodynamics <mdash/> it is necessary to discuss some fundamental
+concepts of probability. We start with definitions of
+<em>microstates</em> and <em>macrostates</em>:
+</p>
+
+<p>
+<assemblage><p>
+A <em>macrostate</em> is a specification of the macroscopic state of the
+system. For example, the pressure, temperature, and number of moles
+of an ideal gas would specify a macrostate.
+</p>
+
+<p>
+A <em>microstate</em> is the detailed specification of the microscopic
+state of the system. In the ideal gas example, the microstate would
+be precise values for the position and velocity of every single
+molecule.
+</p></assemblage>
+</p>
+
+<p>
+A macrostate can have many microstates associated with it. In the
+ideal gas example, there are many possible arrangements of the
+molecules that are consistent with having, say, one mole of gas with
+atmospheric pressure and room temperature. This brings us to
+multiplicity:
+</p>
+
+<p>
+<assemblage><p>
+The <em>multiplicity</em> <m>\Omega</m> of a macrostate is the number of
+microstates associated with that macrostate.
+</p></assemblage>
+</p>
+
+<p>
+Let's explore these ideas with a specific example: a pair of six-sided
+dice, one red and one green.<fn>Having dice of the same color
+  wouldn't change anything.  We just use different colors to help
+  label the dice.</fn> There are 36 possible outcomes of rolling these
+dice, listed in <xref ref="table_paradise">Table</xref>, and the sum of the two
+dice can be any number between two and twelve. Not every sum is
+equally probable, however. If you roll the dice many times, you will
+notice you get a sum of seven much more often than, say, a sum of
+twelve.
+</p>
+
+<p>
+The 36 possible outcomes are the microstates. The red dice showing
+<sq>5</sq> and the green die showing <sq>3</sq> would be a particular microstate
+(labeled 5-3 in <xref ref="table_paradise">Table</xref>). The sum of the dice,
+eight in this case, represents a macrostate. Notice that there are
+many ways to roll a sum of eight; or stated another way, there are
+multiple microstates associated with the macrostate <sq>8.</sq> The number
+of ways to roll an <sq>8</sq> is the multiplicity <m>\Omega</m>. Looking at
+<xref ref="table_paradise">Table</xref>, we see there are five different ways to
+roll an <sq>8</sq>, so the multiplicity <m>\Omega =5</m>.
+</p>
+
+<p>
+The multiplicity of a macrostate is useful to know because it tells us
+the probability of obtaining that particular macrostate. Each of the
+36 microstates for a pair of dice is equally likely. The reason that
+a sum of seven is a more likely outcome than a sum of twelve is not
+because 4-3 is more likely than 6-6 (it's not!), rather, there are
+more ways to roll a <sq>7.</sq>
+</p>
+
+<p>
+Now let's come back to physics. The macrostate of a collection of
+molecules could be defined in terms of the number of particles and
+the amount of energy <m>E_\text{therm}</m> they have. A microstate would
+correspond to a particular arrangement of the energy among the
+molecules. Since there are many possible ways to arrange the energy
+among the molecules, there are many microstates associated with this
+macrostate. The number of possible ways to arrange the given amount
+of energy would then be the multiplicity <m>\Omega</m>.
+</p>
+<table xml:id="table_paradise" >
+<title>The 36 possible results from rolling a pair of dice (one
+  red, one green)</title>
+<tabular>
+<row bottom="medium"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+
+<row><cell  >
+sum</cell><cell>rolls (red die<ndash/>green die)</cell><cell><m>\Omega</m></cell><cell>probability</cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>2</cell><cell>1-1</cell><cell>1</cell><cell>1/36</cell></row>
+<row><cell>3</cell><cell>1-2 <nbsp/><nbsp/> 2-1</cell><cell>2</cell><cell>2/36 = 1/18</cell></row>
+<row><cell>4</cell><cell>1-3 <nbsp/><nbsp/> 2-2 <nbsp/><nbsp/> 3-1</cell><cell>3</cell><cell>3/36 = 1/12</cell></row>
+<row><cell>5</cell><cell>1-4 <nbsp/><nbsp/> 2-3 <nbsp/><nbsp/> 3-2 <nbsp/><nbsp/> 4-1</cell><cell>4</cell><cell>4/36 = 1/9</cell></row>
+<row><cell>6</cell><cell>1-5 <nbsp/><nbsp/> 2-4 <nbsp/><nbsp/> 3-3 <nbsp/><nbsp/> 4-2 <nbsp/><nbsp/> 5-1</cell><cell>5</cell><cell>5/36</cell></row>
+<row><cell>7</cell><cell>1-6 <nbsp/><nbsp/> 2-5 <nbsp/><nbsp/> 3-4 <nbsp/><nbsp/> 4-3 <nbsp/><nbsp/> 5-2 <nbsp/><nbsp/> 6-1</cell><cell>6</cell><cell>6/36 = 1/6</cell></row>
+<row><cell>8</cell><cell>2-6 <nbsp/><nbsp/> 3-5 <nbsp/><nbsp/> 4-4 <nbsp/><nbsp/> 5-3 <nbsp/><nbsp/> 6-2</cell><cell>5</cell><cell>5/36</cell></row>
+<row><cell>9</cell><cell>3-6 <nbsp/><nbsp/> 4-5 <nbsp/><nbsp/> 5-4 <nbsp/><nbsp/> 6-3</cell><cell>4</cell><cell>4/36 = 1/9</cell></row>
+<row><cell>10</cell><cell>4-6 <nbsp/><nbsp/> 5-5 <nbsp/><nbsp/> 6-4</cell><cell>3</cell><cell>3/36 = 1/12</cell></row>
+<row><cell>11</cell><cell>5-6 <nbsp/><nbsp/> 6-5</cell><cell>2</cell><cell>2/36 = 1/18</cell></row>
+<row><cell>12</cell><cell>6-6</cell><cell>1</cell><cell>1/36</cell></row>
+<row bottom="medium"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+
+<row><cell  ></cell></row>
+</tabular>
+</table>
+<p>
+To go from multiplicity to probability we need one more piece of
+information. In the case of the dice, each of the 36 possible
+outcomes was equally likely, assuming that the dice were fair,
+returning each of the six values with equal probability. Does this
+apply as well for our system of <m>N</m> particles sharing a total energy
+<m>E_\text{therm}</m>? In general, we cannot prove this, but to make
+progress we will assume that it is true.
+</p>
+
+<p>
+<assemblage><p>
+<sc>The Fundamental Assumption of Statistical Mechanics:</sc>
+</p>
+
+<p>
+All of a system's accessible microstates are equally likely.
+</p></assemblage>
+</p>
+
+<p>
+<q>Accessible microstates</q> here means simply those which are allowed by
+energy conservation. The motivation for this assumption is that
+whatever the specific dynamics are, however the molecules are
+colliding and sloshing energy back and forth among each other, they
+eventually visit every possible state allowed by energy conservation.
+So a sequence of snapshots of the system would look like randomly
+selected examples of possible microstates. In the end, nature has
+confirmed that starting with the fundamental assumption leads to
+predictions that match experiments extremely well. Now we shall see
+what the fundamental assumption buys us.
+</p>
+</section>

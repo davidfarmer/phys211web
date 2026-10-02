@@ -1,0 +1,46 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_second_law">
+<title>Second Law of Thermodynamics and  Entropy</title>
+
+
+<introduction>
+<p>
+In this chapter we will discuss one of the most significant
+developments in the history of science <mdash/> the development of a <em>statistical</em> theory of thermodynamics. Here is the question: if a
+chunk of ice, or a glass of water, or an air-filled balloon is composed of
+<m>10^{22}</m> or <m>10^{23}</m> molecules, isn't it necessary to describe the
+dynamics of each individual molecule? To determine the force on each
+molecule and solve Newton's second law to figure out its motion? The
+answer is no, thankfully. Instead, we can treat each of these
+molecules as though they are behaving randomly, and recover all the
+results of thermodynamics from a probabilistic treatment.
+</p>
+
+<p>
+The importance of this statistical approach cannot be overstated.
+The idea that we can treat thermodynamic systems probabilistically
+led to a revolution in scientific thought that ranks up there
+with Newton's development of classical physics, Pasteur's development
+of germ theory of disease, Einstein's theory of relativity, and
+the development of quantum mechanics (which you'll see in PHYS 212).
+</p>
+
+<p>
+We will introduce statistical mechanics by revisiting the basic phenomenon
+of heat flow, the spontaneous thermal energy transfer from hotter objects
+to colder objects. The direction of the heat flow is determined by what
+is known as the <em>second law of thermodynamics.</em> We can derive the
+second law of thermodynamics from probability arguments; essentially,
+thermal energy flow is dictated by moving from an improbable to a
+probable situation. Entropy is introduced as a measure of probability.
+And along the way to understanding the second law, we will provide a
+general definition of temperature.
+</p>
+</introduction>
+<xi:include  href="section9-1.ptx" />
+<xi:include  href="section9-2.ptx" />
+<xi:include  href="section9-3.ptx" />
+<xi:include  href="section9-4.ptx" />
+<xi:include  href="section9-5.ptx" />
+<xi:include  href="section9-6.ptx" />
+<xi:include  href="section9-9x.ptx" />
+</chapter>

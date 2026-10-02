@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<docinfo>
+<rename element="lemma">Important</rename>
+<rename element="inlineexercise">Problem</rename>
+
+
+<macros>
+\newcommand{\solution}{
+
+\textbf{Solution: }}
+\renewcommand{\arraystretch}{1.8}
+\newcommand{\Xunits}[1]{\,\mbox{#1}}
+\renewcommand{\arraystretch}{1.0}
+</macros>
+
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+
+\usepackage{pgfplots}
+
+</latex-image-preamble>
+
+</docinfo>
+
+
+<book>
+    <title>Bucknell Physics 211 Supplement    </title>
+<frontmatter>
+<titlepage>
+<author>
+<personname>Fall, 2026</personname>
+</author>
+</titlepage>
+</frontmatter>
+
+
+<xi:include href="./chapter1x.ptx" />
+
+<xi:include href="./chap_numerical.ptx" />
+
+<xi:include href="./chap_relativityI.ptx" />
+
+<xi:include href="./chap_relativistic_spacetime.ptx" />
+
+<xi:include href="./chap_relativity_pande.ptx" />
+
+<xi:include href="./chap_relativity_app.ptx" />
+
+<xi:include href="./chap_thermal_energy.ptx" />
+
+<xi:include href="./chap_liquids_and_gases.ptx" />
+
+<xi:include href="./chap_gas_processes.ptx" />
+
+<xi:include href="./chap_second_law.ptx" />
+
+<xi:include href="./chap_heat_engines.ptx" />
+
+<xi:include href="./chap_gravity.ptx" />
+
+<xi:include href="./chapter2x.ptx" />
+
+<backmatter>
+
+<xi:include href="./bibliography.ptx" />
+
+</backmatter>
+</book>
+</pretext>

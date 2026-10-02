@@ -1,0 +1,126 @@
+<section>
+<title>Coupled Einstein Solids</title>
+<p>
+Our original goal was to understand heat flow. That is, why thermal
+energy spontaneously goes from hotter objects to colder objects. To
+that end, we will now consider two Einstein solids, solid <m>A</m> with a
+number <m>N_A</m> oscillators and <m>q_A</m> energy units, and solid <m>B</m> with
+<m>N_B</m> oscillators and <m>q_B</m> energy units. If solids <m>A</m> and <m>B</m> are
+brought into thermal contact, then they will be able to pass energy
+units back and forth while maintaining a fixed total
+<m>q_\text{tot} =q_A+q_B</m>. But which way will the energy go, on average? And
+when will it come to thermal equilibrium? Let us try to address these
+questions.
+</p>
+
+<p>
+Once the two Einstein solids are thermally coupled and exchanging
+energy, <m>A</m> and <m>B</m> should be regarded as <em>subsystems</em> of the
+combined system. For a particular division of energy among the two
+subsystems, we have a multiplicity <m>\Omega_A</m> that depends on <m>N_A</m>
+and <m>q_A</m>, and a multiplicity <m>\Omega_B</m> that depends on <m>N_B</m> and
+<m>q_B</m>.
+</p>
+
+<p>
+How do we calculate the combined multiplicity of the system? If you
+have three pairs of pants and five shirts, then you have <m>3\cdot 5=15</m>
+possible combinations you can make, at least in polite company.
+Similarly, subsystem <m>A</m> may be in any of the number <m>\Omega_A</m>
+microstates and subsystem <m>B</m> in any of <m>\Omega_B</m> microstates, so the
+number of paired microstates we can make is the product <m>\Omega_{AB} =
+\Omega_A\Omega_B</m>. This is the combined multiplicity of the system.
+</p>
+
+<p>
+Let's consider a specific case. Let <m>N_A=3</m> and <m>N_B=3</m>, and
+<m>q_\text{tot} =q_A+q_B=6</m>. The two systems may divide up the six energy
+units a variety of ways, as shown in <xref ref="table_two_systems">Table</xref>.
+For each choice, the multiplicities <m>\Omega_A</m> and <m>\Omega_B</m> and the
+combined multiplicity <m>\Omega_{AB}</m> are given. Note that the most
+probable arrangement of energy, the one with the largest multiplicity,
+is the one with three energy units in each subsystem. If subsystem
+<m>A</m> started with zero energy units and subsystem <m>B</m> with six units,
+then simple random energy exchanges would move the coupled systems
+toward the more probable state with <m>q_A=q_B=3</m>. This is a clue about the
+origin of the second law.
+</p>
+<table xml:id="table_two_systems" >
+<title>Possible macrostates for system <m>A</m> and <m>B</m> sharing six units
+  of energy, with <m>N_A=3</m> and <m>N_B=3</m></title>
+<tabular>
+<row bottom="medium"><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+
+<row><cell  >
+<m>q_A</m></cell><cell><m>q_B</m></cell><cell><m>\Omega_A</m></cell><cell><m>\Omega_B</m></cell><cell><m>\Omega_{AB}</m></cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>0</cell><cell>6</cell><cell>1</cell><cell>28</cell><cell>28</cell></row>
+<row><cell>1</cell><cell>5</cell><cell>3</cell><cell>21</cell><cell>63</cell></row>
+<row><cell>2</cell><cell>4</cell><cell>6</cell><cell>15</cell><cell>90</cell></row>
+<row><cell>3</cell><cell>3</cell><cell>10</cell><cell>10</cell><cell>100</cell></row>
+<row><cell>4</cell><cell>2</cell><cell>15</cell><cell>6</cell><cell>90</cell></row>
+<row><cell>5</cell><cell>1</cell><cell>21</cell><cell>3</cell><cell>63</cell></row>
+<row><cell>6</cell><cell>0</cell><cell>28</cell><cell>1</cell><cell>28</cell></row>
+<row bottom="medium"><cell></cell><cell></cell><cell></cell><cell></cell><cell></cell></row>
+
+<row><cell  ></cell></row>
+</tabular>
+</table>
+<p>
+From <xref ref="table_two_systems">Table</xref> we see that the most probable
+situation is only slightly more probable than the other possibilities.
+This changes dramatically as the system size is increased. In
+<xref ref="fig_multiplicity_with_size">Figure</xref> we plot the combined
+multiplicity as a function of <m>q_A</m> for various numbers of oscillators
+and energy units. As the figure shows, when the numbers become
+larger, say in the thousands, the multiplicity function becomes
+sharply peaked. Some particular division of energy between
+the two subsystems is vastly, hugely, awesomely, mind-bogglingly more
+probable<fn>I.e., it isn't just a little more probable, it is a
+  <em>lot</em> more probable.</fn> than all others. This we identify as the
+equilibrium division of energy. Now imagine what occurs when you
+approach Avogadro's number of energy units. The multiplicity function
+becomes completely sharp. There is some particular division of the
+energy between subsystems <m>A</m> and <m>B</m> that is ridiculously,
+overwhelmingly, staggeringly<fn><q><ellipsis /> vastly, hugely,
+  awesomely, mind-bogglingly, ...</q> and that doesn't even begin to cover it!</fn>
+more probable than any other.
+</p>
+<figure xml:id="fig_multiplicity_with_size" >
+<caption>Plots of the multiplicity as a function of <m>q_A</m> for a
+  variety of system sizes.  Note that <m>q_B</m> is determined by
+  <m>q_A+q_B=q_ tot</m>.</caption>
+<image width="93%" source="multiplicity_with_size.png" />
+</figure>
+<p>
+Now we have the probabilistic origin of the second law. Subsystems
+<m>A</m> and <m>B</m>, before they are thermally coupled, can be prepared with
+any thermal energy we would like. We made the metal object hot and
+the water cold before plunging the metal into the water. But once the
+subsystems are thermally coupled, they will move from whatever
+division of energy they started with toward the maximally probable
+arrangement of energy for the coupled system. They are irresistibly
+led to it by essentially random exchanges of energy between the
+subsystems. The energy transferred along the way is what we had
+previously identified as heat.
+</p>
+
+<p>
+To summarize:
+</p>
+
+<p>
+<assemblage><p>
+The second law of thermodynamics is a result of a system prepared in
+an improbable initial state then moving to a vastly more probable
+final state.</p></assemblage>
+</p>
+
+<p>
+<em>This is an incredibly important result!!!!</em> With this
+statement, we don't have to worry at all about the detailed,
+Newtonian mechanics of the (many, many) individual molecules or
+atoms in a solid, liquid or gas. We treat all the motion as though
+it is random and then simply figure out the probabilities.
+</p>
+</section>

@@ -1,0 +1,108 @@
+<section>
+<title>Heat Flow Revisited</title>
+<p>
+Consider the following process, illustrated in
+<xref ref="fig_paradigmatic_process">Figure</xref>: a hot piece of metal is placed
+into a container holding cold water. As time passes, thermal energy
+flows from the metal to the water, making the metal colder and the
+water warmer. Eventually, the two are at the same temperature and no
+more thermal energy is transferred. This is <em>heat</em>: the
+spontaneous thermal energy transfer due to the temperature difference,
+as we identified in <xref ref="sec_heat">section</xref>.
+</p>
+<figure xml:id="fig_paradigmatic_process" >
+<caption>A hot piece of metal is placed into cold water.  Thermal
+  energy is transferred from the hot metal to the cold water until
+  they are in thermal equilibrium.</caption>
+<image width="86%" source="paradigm" />
+</figure>
+<p>
+In a heat flow scenario, such as this one, the first law of
+thermodynamics states that energy is conserved, and so we must have
+<men>
+  \Delta E_\text{therm,water}  = -\Delta E_\text{therm,metal} .
+</men>
+</p>
+
+<p>
+However, energy conservation would be equally well satisfied if the
+heat flowed the other way. Imagine putting the hot metal into cold
+water and finding that the metal becomes increasingly hotter while the
+water becomes increasingly cooler, beginning to freeze. Absurd! This
+is never observed to happen. And yet it would be perfectly consistent
+with the first law of thermodynamics.
+</p>
+
+<p>
+What this process illustrates is that there must be an additional law
+of nature involved that determines the direction of heat flow. In a
+fit of creativity, physicists decided to call this the <em>second</em>
+law of thermodynamics. There are many equivalent ways to state the
+second law. We will begin with the <em>Clausius statement</em> of the
+second law, since it is the most intuitive.
+</p>
+
+<p>
+<assemblage><p>
+<sc>2nd Law of Thermodynamics (Clausius):</sc>
+</p>
+
+<p>
+Heat cannot flow spontaneously from a material at lower temperature to
+a material at higher temperature.
+</p></assemblage>
+</p>
+
+<p>
+Let's examine this. First, note that the law is, at this point,
+empirical, which means it is a statement about the observed behavior
+of nature. The second law rules out the absurd scenario whereby heat
+flowed from the cold water to the hot metal. But, note that the
+second law makes no statement about whether the heat will actually
+flow from the metal to the water. According to the second law, this heat
+flow is allowed, but not required. That is exactly what we want from
+a general law, since after all the metal and the water may or may not
+be thermally coupled.
+</p>
+
+<p>
+Temperature plays a crucial role in the second law, since the question
+of whether heat is allowed to flow from <m>A</m> to <m>B</m> or instead from <m>B</m>
+to <m>A</m> is answered by the temperatures <m>T_A</m> and <m>T_B</m>. Temperature
+plays the role of nature's traffic cop, enforcing thermodynamic
+<q>one-way streets.</q><fn>However, nature needs no traffic court
+  since its one-way streets, like its speed limit, are
+  self-enforcing.</fn> The primary topic of this chapter is the
+explanation of why temperature plays this role.
+</p>
+
+<p>
+Another interesting aspect of the second law is the phenomenon of <em>irreversibility.</em> Many processes in nature are reversible. A movie of
+the flight of a ball thrown straight up into the air, turning around and
+coming back down, looks the same whether played forward or backward.
+This is because Newton's law are <em>reversible</em> as long as friction
+is negligible. But once heat flows from the hot metal to the cold
+water, it will never spontaneously flow back again. A movie of the
+process (with some thermometers used to make the temperature visible)
+would look different played backward versus forward. Physicists believe
+the second law is the origin of any irreversibility observed in nature,
+which is to say, the second law of thermodynamics plays a crucial role
+in determining the direction of time flow.
+</p>
+
+<p>
+Interestingly, the second law is unique among laws of physics. Most
+laws are simply inferred from the behavior of nature. We don't know
+why energy conservation happens; we just know it does. The second law
+is different because we can essentially derive it. We know <em>why</em>
+it happens. It is ultimately a statement about probability: thermal
+energy flows spontaneously from hotter objects to colder objects
+because that brings the system to a state with a more
+likely arrangement of energy.
+</p>
+
+<p>
+The rest of this chapter is concerned with expanding our probabilistic
+understanding of the second law and temperature.
+</p>
+</section>

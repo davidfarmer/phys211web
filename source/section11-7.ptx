@@ -1,0 +1,53 @@
+<section>
+<title>Black Holes</title>
+<p>
+Let's consider again a spherical object of mass <m>M</m> and radius <m>R</m>,
+and recall our curved spacetime solution, given by
+Eqs.<nbsp/><xref ref="eq_Schwarzschild_ds" /> and <xref ref="eq_Schwarzschild_dt" />.
+This solution is valid only outside of the mass, in the region where
+<m>r>R</m>.
+</p>
+
+<p>
+The radius <m>R</m> of the mass is <em>not</em> the same thing as the
+Schwarzschild radius <m>R_s</m>, given in
+<xref ref="eq_Schwarzschild_radius" />. For stars and
+planets, the radius <m>R</m> is typically much larger than <m>R_s</m>. For
+example, from <xref ref="chap_gravity">Example</xref>. <xref ref="ex_curved_space"></xref> the
+radius of the Sun is <m>R=6.96\times 10^8\,\text{m}</m>, while the
+Schwarzschild radius is <m>R_s=2950\,\text{m}</m>.
+</p>
+
+<p>
+Note that <m>R_s</m> depends only on the mass of the object and fundamental
+constants. For an object to have <m>R\lt R_s</m> it requires a very high
+density, more dense than even an atomic nucleus. But if such dense
+objects were to exist, they would have some extreme properties; in
+particular, light rays that originate from inside the Schwarzschild
+radius, where <m>r\lt R_s</m>, are so bent that they can never escape. So
+such an object would not emit any light!
+</p>
+
+<p>
+This is precisely what a black hole is: an object whose radius <m>R</m> is
+smaller than its Schwarzschild radius <m>R_s</m>. They were predicted by
+general relativity but remained largely the domain of science fiction
+for many years. After all, it is hard to see something that doesn't
+emit light!
+</p>
+
+<p>
+But much evidence for black holes emerged. Most commonly, a black hole
+can be found in a binary orbit with an ordinary star, and we can infer
+the existence of the black hole from the wobbling orbit of the star.
+Now there is general consensus that the centers of many galaxies, including
+our own, contain a supermassive black hole that is many millions times the
+mass of our Sun.
+</p>
+
+<p>
+And then in 2015 we were able to see direct evidence of black holes when
+we observed two black holes merging. The black holes didn't send us
+light, but they did send us gravitational waves!
+</p>
+</section>

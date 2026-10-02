@@ -1,0 +1,355 @@
+<section>
+<title>Problems</title>
+<exercise xml:id="prob_multiplicityforthree">
+<statement>
+<p>
+Consider an Einstein solid with three oscillators and four units of
+energy.
+<ol>
+<li><p>Calculate the multiplicity for this macrostate.</p></li>
+<li><p>Write out the triplet for each possible microstate.  For
+  example, the microstate where the first oscillator has all the units
+  of energy can be written as <m>(4,0,0)</m>.  Confirm that you find the
+  correct number of microstates.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_mult_of_twentyfour">
+<statement>
+<p>
+Calculate the multiplicity of an Einstein solid with 24 oscillators
+and 15 energy units.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_rolldie">
+<statement>
+<p>
+Suppose you roll a fair six-sided die three times in a row.
+<ol>
+<li><p>Determine the probability of getting exactly the sequence 1<ndash/>3<ndash/>2?</p></li>
+<li><p>Now determine the probability of getting any other particular
+sequence (hint: no calculation necessary).</p></li>
+<li><p>What is the probability of rolling a sum of 6?</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_twosolids">
+<statement>
+<p>
+For two Einstein solids with <m>N_A=3</m> and <m>N_B=3</m> and six energy
+units, how many times more probable is the macrostate with equally
+shared energy than the macrostate where system <m>A</m> has all the
+energy? Use <xref ref="table_two_systems">Table</xref>.
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Is it really true that the entropy of an isolated system consisting of
+two Einstein solids never decreases? Consider a pair of very small
+solids. Explain why this statement is more accurate for large systems
+than for small systems.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_tempoflargeobject">
+<statement>
+<p>
+A large object's entropy is observed to increase by <m>0.15\,\text{J/K}</m>
+when we add <m>45\,\text{J}</m> of thermal energy. Assume that this causes
+a negligible increase in the temperature of the object. Determine
+the approximate temperature of the object.
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_diminishing">
+<statement>
+<p>
+The idea of <q>diminishing returns</q> says that while the entropy does
+increase with increasing thermal energy, the slope is decreasing
+(see <xref ref="fig_entropy_vs_energy">Figure</xref>). The Einstein solid
+multiplicity, like most materials, shows this behavior. Here is how
+to see it:
+<ol>
+<li><p>For an Einstein solid with 10 oscillators and 5 energy units,
+    calculate how much the entropy increases, i.e. <m>\Delta S</m>, if you
+    add one more energy unit (you may leave your answer in terms of
+    <m>k_B</m>).</p></li>
+<li><p>Now consider an Einstein solid with 10 oscillators and 15
+    energy units, and calculate how much the entropy increases if you
+    add one more energy unit.</p></li>
+<li><p>Do your answers to (a) and (b) confirm the diminishing
+    returns?  Explain why.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_entropyoftwosolids">
+<statement>
+<p>
+For two Einstein solids <m>A</m> and <m>B</m>, the entropy as a function of
+thermal energy is given by
+<me>
+  S_A= k_B\, 400\ln(E_A/300) \qquad S_B = k_B\, 100\ln(E_B/800)
+</me>
+where <m>E_A</m> and <m>E_B</m> are the thermal energies of systems <m>A</m> and
+<m>B</m>. If the two solids are brought to thermal equilibrium, what
+relation, if any, can be made between the final energies <m>E_{A,f}</m> and
+<m>E_{B,f}</m>?
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_strangesystem">
+<statement>
+<p>
+Consider a very strange system whose multiplicity is <m>\Omega_A=1</m>
+regardless of how much energy it has. Imagine starting this system
+with some amount of energy and bringing it into thermal contact with
+system <m>B</m>, an Einstein solid.
+<ol>
+<li><p>In which direction will the energy flow, or will no energy flow?</p></li>
+<li><p>What can you say about the energies of the final state?  For
+  example, will they be equal?  If they are unequal, which is larger?
+  Is there anything more you can conclude?</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+A substance has entropy <m>S=c\sqrt{E_\text{therm} }</m>, where <m>c</m> is
+some constant. Use the definition of temperature to find
+<m>E_\text{therm}</m> as a function of <m>T</m>.
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Consider two Einstein solids with <m>N_A=3</m> and <m>N_B=3</m> and eight energy
+units.
+<ol>
+<li><p>Make a table like <xref ref="table_two_systems">Table</xref>.  Note that many
+  of the multiplicities you will need are already in
+  <xref ref="table_two_systems">Table</xref>, so there is no need to re-calculate
+  everything.</p></li>
+<li><p>How many times more probable is the macrostate with equally
+  shared energy than the macrostate where system <m>A</m> has all the energy?</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+An Einstein solid has four oscillators and three units of energy.
+<ol>
+<li><p>Calculate the multiplicity of the solid.</p></li>
+<li><p>Identify all the possible microstates using the parenthesis
+  notation of <xref ref="example_multiplicity">Example</xref>.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+System <m>A</m> and system <m>B</m> are both large. For system <m>A</m>, adding
+<m>250\,\text{J}</m> of thermal energy causes an entropy increase of
+<m>0.80\,\text{J/K}</m>. For system <m>B</m>, adding <m>250\,\text{J}</m> of thermal
+energy causes an entropy increase of <m>0.60\,\text{J/K}</m>.
+<ol>
+<li><p>Without mentioning temperature, use probability arguments to
+  determine which way thermal energy will flow when systems <m>A</m> and
+  <m>B</m> are thermally coupled.</p></li>
+<li><p>Estimate the temperature of each object and check that your
+  result is consistent with part (a).</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="problem_entropy_additive">
+<statement>
+<p>
+Show that <m>S_{AB} = S_A + S_B</m> follows from the definition of entropy.
+</p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Entropy applies to more than just heat flow. We can use entropy
+and the second law of thermodynamics to discuss movement of
+air in a room.
+<ol>
+<li><p>Consider a room with only 100 gas molecules.  Theoretically,
+the gas molecules can move anywhere in the room.  Calculate the 
+probability that all 100 of the molecules will be found on
+one particular side of the room.</p></li>
+<li><p>Now, consider a real room with a realistic amount of gas in
+it <mdash/> let's say that there are <m>10^{26}</m> gas molecules in the room.
+Calculate the probability that all of these gas molecules will
+be found in one particular side of the room.  (Note:  the probability
+is <em>so</em> small that your calculator or computer might simply
+give <q>0</q> for the answer.)</p></li>
+<li><p>Is it reasonable to say that you will <q>never</q> find all the
+air in one side of the room?</p></li>
+<li><p>Now, write a couple of sentences explaining why it is
+(from a probability perspective) that when a perfume bottle is
+opened, the scent of the perfume will spread throughout
+the room.</p></li>
+<li><p>After the perfume smell has spread throughout the room,
+would you expect all of the perfume molecules to go back
+into the bottle?  Discuss this using the entropic form of the
+second law of thermodynamics.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_energy_transferA">
+<statement>
+<p>
+The graphs in the figure below give plots of entropy <m>S</m> vs.<nbsp/><m>E_\text{therm}</m> for
+two different solids, A and B. Solid A starts with indicated energy <m>E_A</m> and
+entropy <m>S_A</m>, and Solid B starts with <m>E_B</m> and <m>S_B</m>.
+When Solid A has energy <m>E_A</m>, the slope of the entropy
+vs.<nbsp/>energy curve is <m>dS_A/dE= 0.2\,\text{K}^{-1}</m>, and
+when Solid B has energy <m>E_B</m>, the slope of the entropy vs.<nbsp/>energy
+curve is <m>dS_B/dE = 0.4\,\text{K}^{-1}</m>.
+</p>
+<figure xml:id="fig_energy_transferA" >
+<caption>Figure for <xref ref="prob_energy_transferA">Problem</xref></caption>
+<image width="93%" source="energy_transferA.png" />
+</figure>
+<p>
+The two solids are brought into thermal contact with each other so that
+energy can flow between them.
+<ol>
+<li><p>Which way will the energy flow:  from A to B, from B to A, or 
+will no energy flow?  Give  qualitative reasoning to support your answer.</p></li>
+<li><p>Now let's get quantitative.  Calculate the approximate  
+entropy changes <m>\Delta S_A</m> and <m>\Delta S_B</m>, and <m>\Delta S_\text{total}</m> 
+if <m>3\,\text{J}</m> of energy flow between the two solids in the direction 
+that you chose in part (a).</p></li>
+<li><p>By what factor has the multiplicity for the total system increased
+from this energy transfer?  In other words, calculate the ratio of 
+multiplicities <m>\Omega_\text{after} /\Omega_\text{before}</m>.
+
+Note:  The answer you get will be a ridiculously, mind-boggling,
+impossible-to-put-into-words-just-how-huge-it-really-is number
+that you will not be able to calculate <mdash/>  you'll have to express it as
+<m>e^\text{ something really big }</m>.  To give you and idea of just how
+large this number is, if you were to write it as a digit followed by a
+bunch of zeros, and if each digit were <m>5\,\text{mm}</m> wide, the number
+would fill up several <em>light years</em>.</p></li>
+<li><p>Explain in your own words why heat flows in this system when the
+two solids are brought into contact.  Don't use the words <q>entropy</q>
+or <q>second law</q> but rather explain it based on probabilities.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_energy_transferB">
+<statement>
+<p>
+The graphs in the figure below give plots of entropy <m>S</m> vs.\
+<m>E_\text{therm}</m> for two different solids, A and B. Solid A starts with
+indicated energy <m>E_A</m> and entropy <m>S_A</m>, and Solid B starts with <m>E_B</m>
+and <m>S_B</m>. When Solid A has energy <m>E_A</m>, the slope of the entropy vs.\
+energy curve is <m>dS_A/dE= 0.5\,\text{K}^{-1}</m>, and when Solid B has
+energy <m>E_B</m>, the slope of the entropy vs.<nbsp/>energy curve is <m>dS_B/dE =
+0.1\,\text{K}^{-1}</m>.
+</p>
+<figure xml:id="fig_energy_transferB" >
+<caption>Figure for <xref ref="prob_energy_transferB">Problem</xref></caption>
+<image width="93%" source="energy_transferB.png" />
+</figure>
+<p>
+The two solids are brought into thermal contact with each other so that
+energy can flow between them.
+<ol>
+<li><p>Which way will the energy flow:  from A to B, from B to A, or 
+will no energy flow?  Give  qualitative reasoning to support your answer.</p></li>
+<li><p>Now let's get quantitative.  Calculate the approximate  
+entropy changes <m>\Delta S_A</m> and <m>\Delta S_B</m>, and <m>\Delta S_\text{total}</m> 
+if <m>2\,\text{J}</m> of energy flow between the two solids in the direction 
+that you chose in part (a).</p></li>
+<li><p>By what factor has the multiplicity for the total system increased
+from this energy transfer?  In other words, calculate the ratio of 
+multiplicities <m>\Omega_\text{after} /\Omega_\text{before}</m>.
+
+Note:  The answer you get will be a ridiculously, mind-boggling,
+impossible-to-put-into-words-just-how-huge-it-really-is number
+that you will not be able to calculate <mdash/>  you'll have to express it as
+<m>e^\text{ something really big }</m>.  To give you and idea of just how
+large this number is, if you were to write it as a digit followed by a
+bunch of zeros, and if each digit were <m>5\,\text{mm}</m> wide, the number
+would fill up several <em>light years</em>.</p></li>
+<li><p>Explain in your own words why heat flows in this system when the
+two solids are brought into contact.  Don't use the words <q>entropy</q>
+or <q>second law</q> but rather explain it based on probabilities.</p></li>
+</ol>
+
+</p>
+</statement>
+</exercise>
+
+<exercise xml:id="prob_energy_transfer_table">
+<statement>
+<p>
+System A and System B are brought into thermal contact when the energy in
+A is <m>E_A= 1000\,\text{J}</m> and the energy in B is <m>E_B=1100\,\text{J}</m>.
+Using the table below, listing energies and corresponding entropies of
+the two systems, determine whether heat will flow from A to B, or
+from B to A. Show all your work.
+</p>
+<tabular>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell><m>E_A</m> (J)</cell><cell><m>E_B</m> (J)</cell><cell><m>S_A</m> (J/K)</cell><cell><m>S_B</m> (J/K)</cell></row>
+<row bottom="medium"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+
+<row><cell  >
+    950</cell><cell>1150</cell><cell>6.76</cell><cell>10.34</cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>975</cell><cell>1125</cell><cell>6.84</cell><cell>10.21</cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell><em>1000</em></cell><cell><em>1100</em></cell><cell><em>6.93</em></cell><cell><em>  10.08</em></cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>1025</cell><cell>1075</cell><cell>7.02</cell><cell>9.95</cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+<row><cell>1050</cell><cell>1050</cell><cell>7.10</cell><cell>9.82</cell></row>
+<row bottom="minor"><cell></cell><cell></cell><cell></cell><cell></cell></row>
+</tabular>
+</statement>
+</exercise>
+</section>

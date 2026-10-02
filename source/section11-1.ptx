@@ -1,0 +1,104 @@
+<section>
+<title>Introduction</title>
+<p>
+Newtonian gravity and Newton's Second Law combined to give a wildly
+successful description of planetary motion. This was a
+monumental breakthrough, and the success of this theory <mdash/> which showed
+that we can dare to understand the workings of celestial objects like
+the planets <mdash/> played a large role in launching physics as a
+discipline.
+</p>
+
+<p>
+Nevertheless, there were a few lingering shortcomings of the Newtonian
+description of gravity. Here are three of them.
+<ol>
+<li><p>Newton himself was bothered by the idea that forces act across
+  distances; that the Sun is doing something to the Earth even though
+  it is 150 million kilometers away.  This problem was later made
+  worse with the introduction of relativity which says that nothing,
+  no influence of any kind, can travel faster than the speed of light.
+  Since it takes light from the Sun about eight minutes to reach the
+  Earth, how can the Sun's gravitational pull affect the Earth
+  instantly?</p></li>
+<li><p>Newton's laws showed that mass has a curious double life.  One
+  role of mass is to determine the strength of the gravitational
+  force.  A separate role is to determine the acceleration of an
+  object via <m>\vec a = \vec F_\text{net} /m</m>, regardless of what type
+  of forces are involved.  Our most precise measurements indicate that
+  <em>gravitational mass</em> (what appears in the gravitational
+  force) and <em>inertial mass</em> (what appears in the second law)
+  are exactly the same.  But why should this one property of an object
+  play two separate roles?  This coincidence requires some
+  explanation.</p></li>
+<li><p>Precision measurements revealed that the orbit of Mercury, the
+  planet closest to the Sun, does some strange things that are
+  inconsistent with Newtonian gravity.</p></li>
+</ol>
+</p>
+
+<p>
+Any new theory of gravity faces quite a challenge: it must resolve the
+problems listed above while still reproducing all the successful
+results of Newtonian gravity. And then ideally this new theory should
+predict some new phenomena that could be tested to confirm the theory.
+Einstein rolled up his sleeves and spent a decade working on this and
+achieved success, emerging in 1915 with what is called <em>general
+relativity</em>.
+</p>
+
+<p>
+A one sentence summary of general relativity is the
+following:<fn>Quote from John A. Wheeler</fn>
+</p>
+
+<p>
+<assemblage><p>
+Mass tells spacetime how to curve; spacetime tells mass how to move.
+</p></assemblage>
+</p>
+
+<p>
+Let's process that. General relativity has at its core a very
+radical proposal. Usually we think of space and time as a canvas on
+which things happen, and we develop theories to describe how objects
+move through space and time. But in general relativity,
+<em>spacetime is what happens!!</em> It is not something we put into
+the theory, it is something we get out of it. In particular, the
+theory predicts how spacetime is distorted by the presence of mass.
+Physicists call this <q>curved</q> spacetime for reasons we will describe
+below. Objects then move through curved spacetime and the resulting
+motion reproduces the effect of a gravitational force.
+</p>
+
+<p>
+With this peculiar theory Einstein was able to resolve the three
+issues listed above and also predict some amazing new phenomena:
+<ul>
+<li><p>that light can be bent by gravity,</p></li>
+<li><p>that the color (wavelength) of light can be affected by
+  gravity,</p></li>
+<li><p>that very dense objects can trap light (what we now call black
+  holes),</p></li>
+<li><p>that an accelerating mass emits gravitational waves.</p></li>
+</ul>
+</p>
+
+<p>
+These predictions have all been
+confirmed, most recently with the first direct
+detection of gravitational waves in 2015, a century after they were
+predicted!
+</p>
+
+<p>
+In this chapter we begin with a description of what distorted or
+<q>curved</q> spacetime is, and describe the curved spacetime associated
+with a spherically symmetric mass. Next we describe the principle of
+maximum proper time, which provides the rule for how objects move
+through curved spacetime. Then we finish with a qualitative
+discussion of how gravity bends light and how gravitational waves are
+generated, and discuss the experimental verification of Einstein's
+theory.
+</p>
+</section>

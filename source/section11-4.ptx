@@ -1,0 +1,46 @@
+<section>
+<title>Einstein's Equivalence Principle</title>
+<p>
+Now that we've discussed how mass curves spacetime, let us turn to the
+second half of general relativity: how does spacetime tell mass how to
+move? Einstein had a major insight early in his development of
+general relativity called the equivalence principle. The equivalence principle
+states that there should be no detectable difference between being
+in a gravitational field of strength <m>g</m> or being in a rocket
+in outer space that accelerates upward with magnitude <m>g</m>. In
+either case, if you hold out a ball and let it go, it will accelerate
+to the floor with acceleration <m>g</m>, as shown in <xref ref="fig_equivalence">Figure</xref>.
+</p>
+<figure xml:id="fig_equivalence" >
+<caption>Dropping a ball on the surface of the Earth causes it to
+  accelerate downward with acceleration <m>g</m>.  Dropping the ball in an
+  accelerating rocket appears to the astronaut as though a force is
+  accelerating the ball to the floor with effective acceleration <m>g</m>.</caption>
+<me>
+  <image width="52%" source="equivalence" />
+</me>
+</figure>
+<p>
+This idea, which Einstein has referred to as his <q>happiest thought,</q>
+stimulated his thinking in two ways.
+<ol>
+<li><p>He latched on to the idea that gravity might not be an actual
+  force, but rather, as in the case of the astronaut in the
+  accelerating rocket, it is an illusion of a
+  force.<fn>Physicists call this an <q>effective</q> force.</fn></p></li>
+<li><p>He noted that the motion of an object in the presence of gravity
+  would be independent of its mass.  If instead of dropping a ball,
+  the astronaut dropped her keys or dropped an elephant, the
+  acceleration of the object would be the same.  This suggested that
+  there is some <em>natural motion</em><fn>Natural motion means
+    the motion of an object in the absence of force.</fn> in spacetime
+  that is totally independent of which object is moving, and this
+  natural motion appears equivalent to a gravitational force acting.</p></li>
+</ol>
+</p>
+
+<p>
+Thus the equivalence principle provides an explanation for the
+equivalence of gravitational mass and inertial mass.
+</p>
+</section>

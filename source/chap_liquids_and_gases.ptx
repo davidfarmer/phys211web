@@ -1,0 +1,22 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="chap_liquids_and_gases">
+<title>Liquids, Gases, and Phase Transitions</title>
+
+
+<introduction>
+<p>
+In this chapter we study the liquid and gas states of matter, as
+well as the phase transitions that occur when going from solid to
+liquid or from liquid to gas. As before with the solid state, our tools
+for understanding these states will be the molecular pair potential
+and the equipartition theorem.
+</p>
+</introduction>
+<xi:include  href="section7-1.ptx" />
+<xi:include  href="section7-2.ptx" />
+<xi:include  href="section7-3.ptx" />
+<xi:include  href="sec_TheGasState.ptx" />
+<xi:include  href="sec_phase_transitions.ptx" />
+<xi:include  href="section7-6.ptx" />
+<xi:include  href="section7-7.ptx" />
+<xi:include  href="section7-7x.ptx" />
+</chapter>

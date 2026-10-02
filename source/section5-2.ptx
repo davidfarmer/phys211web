@@ -1,0 +1,90 @@
+<section>
+<title>Changes of Rest Energy</title>
+<p>
+Much of the light you see comes from changes in rest energy of
+atoms. Examples are sunlight, light from a candle flame, a lightning
+flash, light emitted by a fluorescent lamp, light from the phosphor
+coating on the screen of a television set or a video monitor, and
+laser light. In all these examples, the basic mechanism is that an
+atom in an <q>excited</q> state releases kinetic energy in the form of a
+photon, with the atom going into its ground (lowest possible) state,
+or into an excited state of lower energy. We can represent the
+emission process by the simple reaction equation
+<men xml:id="eq_photon_emission" >
+  \textbf{A}^\ast \rightarrow \textbf{A} + \gamma.
+</men>
+</p>
+
+<p>
+Here <m>\textbf{A}^\ast</m> represents the excited atom, <m>\textbf{A}</m> the atom in its
+ground or lowest state, and <m>\gamma</m> (Greek <em>gamma</em>) the photon.
+</p>
+<figure xml:id="fig_photon_emission1" >
+<caption>An excited atom emits a photon and recoils.</caption>
+<image width="65%" source="photon_emission1.png" />
+</figure>
+<p>
+In <xref ref="fig_photon_emission1">Figure</xref>, the excited atom is shown at rest,
+so all of its energy is rest energy and it has no momentum. But the
+photon has energy, and from the relation <m>E = pc</m>, it also has
+momentum. And because momentum must be conserved, the atom recoils.
+We can write the conservation of energy equation for the reaction in
+<xref ref="eq_photon_emission" /> as follows
+<men>
+  \text{Rest Energy of \(\textbf{A}^\ast\)}  = \text{Energy of \(\textbf{A}\)}  
++ \text{ Energy of photon } .
+</men>
+</p>
+
+<p>
+Because both the kinetic energy of <m>\textbf{A}</m> and the photon energy are
+positive numbers, the rest energy (i.e., the mass) of the
+excited-state atom must be greater than that of the ground-state atom.
+Therefore, in the emission process rest energy, i.e., mass, is
+converted to kinetic energy.
+</p>
+
+<p>
+When light is absorbed by an atom, exactly the opposite effect occurs.
+The atom begins in its ground state, absorbs the photon energy and
+goes into an excited state. Again, by conservation of energy, the
+excited atom must have more rest energy than the ground-state atom.
+</p>
+
+<p>
+Another everyday example of changing rest energy occurs in chemical
+reactions. For example, the reaction for the oxidation of a carbon
+atom
+<men>
+  \text{C}  + \text{O} _2 \rightarrow \text{CO} _2
+</men>
+is known to release kinetic energy in the form of one or more photons.
+Therefore the sum of the masses of C and O<m>_2</m> must be greater than
+the mass of the carbon dioxide molecule. The change in rest energy in
+the case of chemical reactions is typically on the order of
+<m>1\,\text{eV}</m> (or <m>1.6\times 10^{-19}\,\text{J}</m>). Much larger
+energies, on the order of <m>1\,\text{MeV}</m>, are involved in nuclear
+reactions. An example of a nuclear reaction is the decay of a neutron
+into a proton, an electron, and an electron antineutrino:
+<men>
+  n \rightarrow p + e^- + \bar{\nu}_e.
+</men>
+</p>
+
+<p>
+Here the excess mass of the neutron over the mass of the proton plus
+electron (the electron antineutrino has very small mass) is converted
+to the kinetic energy of the three reaction products.
+</p>
+
+<p>
+Another important example of changes in mass is the production of
+new particles in a high energy particle accelerators. In these
+accelerators high-speed particles are shot at target particles and
+some of the kinetic energy of the incoming particles is converted to
+rest energy. In this way hundreds of new particles, most with
+lifetimes between <m>10^{-10}</m> and <m>10^{-23}\,\text{s}</m>, have been
+produced. You'll learn more about these new particles next semester
+in PHYS 212.
+</p>
+</section>

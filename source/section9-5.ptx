@@ -1,0 +1,110 @@
+<section>
+<title>Entropy</title>
+<p>
+Entropy is part of the title of the chapter; perhaps it is time we
+introduced it. The fact is, we have already been discussing the
+entropy, because entropy is simply the multiplicity cast into a more
+convenient form, by means of a logarithm. We define entropy as
+<men xml:id="eq_entropy_def" >
+  S = k_B\ln\Omega.
+</men>
+</p>
+
+<p>
+The factor of Boltzmann's constant plays little role here, apart from
+giving entropy units (which are J/K).<fn>By the way, Boltzmann
+was the one who realized that the second law had a probabilistic origin,
+and <xref ref="eq_entropy_def" /> is engraved on his tombstone.  Check it
+out if you're ever in Vienna.</fn> The logarithm is a monotonic function,
+which means that the larger <m>\Omega</m> gets, the larger <m>S</m> gets. So being
+the most probable state is the same as being the highest entropy state.
+This is a really important statement, so important that we will elevate
+it to box-dom:
+</p>
+
+<p>
+<assemblage><p>Entropy is a measure of probability: the more probable a
+state, the higher its entropy.</p></assemblage>
+</p>
+
+<p>
+Entropy is often incorrectly described as a measure of the disorder
+of a system. This is simply not true; entropy is a measure of
+probability and probability only. It <em>is</em> true that higher
+entropy states are often more disordered than lower-entropy states,
+but this is not always true; there are many examples
+of systems that become <em>more</em> ordered as their
+entropy increases.
+</p>
+
+<p>
+We can now write the second law of thermodynamics rather concisely as
+a statement of probability, given in the boxed statement at the end of
+the previous sec:
+<men>
+  \Delta S_\text{total}  \geq 0. \qquad\text{ (Entropic version of 2nd law) }
+</men>
+</p>
+
+<p>
+Starting from some initial state that is not the maximum entropy
+state, the combination of all our subsystems will exchange thermal
+energy and move spontaneously toward the maximum entropy state. And
+for large systems, it moves irreversibly: there is a negligibly small
+probability of moving away from the maximum entropy state
+(think about the sharply peaked multiplicity).
+</p>
+
+<p>
+Note that the entropic form of the second law refers to the <em>total</em>
+entropy of a system, i.e., the <em>total</em> entropy cannot decrease.
+But the entropy of part of a system <em>can</em> decrease. So, for
+instance, it is very possible to have a chemical reaction where
+the stuff inside your beaker ends up with a lower entropy,
+as long as there is a corresponding increase in entropy somewhere
+else (most likely in the air around the beaker whose entropy
+increases when heated up by heat flowing from the beaker).
+</p>
+
+<p>
+We could have expressed all this with the multiplicity, so why
+take a logarithm and call it entropy? There are three reasons. First,
+since multiplicities become very, very large for even modest sized
+systems, we find more workable expressions if we use the
+logarithm. For example, in the previous case of 100 oscillators with
+200 energy units, we get an entropy of
+<men>
+  S/k_B = \ln\Omega = \ln\left(\frac{299!}{200!\;99!}\right) = 190 ,
+</men>
+which is much nicer to manipulate and plot than <m>10^{82}</m>.
+</p>
+
+<p>
+The second reason is that the combined entropy of two systems is
+simply the sum,
+<men>
+  S_{AB} = S_A + S_B,
+</men>
+which you will show in <xref ref="problem_entropy_additive">Problem</xref>. When we
+are trying to identify the maximum entropy state, we can combine the
+contributions <m>S_A</m> and <m>S_B</m> from subsystems <m>A</m> and <m>B</m> by simply
+adding them together (like we would for energies). That will turn out
+to be handy now as we finally come to the definition of temperature.
+</p>
+
+<p>
+The third reason is historical: it so happens that entropy was defined
+by Clausius a few years before Boltzmann developed a probabilistic
+theory for thermodynamics. Clausius defined the quantity that he
+called <em>entropy</em><fn>Clausius chose the word <em>entropy</em>
+  partially after the Greek word <em>trope</em> which means <em>transformation</em> and partially because he wanted a word that
+  sounded similar to <em>energy</em> since he defined entropy in terms of
+  an energy flow.</fn> in terms of energy flow in a thermodynamical
+system (to be discussed in the next chapter). He even stated the
+entropic form of the second law of thermodynamics, though no one
+at the time understood that this is really a statement of probability.
+So, taking the logarithm of multiplicity was needed to keep the
+entropic statement of the second law consistent with that proposed by
+Clausius.
+</p>
+</section>
