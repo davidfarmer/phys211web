@@ -34,7 +34,7 @@ zero</em> as the temperature where all molecular motion stops. This occurs at
 <figure xml:id="fig_temperature_scales" >
 <caption>The size of the degree is the same for Celsius and Kelvin
   temperature scales.  They differ by a shift:  <m>T_K=T_C+273</m></caption>
-<image width="84%" source="temperature_scales" />
+<image width="84%" source="temperature_scales.png" />
 </figure>
 <p>
 A important variation on the Celsius temperature scale is called the

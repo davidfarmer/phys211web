@@ -42,16 +42,13 @@ second law. We will begin with the <em>Clausius statement</em> of the
 second law, since it is the most intuitive.
 </p>
 
-<p>
-<assemblage><p>
-<sc>2nd Law of Thermodynamics (Clausius):</sc>
-</p>
+<assemblage>
+<title>2nd Law of Thermodynamics (Clausius)</title>
 
 <p>
 Heat cannot flow spontaneously from a material at lower temperature to
 a material at higher temperature.
 </p></assemblage>
-</p>
 
 <p>
 Let's examine this. First, note that the law is, at this point,

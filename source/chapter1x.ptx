@@ -1192,6 +1192,15 @@ wheels to a common angular speed <m>\omega_f</m>.
 </statement>
 </exercise>
 
+<exercise>
+<title>This problem does not exist!</title>
+<statement>
+<p>
+</p>
+</statement> 
+</exercise>
+
+
 <exercise xml:id="prob_birdI">
 <title>Dunking Birds and the Ideal Gas Law</title>
 <statement>
@@ -2269,7 +2278,7 @@ the wind velocity?
 <exercise xml:id="prob_massondisk">
 <title>Spring ejector on rotating platform</title>
 <statement>
-<sidebyside>A massless spring with constant <m>k</m> is
+<p>A massless spring with constant <m>k</m> is
 mounted on a turntable of rotational inertia <m>I</m>, as
 shown. The turntable is on a frictionless vertical axle,
 though initally it's not rotating. The spring is com-
@@ -2280,9 +2289,16 @@ turntable's center, at a distance <m>b</m> from the center,
 and slides without friction across the table and off the
 edge. Find expressions for (a) the final linear speed
 of the mass and (b) the final rotational speed of the
-turntable. <em>Hint</em>: What's conserved? <em>Additional hint</em>:
+turntable. 
+</p>
+<p>
+<em>Hint</em>: What's conserved? 
+</p>
+<p>
+<em>Additional hint</em>:
 you have to solve parts (a) and (b) simultaneously.
-\strut\vspace{-<image width="45%" source="problemX3fig" /></sidebyside>
+</p>
+<image width="55%" source="problemX3fig" />
 </statement>
 </exercise>
 

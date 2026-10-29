@@ -116,15 +116,12 @@ apply as well for our system of <m>N</m> particles sharing a total energy
 progress we will assume that it is true.
 </p>
 
-<p>
-<assemblage><p>
-<sc>The Fundamental Assumption of Statistical Mechanics:</sc>
-</p>
+<assemblage>
+<title>The Fundamental Assumption of Statistical Mechanics:</title>
 
 <p>
 All of a system's accessible microstates are equally likely.
 </p></assemblage>
-</p>
 
 <p>
 <q>Accessible microstates</q> here means simply those which are allowed by

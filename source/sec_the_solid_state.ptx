@@ -23,12 +23,12 @@ equilibrium position, we may regard their interactions with their
 nearest neighbors as equivalent to being attached by a spring.
 </p>
 
-<p>
-<assemblage><p><sc>Checkpoint:</sc> What is the main difference between the pair
+<assemblage><title>Checkpoint</title> 
+<p>What is the main difference between the pair
 potential and the spring potential? What would I need to do to a
 pair of molecules to see this difference? (Push together? Pull
 apart? How far?) </p></assemblage>
-</p>
+
 <figure xml:id="fig_pair_potential_spring" >
 <caption>The solid curve is the pair potential <m>U_ pair</m> as a
   function of separation <m>r</m>.  The dashed line is the spring potential

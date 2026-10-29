@@ -6,12 +6,7 @@
 
 
 <macros>
-\newcommand{\solution}{
-
-\textbf{Solution: }}
-\renewcommand{\arraystretch}{1.8}
 \newcommand{\Xunits}[1]{\,\mbox{#1}}
-\renewcommand{\arraystretch}{1.0}
 </macros>
 
 <latex-image-preamble>
