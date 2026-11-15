@@ -59,15 +59,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.3.6';
+eBookConfig.runestone_version = '8.4.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.4beca1fdeed766a2.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.ebd33f6a21eed414.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.9963089870a016c8.css">
+<script src="_static/prefix-runtime.7e2ee203f2ecd6c8.bundle.js"></script><script src="_static/prefix-23.7d27cb317c36911a.bundle.js"></script><script src="_static/prefix-runestone.35a40fea06647cf2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-runestone.7062ede5334282a6.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -407,9 +406,9 @@ dS = \frac{dQ}{T}  \qquad\text{ (whether or not \(W=0\)) } .\tag{10.2.4}
 <div class="para">
 <em class="emphasis">Solution:</em> Since the molar mass of H<span class="process-math">\(_2\)</span>O is <span class="process-math">\(18\,\text{g}\text{,}\)</span> our ice cube contains one mole. Thus the heat required to melt it is (via <a href="sec_phase_transitions.html#table_phase_transitions" class="xref" data-knowl="./knowl/xref/table_phase_transitions.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 48: Melting and vaporization temperatures for a few materials, along with the latent heats of fusion and vaporization">Table 48</a>)</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/table_phase_transitions.html" id="chap_heat_engines-3-15-2-2-5">
-\begin{equation}
-Q = n L_f = 1\,\text{mol}  \cdot 6.01\,\text{kJ/mol}  = 6010 \,\text{J} .\tag{10.2.7}
-\end{equation}
+\begin{equation*}
+Q = n L_f = 1\,\text{mol}  \cdot 6.01\,\text{kJ/mol}  = 6010 \,\text{J} .
+\end{equation*}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_heat_engines-3-15-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
@@ -418,7 +417,7 @@ Q = n L_f = 1\,\text{mol}  \cdot 6.01\,\text{kJ/mol}  = 6010 \,\text{J} .\tag{10
 <div class="displaymath process-math" id="chap_heat_engines-3-15-2-3-1">
 \begin{equation}
 \Delta S = S_\text{water}  - S_\text{ice} = \frac{Q}{T}=
-\frac{6010\,\text{J} }{273\,\text{K} }= 22.0 \,\text{J/K} .\tag{10.2.8}
+\frac{6010\,\text{J} }{273\,\text{K} }= 22.0 \,\text{J/K} .\tag{10.2.7}
 \end{equation}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_heat_engines-3-15-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -431,13 +430,13 @@ Q = n L_f = 1\,\text{mol}  \cdot 6.01\,\text{kJ/mol}  = 6010 \,\text{J} .\tag{10
 <div class="para">In some cases, however, <span class="process-math">\(T\)</span> is changing while the heat flows. In this case we must evaluate some kind of integral to find <span class="process-math">\(\Delta S\text{.}\)</span> We will restrict ourselves to the cases where no work is being done and there is no phase change (i.e., nothing melting, solidifying, condensing or vaporizing). That is, heat is flowing in or out of a solid or liquid, whose volumes are essentially constant. In this case,</div>
 <div class="displaymath process-math" id="chap_heat_engines-3-16-3">
 \begin{equation}
-dQ = dE_\text{therm}  = nC\,dT\tag{10.2.9}
+dQ = dE_\text{therm}  = nC\,dT\tag{10.2.8}
 \end{equation}
 </div>
 <div class="para">that is, we can relate the small heat flow to a small temperature change. Putting this into our integral expression gives</div>
 <div class="displaymath process-math" id="chap_heat_engines-3-16-4">
 \begin{equation}
-\Delta S = \int_A^B \frac{dQ}{T}= \int_{T_A}^{T_B} \frac{nC\,dT}{T}\tag{10.2.10}
+\Delta S = \int_A^B \frac{dQ}{T}= \int_{T_A}^{T_B} \frac{nC\,dT}{T}\tag{10.2.9}
 \end{equation}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_heat_engines-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -447,7 +446,7 @@ dQ = dE_\text{therm}  = nC\,dT\tag{10.2.9}
 <div class="displaymath process-math" id="chap_heat_engines-3-17-1">
 \begin{equation}
 \Delta S = nC\int_{T_A}^{T_B} \frac{dT}{T} = nC(\ln T_B -\ln T_A)
-= nC\ln(T_B/T_A).\tag{10.2.11}
+= nC\ln(T_B/T_A).\tag{10.2.10}
 \end{equation}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_heat_engines-3-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -480,7 +479,7 @@ dQ = dE_\text{therm}  = nC\,dT\tag{10.2.9}
 <div class="displaymath process-math" id="eq_DeltaS_cyclic">
 \begin{equation}
 \Delta S_\text{cyclic}  = 0
-\qquad\text{ (cyclic processes) }\tag{10.2.12}
+\qquad\text{ (cyclic processes) }\tag{10.2.11}
 \end{equation}
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chap_heat_engines-3-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
